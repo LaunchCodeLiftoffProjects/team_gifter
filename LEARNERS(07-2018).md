@@ -2,15 +2,12 @@
 
 ## Section: St. Louis (July 2018)
 
+### LaunchCode Staff Repos
+
 - [Matthews, Paul (@pdmxdd)](https://www.github.com/pdmxdd/liftoff-assignments)
 - [Walker, Ryan (@ryanawalker)](https://www.github.com/ryanawalker/liftoff-assignments)
-<<<<<<< HEAD
-- [Wettroth, Paige (@pwettroth)](https://github.com/pwettroth/liftoff-assignments)
 
-=======
-- [Kumar, Anil (@anilkumar21k](https://github.com/anilkumar21k/liftoff-assignments.git)
->>>>>>> 844fe29... Repository added
-
+### Students Replace Your Name Below With Your Formatted Link
 
 - James A
 - Aparna A
@@ -82,7 +79,7 @@
 - Matthew K
 - Johanna K
 - Joshua K
-- Anil K
+- [Kumar, Anil (@anilkumar21k](https://github.com/anilkumar21k/liftoff-assignments.git)
 - Sunita L
 - Deon L
 - Julian L
@@ -151,7 +148,7 @@
 - Jonathan V
 - Caroline W
 - Jacob W
-- Paige W
+- [Wettroth, Paige (@pwettroth)](https://github.com/pwettroth/liftoff-assignments)
 - Julian W
 - Miriam W
 - Jesse W
