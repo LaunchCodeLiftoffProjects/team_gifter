@@ -4,8 +4,12 @@
 
 - [Matthews, Paul (@pdmxdd)](https://www.github.com/pdmxdd/liftoff-assignments)
 - [Walker, Ryan (@ryanawalker)](https://www.github.com/ryanawalker/liftoff-assignments)
+<<<<<<< HEAD
 - [Wettroth, Paige (@pwettroth)](https://github.com/pwettroth/liftoff-assignments)
 
+=======
+- [Kumar, Anil (@anilkumar21k](https://github.com/anilkumar21k/liftoff-assignments.git)
+>>>>>>> 844fe29... Repository added
 
 
 - James A
