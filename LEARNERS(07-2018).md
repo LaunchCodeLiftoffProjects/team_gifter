@@ -10,7 +10,7 @@
 ### Students Replace Your Name Below With Your Formatted Link
 
 - James A
-- Akula, Aparna(@aparnaakula)](https://github.com/aparnaakula/liftoff-assignments)
+- Aparna A
 - Haley A
 - Benjamin A
 - Randy A
@@ -19,7 +19,7 @@
 - Jose B
 - Ryan B
 - Drew B
-- [Bohnert, Erwin (@Jbohn44)](https://www.github.com/Jbohn44/liftoff-assignments)
+- Erwin B
 - Alysia B
 - Andrea B
 - Bryan B
@@ -71,7 +71,7 @@
 - Adele K
 - Jared H
 - Jesse J
-- [Johnson, Mark (@mrkish)](https://www.github.com/mrkish/liftoff-assignments.git)
+- Mark J
 - Adam K
 - John K
 - Xiaoyu K
@@ -98,7 +98,7 @@
 - Jayde M
 - Miles M
 - Aida M
-- [Munie, Richard (@RichardMunie)](https://github.com/RichardMunie/liftoff-assignments)
+- Richard M
 - Robert N
 - Jessica N
 - Brian N
@@ -106,8 +106,8 @@
 - Timothy N
 - Terence O
 - Daniel O
-- [Owens, Amanda (@amanda7641)](https://github.com/amanda7641/liftoff-assignments)
-- Nicholas O
+- Amanda O
+- [Owens, Nicholas (@Nowens17)](https://github.com/Nowens17/liftoff-assignments)
 - Melissa P
 - Ritu P
 - [Pandey, Sumit (@sumitpandey11)](https://www.github.com/sumitpandey11/liftoff-assignments)
@@ -120,14 +120,14 @@
 - Galen R
 - Joseph R
 - Mitchell R
-- [Ricker, Jeffrey (@rickerje)](https://www.github.com/rickerje/liftoff-assignments)
+- Jeffrey R
 - Robert R
 - Sehar S
 - Sailaja S
 - Derek S
 - Michael S
 - Jakob S
-- [Schremp, Amy (@amyschremp)](https://github.com/amyschremp/liftoff-assignments)
+- Amy S
 - Thomas S
 - Gunnar S
 - Tim S
