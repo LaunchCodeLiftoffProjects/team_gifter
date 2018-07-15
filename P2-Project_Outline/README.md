@@ -7,28 +7,20 @@ For this assignment, you will submit a high-level outline of your project. This 
 ## Submission Instructions
 
 ### Overview
-My idea for this assignment is to create an application that allows users to log and track information related to their mental health, providing them with a clear space to gather their thoughts and analyze patterns. Users will be able to freely log their thoughts from the day, and select a few preset options (example: "How are you feeling today?" and answer using good, okay, or bad). Users will be able to see a calendar with a brief overview of days that they logged and go back to view the information from those days.
-
-This idea came from my own need to have a dedicated, private space to share my thoughts and track patterns with my mental health, and I think this application could help others who have the same need.
-
+Sendfriend is a journaling website designed for climbers to keep track of their "beta", a sequence of movements they used to climb (aka "send") a given route. Users will be able to share and compare their notes with other users. By keeping track of their performance they'll also be able to track how they've improved over time in their personal statistics page. As more users submit data and route descriptions we'll be able to provide suggestions for routes to users based on their strengths and weaknesses.
 ### Features
-- User Login
-Users will be able to create accounts, login, and have the option to provide a few details about themselves. Each user will have a profile page.
-- Journal Entries
-Logged in users will be able to add new journal entries. The homepage will show the most recent entry.
-- Calendar Overview
-Logged in users will be able to see an overview of their posts via a calendar view. Each day on the calendar will show an icon based on whether or not there was a journal entry. Each day's calendar box will be shown as a different color based on the user's answer to a question about their overall mood for the day, in order to provide a general overview of the user's mood patterns.
-
+**User creation:** Users will be able to create an account and add/save routes and associated beta for that route to their profile.
+**User statistics:** Users will be able to see a display of their performance over time.
+**Beta sharing:** Users will be able to share their beta, either all of it, none of it, or specific routes with specific users ("friends").
+**Route suggestions:** Users will be able to see routes that are tagged with certain climbing styles and see routes in a given area they may enjoy.
 ### Technologies
-- MongoDB
-- Java
-- Sprint REST
-- Vue
-- Javascript
-- Sass
-- Vuex
+**Java**
+**Spring Boot**
+**Thymeleaf**
+**MySQL**
+**JavaScript**
 
 ### What I'll Have to Learn
-I'll have to learn how to use Vue and Vuex, as well as building on my limited knowledge of Javascript, Sass, and Spring REST.
-
-https://www.pivotaltracker.com/projects/2184784
+**Google Maps API, or an equivalent:** For displaying climbing areas on an interactive map.
+**JavaScript:** Used for displaying graphs and user performance statistics.
+**JPA Annotations/MySQL:** Explore the most effective model implementations to enable sharing private/public user data.
