@@ -87,7 +87,7 @@
 - [L , J (@Jtiger1841)](https://github.com/Jtiger1841/liftoff-assignments.git)
 - Daniel L
 - Kyle L
-- Judith L
+- [Light, Judith (@judy2001)](https://github.com/judy2001/liftoff-assignments)
 - Gary L
 - [L, R (@SharpeLombard)](https://github.com/SharpeLombard/liftoff-assignments)
 - [Mackey, Mary (@petem981)](https://github.com/petem981/liftoff-assignments.git)
