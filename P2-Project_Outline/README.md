@@ -7,18 +7,21 @@ For this assignment, you will submit a high-level outline of your project. This 
 ## Submission Instructions
 
 ### Overview
-Website will allow administrator created users to create and search for work requests, marking them as complete when the work is finished. This website will be directed toward the needs of a particular University, focusing on cutting costs with a self-owned application and solving issues that cannot be resolved with a web application not specifically created for their needs. 
+I want to make an educational math game for children. It will involve listing 9 numbers and asking the child what the 10th number should be. The pattern will either be arithmetic or geometric, and the game itself will be played on site (using JavaScript). I will also keep track of each user's stats in a database (using phpMyAdmin and Python): Longest streak, current streak, win/loss percentage. The user will have the ability to reset the data at any point--returning all stats to 0.
 ### Features
--User login: Users can login once an administrator has created an account for them. Nothing can be accessed without first logging in.
--Search Buildings: Users will be able to view and search through buildings, these buildings cannot be edited by users. Only an administrator can add or edit buildings.
--Search Work Requests: Users will be able to filter work requests to view on index page, being able to search within a certain field if desired.
--Save and Edit Work Requests: User will be able to create work requests and designate the building on campus that the work is needed, other fields to be created as necessary. Some of the work requests' fields cannot be edited after initial creation, the status (in progress, complete, or cancelled) can be updated by a user.
+Log-in
+Guessing Game
+Stats Tracking
+Stats Reset Option
+
 ### Technologies
-Include Technologies here
+Javascript
+Python
+phpMyAdmin
+Flask?
+HTML/CSS
 
 ### What I'll Have to Learn
-I will have to learn how to create administrator accounts that create and edit users, as well as have editing capabilities of buildings in the future. Probably more, but that's all I know I'll have to learn at this point.
+I'll need to learn Javascript. I also plan to host this on my current website--graceerincallahan.com--so I'll want to figure out how to use FTP. I've been using WordPress up to this point, but I don't like it. I'll also want to revisit Bootstrap because we glanced at it in LC101, and I'm not solid on it just yet.
 
-
-
-
+I'm also at the point of researching what the best framework would be because I haven't used Javascript before.
