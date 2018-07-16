@@ -72,7 +72,7 @@
 - Jared H
 - Jesse J
 - Mark J
-- Adam K
+- [Karr, Adam (@BobbyTheUnspeakable)](https://github.com/BobbyTheUnspeakable/liftoff-assignments)
 - John K
 - [Ke, Xiaoyu (@xiaoyuk)](https://www.github.com/xiaoyuk/liftoff-assignments.git)
 - Vincent K
