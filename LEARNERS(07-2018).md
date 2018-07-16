@@ -11,11 +11,11 @@
 
 - James A
 - Aparna A
-- [Albers, Haley (@haalbers)](https://github.com/haalbers/liftoff-assignments.git)
+- Haley A
 - Benjamin A
 - Randy A
 - Geetha A
-- [Basinger, Jenelle (@Jenellebas)](https://github.com/Jenellebas/liftoff-assignments)
+- Jenelle B
 - Jose B
 - Ryan B
 - Drew B
@@ -25,7 +25,7 @@
 - Bryan B
 - Jack B
 - Joe B
-- [Callahan, Grace (@smallar-achnid)](https://www.github.com/smallar-achnid/liftoff-assignments)
+- Grace C
 - Andrew C
 - Bill C
 - Leslie C
@@ -33,20 +33,20 @@
 - Lucas C
 - Robert C
 - Steven D
-- Brandon D
-- [A, D (@SnowCrashOverride](https://github.com/SnowCrashOverride/liftoff-assignments.git)
+- [Detra, Brandon (@bdtra)](https://github.com/bdtra/liftoff-assignments)
+- Andrew D
 - Gnanaprasuna D
 - Andrew E
 - Sandra E
 - Jonathan E
 - Uche E
-- [Fannon, Paul (@bluenote87)](https://github.com/bluenote87/liftoff-assignments)
+- Paul F
 - Rim F
-- [Filler, Carl (@cfiller123)](https://github.com/cfiller123/liftoff-assignments)
+- Carl F
 - Lucas F
 - Earl G
 - Rupali G
-- [Gallagher, John (@jackpg09)](https://github.com/jackpg09/liftoff-assignments.git)
+- John G
 - Nicholas G
 - Jon G
 - Carl G
@@ -59,7 +59,7 @@
 - Mark H
 - David H
 - Allyn H
-- [Hart, Megan (@ki42)](https://www.github.com/ki42/liftoff-assignments)
+- Megan H
 - Hiroko H
 - Joshua H
 - Kyle H
@@ -89,7 +89,7 @@
 - Gary L
 - Rebecca L
 - Mary M
-- [T M (@emeraldvision)](https://github.com/emeraldvision/liftoff-assignments)
+- Ther M
 - Jonathan M
 - John M
 - Patrick M
@@ -107,9 +107,9 @@
 - Terence O
 - Daniel O
 - Amanda O
-- [Owens, Nicholas (@Nowens17)](https://github.com/Nowens17/liftoff-assignments)
+- Nicholas O
 - Melissa P
-- [P, R (@ritusp)](https://github.com/ritusp/liftoff-assignments)
+- Ritu P
 - [Pandey, Sumit (@sumitpandey11)](https://www.github.com/sumitpandey11/liftoff-assignments)
 - Peshonna P
 - Dhawani P
@@ -122,7 +122,7 @@
 - Mitchell R
 - Jeffrey R
 - Robert R
-- [Sagarwala, Sehar (@ssagarwala)](https://github.com/ssagarwala/liftoff-assignments)
+- Sehar S
 - Sailaja S
 - Derek S
 - Michael S
@@ -143,7 +143,7 @@
 - Ariel T
 - Douglas U
 - Jareson V
-- [Velocci, Francesco (@FrancescoVelocci)](https://github.com/FrancescoVelocci/liftoff-assignments)
+- Francesco V
 - Nicholas V
 - Jonathan V
 - Caroline W
