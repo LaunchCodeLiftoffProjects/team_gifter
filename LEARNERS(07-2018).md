@@ -109,7 +109,7 @@
 - Amanda O
 - [Owens, Nicholas (@Nowens17)](https://github.com/Nowens17/liftoff-assignments)
 - Melissa P
-- Ritu P
+- [P, R (@ritusp)](https://github.com/ritusp/liftoff-assignments)
 - [Pandey, Sumit (@sumitpandey11)](https://www.github.com/sumitpandey11/liftoff-assignments)
 - Peshonna P
 - Dhawani P
