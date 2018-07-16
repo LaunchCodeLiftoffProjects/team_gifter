@@ -42,7 +42,7 @@
 - Uche E
 - [Fannon, Paul (@bluenote87)](https://github.com/bluenote87/liftoff-assignments)
 - Rim F
-- [Filler, Carl (@cfiller123)] (https://github.com/cfiller123/liftoff-assignments)
+- [Filler, Carl (@cfiller123)](https://github.com/cfiller123/liftoff-assignments)
 - Lucas F
 - Earl G
 - Rupali G
