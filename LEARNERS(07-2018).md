@@ -130,7 +130,7 @@
 - Amy S
 - [Shuman, Thomas (@thomasshumanjr)](https://github.com/ThomasShumanJr/liftoff-assignments)
 - Tim S
-- Kelly S
+- [Sorbello, Kelly (@ksorbello)](https://www.github.com/ksorbllo/liftoff-assignments)
 - Saranyadevi S
 - Joseph S
 - Nick S
