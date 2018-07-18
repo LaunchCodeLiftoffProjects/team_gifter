@@ -125,7 +125,7 @@
 - Robert R
 - Sehar S
 - Sailaja S
-- Derek S
+- [Sanabria, Derek (@dsanabria1023)](https://github.com/dsanabria1023/liftoff-assignments)
 - Michael S
 - Jakob S
 - Amy S
