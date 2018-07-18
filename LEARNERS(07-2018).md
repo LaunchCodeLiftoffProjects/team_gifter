@@ -17,7 +17,7 @@
 - Geetha A
 - Jenelle B
 - Jose B
-- Ryan B
+- [Best, Ryan (@rabvc4)](https://www.github.com/Rabvc4/liftoff-assignments)
 - Drew B
 - Erwin B
 - Alysia B
