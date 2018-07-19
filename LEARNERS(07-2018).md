@@ -152,7 +152,7 @@
 - Julian W
 - Miriam W
 - Jesse W
-- Manuel W
+- [Williams, Manuel (@NOBLEMBW)](https://github.com/NOBLEMBW/liftoff-assignments.git)
 - Michelle W
 - Joey W
 - Jared W
