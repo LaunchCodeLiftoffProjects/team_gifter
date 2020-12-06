@@ -1,4 +1,0 @@
-com/liftoff/helloworld/HelloWorldApplication.java
- com.liftoff.helloworld.HelloWorldApplication
-com/liftoff/helloworld/controllers/HelloController.java
- com.liftoff.helloworld.controllers.HelloController
