@@ -1,0 +1,2 @@
+com/liftoff/helloworld/HelloWorldApplicationTests.java
+ com.liftoff.helloworld.HelloWorldApplicationTests
