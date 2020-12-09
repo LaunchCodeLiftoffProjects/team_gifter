@@ -3,7 +3,9 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="gifter.gifter.main" target="11" />
+      <module name="gifter.gifter.main~2" target="11" />
       <module name="gifter.gifter.test" target="11" />
+      <module name="gifter.gifter.test~2" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
