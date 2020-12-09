@@ -23,9 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/dto/LoginFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/dto/RegisterFormDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +73,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
