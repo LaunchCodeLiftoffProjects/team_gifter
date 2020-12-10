@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title>Coding Events</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" th:href="@{/styles.css}">
+
+</head>
+<body>
+
+<header th:fragment="header">
+    <h1 th:text="${title}">Gifter</h1>
+    <ul class="nav" style="float:right;">
+        <li class="nav-item"><a class="nav-link" href="/logout">Log out</a></li>
+    </ul>
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="/samplepath">Sample Nav Link</a></li>
+        <li class="nav-item"><a class="nav-link" href="/samplepath">Sample Nav Link</a></li>
+    </ul>
+</header>
+
+</body>
+</html>
