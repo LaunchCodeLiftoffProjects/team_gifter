@@ -22,14 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/data/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/data/RecipientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/data/CategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/data/RecipientDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +99,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -146,6 +149,14 @@
       <option name="presentableId" value="Default" />
       <updated>1607282839620</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1607565193058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607565193058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,5 +170,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
