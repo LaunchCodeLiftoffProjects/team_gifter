@@ -1,5 +1,7 @@
 com/liftoff/gifter/controllers/HelloController.java
  com.liftoff.gifter.controllers.HelloController
+com/liftoff/gifter/models/Recipient.java
+ com.liftoff.gifter.models.Recipient
 com/liftoff/gifter/GifterApplication.java
  com.liftoff.gifter.GifterApplication
 com/liftoff/gifter/models/dto/RegisterFormDTO.java
@@ -14,3 +16,5 @@ com/liftoff/gifter/models/User.java
  com.liftoff.gifter.models.User
 com/liftoff/gifter/models/AbstractEntity.java
  com.liftoff.gifter.models.AbstractEntity
+com/liftoff/gifter/data/RecipientRepository.java
+ com.liftoff.gifter.data.RecipientRepository
