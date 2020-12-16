@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    margin-top: 50px;
+    background-color : honeydew;
+}
+table{
+    margin-top: 10px;
+    text-align:left;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+}
+table tr:nth-of-type(odd) {
+    background-color:#ffffff;
+}
+table tr:nth-of-type(even) {
+    background-color:#f1f1f1;
+}
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover {
+    background-color: silver;
+}
+td{
+    padding: 4px;
+}
+.error {
+    color: red;
+}
+.admin-button {
+    color: white;
+}
+.rating.glyphicon{
+    color: SkyBlue;
+}
+.rating-1:before{
+    content: "\e006";
+}
+.rating-2:before{
+    content: "\e006 \e006";
+}
+.rating-3:before{
+    content: "\e006\e006\e006";
+}
+.rating-4:before{
+    content: "\e006\e006\e006\e006";
+}
+.rating-5:before{
+    content: "\e006\e006\e006\e006\e006";
+}
+ul {
+    list-style-type: square;
+}
