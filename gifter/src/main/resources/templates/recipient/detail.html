@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <td th:text="${recipient.firstName} + ' ' + ${recipient.lastName}"></td>
+    </tr>
+    <tr>
+        <th>Relationship</th>
+        <td th:text="${recipient.relationship}"></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td th:text="${recipient.email}"></td>
+    </tr>
+    <tr>
+        <th>Phone Number</th>
+        <td th:text="${recipient.phoneNumber}"></td>
+    </tr>
+    <tr>
+        <th>Address</th>
+        <td th:text="${recipient.address}"></td>
+    </tr>
+    <tr>
+        <th>Birthday</th>
+        <td th:text="${recipient.dateOfBirth}"></td>
+    </tr>
+    <tr>
+        <th>Anniversary</th>
+        <td th:text="${recipient.anniversary}"></td>
+    </tr>
+</table>
+
+<!--TODO: link to edit recipient for each blank cell. Example: if birthday is blank, text reads "Add Birthday" and links to the edit recipient page-->
+<!--<a th:href="'/recipient/edit?recipientId=' + ${recipient.id}">Edit</a>-->
+
+
+</body>
+</html>

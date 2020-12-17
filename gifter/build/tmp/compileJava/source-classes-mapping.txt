@@ -8,6 +8,8 @@ com/liftoff/gifter/models/dto/RegisterFormDTO.java
  com.liftoff.gifter.models.dto.RegisterFormDTO
 com/liftoff/gifter/models/dto/LoginFormDTO.java
  com.liftoff.gifter.models.dto.LoginFormDTO
+com/liftoff/gifter/models/Recipient.java
+ com.liftoff.gifter.models.Recipient
 com/liftoff/gifter/controllers/AuthenticationController.java
  com.liftoff.gifter.controllers.AuthenticationController
 com/liftoff/gifter/data/UserRepository.java
@@ -16,7 +18,5 @@ com/liftoff/gifter/models/User.java
  com.liftoff.gifter.models.User
 com/liftoff/gifter/data/RecipientRepository.java
  com.liftoff.gifter.data.RecipientRepository
-com/liftoff/gifter/models/Recipient.java
- com.liftoff.gifter.models.Recipient
 com/liftoff/gifter/controllers/RecipientController.java
  com.liftoff.gifter.controllers.RecipientController

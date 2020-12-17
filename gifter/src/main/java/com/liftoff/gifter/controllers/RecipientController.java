@@ -10,6 +10,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("recipient")
@@ -44,10 +45,33 @@ public class RecipientController {
         return "recipient/add";
     }
 
+    @GetMapping("detail")
+    public String displayRecipientDetails(@RequestParam Integer recipientId, Model model) {
+
+        Optional<Recipient> result = recipientRepository.findById(recipientId);
+
+        if (result.isEmpty()) {
+            model.addAttribute("title", "Invalid Recipient ID: " + recipientId);
+        } else {
+            Recipient recipient = result.get();
+            model.addAttribute("title", recipient.getFirstName() + recipient.getLastName());
+            model.addAttribute("recipient", recipient);
+        }
+
+        return "recipient/detail";
+    }
+
+    @GetMapping("view")
+    public String viewRecipients(Model model) {
+        model.addAttribute("title", "All Recipients");
+        model.addAttribute("recipients", recipientRepository.findAll());
+
+        return "recipient/view";
+    }
+
     // ToDo: Build handlers to "edit" recipient
 
     // ToDo: Build handlers to "remove" recipient
-
 
 }
 

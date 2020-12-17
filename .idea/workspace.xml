@@ -22,32 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/css/images/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/css/images/star_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/css/images/star_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/css/jqx.arctic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/css/jqx.base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/images/critter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/js/jquery-1.11.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/js/jqxcore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/js/jqxrating.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/gifter.gifter.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/gifter.gifter.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/RecipientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/RecipientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,13 +71,13 @@
       </state>
     </system>
   </component>
-
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
         <option value="Class" />
         <option value="HTML File" />
+        <option value="Thymeleaf" />
       </list>
     </option>
   </component>
@@ -106,7 +87,6 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -129,12 +109,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
-
   </component>
   <component name="RunManager">
     <configuration name="gifter [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -191,12 +169,28 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial commit of persistent recipients" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
-
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1797" height="239" key="GridCell.Tab.0.bottom" timestamp="1608167397223">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1797" height="239" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397223" />
+    <state width="1797" height="239" key="GridCell.Tab.0.center" timestamp="1608167397215">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1797" height="239" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397215" />
+    <state width="1797" height="239" key="GridCell.Tab.0.left" timestamp="1608167397214">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1797" height="239" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397214" />
+    <state width="1797" height="239" key="GridCell.Tab.0.right" timestamp="1608167397221">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1797" height="239" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397221" />
   </component>
 </project>
