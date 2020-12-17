@@ -27,12 +27,10 @@
         <td th:text="${recipient.address}"></td>
     </tr>
     <tr>
-        <th>Birthday</th>
-        <td th:text="${recipient.dateOfBirth}"></td>
-    </tr>
-    <tr>
-        <th>Anniversary</th>
-        <td th:text="${recipient.anniversary}"></td>
+        <th>Occasions</th>
+        <td>
+            <span th:each="occasion : ${occasions}" th:text="${occasion.name} + ' '"></span>
+        </td>
     </tr>
 </table>
 

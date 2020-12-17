@@ -1,6 +1,7 @@
 package com.liftoff.gifter.controllers;
 
 
+import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Recipient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,9 @@ public class RecipientController {
 
     @Autowired
     private RecipientRepository recipientRepository;
+
+    @Autowired
+    private OccasionRepository occasionRepository;
 
     // ToDo: finish this index handler for '/recipient' path
 //    @RequestMapping(value = "")
@@ -51,11 +55,12 @@ public class RecipientController {
         Optional<Recipient> result = recipientRepository.findById(recipientId);
 
         if (result.isEmpty()) {
-            model.addAttribute("title", "Invalid Recipient ID: " + recipientId);
+            model.addAttribute("title", "Recipient Does Not Exist");
         } else {
             Recipient recipient = result.get();
             model.addAttribute("title", recipient.getFirstName() + recipient.getLastName());
             model.addAttribute("recipient", recipient);
+            model.addAttribute("occasions", recipient.getOccasions());
         }
 
         return "recipient/detail";
