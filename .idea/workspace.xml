@@ -24,13 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/data/CategoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/data/RecipientDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,9 +122,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -174,5 +165,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608162773662">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608162773662" />
+    <state x="449" y="239" key="git4idea.ui.GitStashDialog" timestamp="1608162890709">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="449" y="239" key="git4idea.ui.GitStashDialog/0.0.1280.680@0.0.1280.680" timestamp="1608162890709" />
+    <state x="404" y="130" key="git4idea.ui.GitUnstashDialog" timestamp="1608163010534">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="404" y="130" key="git4idea.ui.GitUnstashDialog/0.0.1280.680@0.0.1280.680" timestamp="1608163010534" />
   </component>
 </project>
