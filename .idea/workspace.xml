@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,5 +185,9 @@
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state width="1797" height="239" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397221" />
+    <state x="1959" y="281" key="Vcs.Push.Dialog.v2" timestamp="1608168727741">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1959" y="281" key="Vcs.Push.Dialog.v2/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608168727741" />
   </component>
 </project>
