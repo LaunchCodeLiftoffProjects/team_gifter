@@ -19,11 +19,11 @@ public class RecipientController {
     private RecipientRepository recipientRepository;
 
     // ToDo: finish this index handler for '/recipient' path
-//    @RequestMapping(value = "")
-//    public String index(Model model) {
-//        model.addAttribute("title", "Recipients");
-//        return "recipients/index";
-//    }
+    @RequestMapping(value = "")
+    public String index(Model model) {
+        model.addAttribute("title", "Recipients");
+        return "recipient/index";
+    }
 
 
     @GetMapping("add")
@@ -41,7 +41,7 @@ public class RecipientController {
             return "recipient/add";
         }
         recipientRepository.save(newRecipient);
-        return "recipient/add";
+        return "recipient/index";
     }
 
     // ToDo: Build handlers to "edit" recipient

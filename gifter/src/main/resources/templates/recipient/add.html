@@ -31,8 +31,8 @@
 
     <div class="form-group">
         <label th:for="dateOfBirth">Date of Birth</label>
-        <input class="form-control"
-               th:field="*{dateOfBirth}" placeholder="Date in the form of ####-##-## (year-month-day)" />
+        <input class="form-control" type="date" value="2018-07-22"
+               th:field="*{dateOfBirth}" />
         <span th:errors="*{dateOfBirth}" class="error"></span>
     </div>
 
@@ -45,22 +45,22 @@
 
     <div class="form-group">
         <label th:for="anniversary">Anniversary</label>
-        <input class="form-control"
-               th:field="*{anniversary}" placeholder="Date in the form of ####-##-## (year-month-day)" />
+        <input class="form-control" type="date"
+               th:field="*{anniversary}" />
         <span th:errors="*{anniversary}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="address">Address</label>
         <input class="form-control"
-               th:field="*{address}" placeholder="We need to tweak this input field" />
+               th:field="*{address}" placeholder="This input field needs some tweakin'" />
         <span th:errors="*{address}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="phoneNumber">Phone Number</label>
         <input class="form-control"
-               th:field="*{phoneNumber}" placeholder="In the form of (###) ###-####" />
+               th:field="*{phoneNumber}" placeholder="Format: 123-456-7890" />
         <span th:errors="*{phoneNumber}" class="error"></span>
     </div>
 
