@@ -155,7 +155,7 @@ public class Recipient extends AbstractEntity {
         return occasions;
     }
 
-
+    public void addOccasion(Occasion occasion) { this.occasions.add(occasion); }
 
     @Override
     public boolean equals(Object o) {

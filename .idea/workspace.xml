@@ -23,10 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/OccasionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/add-occasion.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +76,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="HTML File" />
-        <option value="Thymeleaf" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Thymeleaf" />
       </list>
     </option>
   </component>
@@ -179,25 +181,41 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2614" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608174227279" />
-    <state width="1797" height="239" key="GridCell.Tab.0.bottom" timestamp="1608167397223">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state width="1039" height="271" key="GridCell.Tab.0.bottom" timestamp="1608178445021">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1039" height="271" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178445021" />
     <state width="1797" height="239" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397223" />
-    <state width="1797" height="239" key="GridCell.Tab.0.center" timestamp="1608167397215">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state width="1058" height="271" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012029" />
+    <state width="1039" height="271" key="GridCell.Tab.0.center" timestamp="1608178445017">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1039" height="271" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178445017" />
     <state width="1797" height="239" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397215" />
-    <state width="1797" height="239" key="GridCell.Tab.0.left" timestamp="1608167397214">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state width="1058" height="271" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012026" />
+    <state width="1039" height="271" key="GridCell.Tab.0.left" timestamp="1608178445015">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1039" height="271" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178445015" />
     <state width="1797" height="239" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397214" />
-    <state width="1797" height="239" key="GridCell.Tab.0.right" timestamp="1608167397221">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state width="1058" height="271" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012025" />
+    <state width="1039" height="271" key="GridCell.Tab.0.right" timestamp="1608178445019">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1039" height="271" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178445019" />
     <state width="1797" height="239" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397221" />
+    <state width="1058" height="271" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012027" />
     <state x="1959" y="281" key="Vcs.Push.Dialog.v2" timestamp="1608169322473">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="1959" y="281" key="Vcs.Push.Dialog.v2/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608169322473" />
+    <state x="2517" y="172" width="586" height="735" key="find.popup" timestamp="1608177602728">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2517" y="172" width="586" height="735" key="find.popup/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608177602728" />
+    <state x="2479" y="315" width="670" height="676" key="search.everywhere.popup" timestamp="1608177425528">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2479" y="315" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608177425528" />
   </component>
 </project>

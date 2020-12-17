@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<form method="post">
+    <div class="form-group">
+        <input type="hidden" th:field="${recipientOccasion.recipient}">
+        <select th:field="${recipientOccasion.occasion}">
+            <option th:each="occasion : ${occasions}"
+                    th:value="${occasion.id}"
+                    th:text="${occasion.name}"
+            ></option>
+        </select>
+    </div>
+    <input type="submit" class="btn btn-success" value="Add Occasion">
+</form>
+
+</body>
+</html>
