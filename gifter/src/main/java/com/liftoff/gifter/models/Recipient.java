@@ -3,45 +3,49 @@ package com.liftoff.gifter.models;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.sql.Array;
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
 public class Recipient extends AbstractEntity {
 
     @NotNull
-    @Size(min=3, max=20, message="First name must have 3 to 20 characters.")
+    @Size(min=2, max=20, message="First name must have 3 to 20 characters.")
     private String firstName;
 
     @NotNull
-    @Size(min=3, max=20, message="Last name must have 3 to 20 characters.")
+    @Size(min=2, max=20, message="Last name must have 3 to 20 characters.")
     private String lastName;
 
-    @Email(message="Email address must be properly formed.")
+    @Email(message="Please enter a valid email.")
     private String email;
 
-    @Basic
-    private Date dateOfBirth;
-
-//    @CollectionTable
-//    private Array categories;
-
-    private String relationship;
-
-    @Basic
-    private Date anniversary;
+    private String phoneNumber;
 
     private String address;
 
-    private String phoneNumber;
+    private String relationship;
+
+    @ManyToMany
+    private final List<Occasion> occasions = new ArrayList<>();
 
     private Date dateCreated;
 
     private Date dateUpdated;
+
+    //TODO: change these to occasions
+    @Basic
+    private Date dateOfBirth;
+
+    @Basic
+    private Date anniversary;
 
 
     public Recipient() {}
@@ -146,6 +150,12 @@ public class Recipient extends AbstractEntity {
     public void setDateUpdated(Date dateUpdated) {
         this.dateUpdated = dateUpdated;
     }
+
+    public List<Occasion> getOccasions() {
+        return occasions;
+    }
+
+    public void addOccasion(Occasion occasion) { this.occasions.add(occasion); }
 
     @Override
     public boolean equals(Object o) {
