@@ -95,8 +95,9 @@ public class RecipientController {
         recipientToEdit.setPhoneNumber(recipient.getPhoneNumber());
         recipientToEdit.setDateUpdated(updated);
         recipientRepository.save(recipientToEdit);
-        return "redirect:";
-//        return "recipient/detail";
+        model.addAttribute("occasions", recipient.getOccasions());
+//        return "redirect:";
+        return "redirect:detail?recipientId=" + recipientToEdit.getId();
     }
 
     @GetMapping("view")
@@ -157,8 +158,6 @@ public class RecipientController {
 
         return "redirect:add-occasion";
     }
-
-    // ToDo: Build handlers to "edit" recipient
 
     // ToDo: Build handlers to "remove" recipient
 
