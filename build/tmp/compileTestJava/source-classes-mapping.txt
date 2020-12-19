@@ -1,0 +1,2 @@
+com/liftoff/gifter/GifterApplicationTests.java
+ com.liftoff.gifter.GifterApplicationTests

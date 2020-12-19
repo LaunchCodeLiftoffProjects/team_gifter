@@ -9,7 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/reports/tests/test/classes/com.liftoff.helloworld.HelloWorldApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/reports/tests/test/packages/com.liftoff.helloworld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/test-results/test/TEST-com.liftoff.helloworld.HelloWorldApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +79,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="view-recipients" />
+        <entry key="$PROJECT_DIR$" value="occasions" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,6 +108,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="gifter [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -207,10 +225,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1888" y="121" key="#Project_Structure" timestamp="1608357898621">
+    <state x="1888" y="121" key="#Project_Structure" timestamp="1608358994734">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="1888" y="121" key="#Project_Structure/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608357898621" />
+    <state x="1888" y="121" key="#Project_Structure/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608358994734" />
     <state x="2614" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1608338164804">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
