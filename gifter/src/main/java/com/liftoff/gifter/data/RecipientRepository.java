@@ -9,3 +9,4 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public interface RecipientRepository extends CrudRepository<Recipient, Integer> {
 }
+// © 2020 Gifter

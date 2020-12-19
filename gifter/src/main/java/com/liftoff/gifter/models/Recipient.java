@@ -6,8 +6,8 @@ import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.sql.Array;
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.Objects;
 
 @Entity
@@ -27,9 +27,6 @@ public class Recipient extends AbstractEntity {
     @Basic
     private Date dateOfBirth;
 
-//    @CollectionTable
-//    private Array categories;
-
     private String relationship;
 
     @Basic
@@ -39,24 +36,28 @@ public class Recipient extends AbstractEntity {
 
     private String phoneNumber;
 
-    private Date dateCreated;
+    private Date creationDate;
 
-    private Date dateUpdated;
+    private Date updated;
 
 
-    public Recipient() {}
+    public Recipient() {
+        creationDate = new java.sql.Date(System.currentTimeMillis());
+        updated = new java.sql.Date(System.currentTimeMillis());
+    }
 
     public Recipient(@NotNull @Size(min = 3, max = 20, message = "First name must have 3 to 20 characters.") String firstName,
                      @NotNull @Size(min = 3, max = 20, message = "Last name must have 3 to 20 characters.") String lastName,
                      @Email(message = "Email address must be properly formed.")
-                     String email,
+                             String email,
                      Date dateOfBirth,
                      String relationship,
                      Date anniversary,
                      String address,
                      String phoneNumber,
-                     Date dateCreated,
-                     Date dateUpdated) {
+                     Date creationDate,
+                     Date updated) {
+        this();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -131,20 +132,28 @@ public class Recipient extends AbstractEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    public Date getDateCreated() {
-        return dateCreated;
+    public Date getCreationDate() {
+        return creationDate;
     }
 
-    public void setDateCreated(Date dateCreated) {
-        this.dateCreated = dateCreated;
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
     }
 
-    public Date getDateUpdated() {
-        return dateUpdated;
+    public Date getUpdated() {
+        return updated;
     }
 
-    public void setDateUpdated(Date dateUpdated) {
-        this.dateUpdated = dateUpdated;
+    public void setUpdated(Date updated) {
+        this.updated = updated;
+    }
+
+    public String getFormattedCreationDate(){
+        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getCreationDate());
+    }
+
+    public String getFormattedUpdatedDate(){
+        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getUpdated());
     }
 
     @Override
@@ -161,15 +170,15 @@ public class Recipient extends AbstractEntity {
                 && Objects.equals(anniversary, recipient.anniversary)
                 && Objects.equals(address, recipient.address)
                 && Objects.equals(phoneNumber, recipient.phoneNumber)
-                && Objects.equals(dateCreated, recipient.dateCreated)
-                && Objects.equals(dateUpdated, recipient.dateUpdated);
+                && Objects.equals(creationDate, recipient.creationDate)
+                && Objects.equals(updated, recipient.updated);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), firstName, lastName,
                 email, dateOfBirth, relationship, anniversary,
-                address, phoneNumber, dateCreated, dateUpdated);
+                address, phoneNumber, creationDate, updated);
     }
 
     @Override
@@ -183,8 +192,8 @@ public class Recipient extends AbstractEntity {
                 ", anniversary=" + anniversary +
                 ", address='" + address + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", dateCreated=" + dateCreated +
-                ", dateUpdated=" + dateUpdated +
+                ", dateCreated=" + creationDate +
+                ", updated=" + updated +
                 '}';
     }
 }

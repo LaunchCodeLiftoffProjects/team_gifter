@@ -5,18 +5,17 @@
 
 <header th:replace="fragments :: header"></header>
 
-
-<form method="post" class="form" style="max-width: 400px" th:object="${recipient}">
+<form method="post" th:action="@{/recipient/edit}" class="form" style="max-width: 400px" th:object="${recipient}">
 
     <div class="form-group">
-        <label th:for="firstName">First Name</label>
-        <input class="form-control" id="focus" th:field="*{firstName}" placeholder="3 to 20 characters allowed" />
+        <label th:for="firsName">First Name</label>
+        <input class="form-control" th:field="*{firstName}"/>
         <span th:errors="*{firstName}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="lastName">Last Name</label>
-        <input class="form-control" th:field="*{lastName}" placeholder="3 to 20 characters allowed" />
+        <input class="form-control" th:field="*{lastName}" />
         <span th:errors="*{lastName}" class="error"></span>
     </div>
 
@@ -56,10 +55,8 @@
         <span th:errors="*{phoneNumber}" class="error"></span>
     </div>
 
-
-
-    <input type="submit" class="btn btn-primary" value="Add Recipient" />
-
+    <input type="hidden" th:value="*{id}" name="id"  />
+    <input type="submit" value="Update Recipient" class="btn btn-primary" />
 </form>
 
 </body>
