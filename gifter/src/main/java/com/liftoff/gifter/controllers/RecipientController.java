@@ -27,13 +27,12 @@ public class RecipientController {
     @Autowired
     private OccasionRepository occasionRepository;
 
-    // ToDo: finish this index handler for '/recipient' path
-//    @RequestMapping(value = "")
-//    public String index(Model model) {
-//        model.addAttribute("title", "Recipients");
-//        return "recipients/index";
-//    }
 
+    @RequestMapping(value = "")
+    public String index(Model model) {
+        model.addAttribute("title", "Recipients");
+        return "recipient/index";
+    }
 
     @GetMapping("add")
     public String displayAddRecipientForm(Model model) {
@@ -69,6 +68,35 @@ public class RecipientController {
         }
 
         return "recipient/detail";
+    }
+
+    @GetMapping("edit/{recipientId}")
+    public String displayEditForm(Model model, @PathVariable int recipientId) {
+        Recipient recipientToEdit = recipientRepository.findById(recipientId).get();
+        model.addAttribute("title", "Edit Recipient");
+        model.addAttribute("recipient", recipientToEdit);
+        return "recipient/edit";
+    }
+
+    @PostMapping(value="edit")
+    public String processEditForm(@ModelAttribute @Valid Recipient recipient, int id,
+                                  Errors errors, Model model){
+        if (errors.hasErrors()){
+            model.addAttribute("title", "Add Recipient");
+            return "recipient/edit";
+        }
+        Date updated = new java.util.Date(System.currentTimeMillis());
+        Recipient recipientToEdit = recipientRepository.findById(id).get();
+        recipientToEdit.setFirstName(recipient.getFirstName());
+        recipientToEdit.setLastName(recipient.getLastName());
+        recipientToEdit.setEmail(recipient.getEmail());
+        recipientToEdit.setRelationship(recipient.getRelationship());
+        recipientToEdit.setAddress(recipient.getAddress());
+        recipientToEdit.setPhoneNumber(recipient.getPhoneNumber());
+        recipientToEdit.setDateUpdated(updated);
+        recipientRepository.save(recipientToEdit);
+        return "redirect:";
+//        return "recipient/detail";
     }
 
     @GetMapping("view")

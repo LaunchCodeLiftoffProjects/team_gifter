@@ -8,8 +8,9 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.sql.Array;
-import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -17,11 +18,11 @@ import java.util.Objects;
 public class Recipient extends AbstractEntity {
 
     @NotNull
-    @Size(min=2, max=20, message="First name must have 3 to 20 characters.")
+    @Size(min=2, max=20, message="First name is required. Must have 2 to 20 characters.")
     private String firstName;
 
     @NotNull
-    @Size(min=2, max=20, message="Last name must have 3 to 20 characters.")
+    @Size(min=2, max=20, message="Last name is required. Must have 2 to 20 characters.")
     private String lastName;
 
     @Email(message="Please enter a valid email.")
@@ -40,33 +41,25 @@ public class Recipient extends AbstractEntity {
 
     private Date dateUpdated;
 
-    //TODO: change these to occasions
-    @Basic
-    private Date dateOfBirth;
-
-    @Basic
-    private Date anniversary;
-
-
-    public Recipient() {}
+    public Recipient() {
+        dateCreated = new java.util.Date(System.currentTimeMillis());
+        dateUpdated = new java.util.Date(System.currentTimeMillis());
+    }
 
     public Recipient(@NotNull @Size(min = 3, max = 20, message = "First name must have 3 to 20 characters.") String firstName,
                      @NotNull @Size(min = 3, max = 20, message = "Last name must have 3 to 20 characters.") String lastName,
                      @Email(message = "Email address must be properly formed.")
                      String email,
-                     Date dateOfBirth,
                      String relationship,
-                     Date anniversary,
                      String address,
                      String phoneNumber,
                      Date dateCreated,
                      Date dateUpdated) {
+        this();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.dateOfBirth = dateOfBirth;
         this.relationship = relationship;
-        this.anniversary = anniversary;
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
@@ -95,28 +88,12 @@ public class Recipient extends AbstractEntity {
         this.email = email;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
     public String getRelationship() {
         return relationship;
     }
 
     public void setRelationship(String relationship) {
         this.relationship = relationship;
-    }
-
-    public Date getAnniversary() {
-        return anniversary;
-    }
-
-    public void setAnniversary(Date anniversary) {
-        this.anniversary = anniversary;
     }
 
     public String getAddress() {
@@ -139,12 +116,20 @@ public class Recipient extends AbstractEntity {
         return dateCreated;
     }
 
+    public String getFormattedCreationDate(){
+        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getDateCreated());
+    }
+
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
     }
 
     public Date getDateUpdated() {
         return dateUpdated;
+    }
+
+    public String getFormattedUpdatedDate(){
+        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getDateUpdated());
     }
 
     public void setDateUpdated(Date dateUpdated) {
@@ -166,9 +151,7 @@ public class Recipient extends AbstractEntity {
         return Objects.equals(firstName, recipient.firstName)
                 && Objects.equals(lastName, recipient.lastName)
                 && Objects.equals(email, recipient.email)
-                && Objects.equals(dateOfBirth, recipient.dateOfBirth)
                 && Objects.equals(relationship, recipient.relationship)
-                && Objects.equals(anniversary, recipient.anniversary)
                 && Objects.equals(address, recipient.address)
                 && Objects.equals(phoneNumber, recipient.phoneNumber)
                 && Objects.equals(dateCreated, recipient.dateCreated)
@@ -178,8 +161,7 @@ public class Recipient extends AbstractEntity {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), firstName, lastName,
-                email, dateOfBirth, relationship, anniversary,
-                address, phoneNumber, dateCreated, dateUpdated);
+                email, relationship, address, phoneNumber, dateCreated, dateUpdated);
     }
 
     @Override
@@ -188,9 +170,7 @@ public class Recipient extends AbstractEntity {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
                 ", relationship='" + relationship + '\'' +
-                ", anniversary=" + anniversary +
                 ", address='" + address + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", dateCreated=" + dateCreated +

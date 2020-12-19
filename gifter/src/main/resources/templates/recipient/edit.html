@@ -5,30 +5,27 @@
 
 <header th:replace="fragments :: header"></header>
 
-
-<form method="post" class="form" style="max-width: 400px" th:object="${recipient}">
+<form method="post" th:action="@{/recipient/edit}" class="form" style="max-width: 400px" th:object="${recipient}">
 
     <div class="form-group">
         <label th:for="firstName">First Name</label>
-        <input class="form-control" id="focus"
-               th:field="*{firstName}" placeholder="2 to 20 characters allowed" />
+        <input class="form-control" th:field="*{firstName}"/>
         <span th:errors="*{firstName}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="lastName">Last Name</label>
-        <input class="form-control"
-               th:field="*{lastName}" placeholder="2 to 20 characters allowed" />
+        <input class="form-control" th:field="*{lastName}" />
         <span th:errors="*{lastName}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="email">Email</label>
-        <input type="email" class="form-control" th:field="*{email}" placeholder="name@example.com" />
+        <input type="email" class="form-control" th:field="*{email}" placeholder="Email must be properly formed" />
         <span th:errors="*{email}" class="error"></span>
     </div>
 
-<!--    TODO: fix placeholder for this select tag-->
+    <!--    TODO: fix placeholder for this select tag-->
     <div class="form-group">
         <label th:for="relationship">Relationship</label>
         <select class="form-control" name="relationship" th:field="*{relationship}" required>
@@ -45,8 +42,6 @@
         <span th:errors="*{relationship}" class="error"></span>
     </div>
 
-<!--    TODO: Tweak inputs for address and phone number to ensure proper formatting-->
-
     <div class="form-group">
         <label th:for="address">Address</label>
         <input class="form-control" th:field="*{address}" placeholder="This input field needs some tweakin'" />
@@ -55,14 +50,12 @@
 
     <div class="form-group">
         <label th:for="phoneNumber">Phone Number</label>
-        <input class="form-control"
-               th:field="*{phoneNumber}" placeholder="Format: 123-456-7890" />
+        <input class="form-control" th:field="*{phoneNumber}" placeholder="Format: 123-456-7890" />
         <span th:errors="*{phoneNumber}" class="error"></span>
     </div>
 
-    <input type="submit" class="btn btn-primary" value="Add Recipient" />
-
+    <input type="hidden" th:value="*{id}" name="id"  />
+    <input type="submit" value="Update Recipient" class="btn btn-primary" />
 </form>
 
 </body>
-</html>
