@@ -12,8 +12,10 @@ import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.*;
+
 import javax.validation.Valid;
-import java.util.Optional;
+import java.util.ArrayList;
 
 @Controller
 @RequestMapping("recipient")
@@ -82,12 +84,30 @@ public class RecipientController {
         Optional<Recipient> result = recipientRepository.findById(recipientId);
         Recipient recipient = result.get();
         model.addAttribute("title", "Add Occasions For " + recipient.getFirstName() + ' ' + recipient.getLastName());
-        model.addAttribute("occasions", occasionRepository.findAll());
         OccasionDTO recipientOccasion = new OccasionDTO();
         recipientOccasion.setRecipient(recipient);
         model.addAttribute("recipientOccasion", recipientOccasion);
         model.addAttribute(new Occasion());
-        return "recipient/add-occasion.html";
+
+        ArrayList<String> standardOccasions = Occasion.getStandardOccasions();
+        ArrayList<Occasion> customOccasions = (ArrayList<Occasion>) occasionRepository.findAll();
+        ArrayList<String> occasions = new ArrayList<>();
+
+        for(int j = 0; j<standardOccasions.size(); j++){
+            occasions.add(standardOccasions.get(j));
+        }
+
+        if(customOccasions.size()>0){
+            for(int i = 0; i < customOccasions.size(); i++){
+                String occasionName = customOccasions.get(i).getName();
+                if(!standardOccasions.contains(occasionName)){
+                    occasions.add(occasionName);
+                }
+            }
+        }
+
+        model.addAttribute("occasions", occasions);
+        return "recipient/add-occasion";
     }
 
     @PostMapping("add-occasion")
@@ -98,8 +118,10 @@ public class RecipientController {
         if (!errors.hasErrors()) {
             Recipient recipient = recipientOccasion.getRecipient();
             Occasion occasion = recipientOccasion.getOccasion();
+
             if (!recipient.getOccasions().contains(occasion)){
                 recipient.addOccasion(occasion);
+                occasionRepository.save(occasion);
                 recipientRepository.save(recipient);
             }
             return "redirect:detail?recipientId=" + recipient.getId();
