@@ -10,39 +10,42 @@
 
     <div class="form-group">
         <label th:for="firstName">First Name</label>
-        <input class="form-control" id="focus" th:field="*{firstName}" placeholder="3 to 20 characters allowed" />
+        <input class="form-control" id="focus"
+               th:field="*{firstName}" placeholder="2 to 20 characters allowed" />
         <span th:errors="*{firstName}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="lastName">Last Name</label>
-        <input class="form-control" th:field="*{lastName}" placeholder="3 to 20 characters allowed" />
+        <input class="form-control"
+               th:field="*{lastName}" placeholder="2 to 20 characters allowed" />
         <span th:errors="*{lastName}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="email">Email</label>
-        <input type="email" class="form-control" th:field="*{email}" placeholder="Email must be properly formed" />
+        <input type="email" class="form-control" th:field="*{email}" placeholder="name@example.com" />
         <span th:errors="*{email}" class="error"></span>
     </div>
 
-    <div class="form-group">
-        <label th:for="dateOfBirth">Date of Birth</label>
-        <input class="form-control" type="date" value="2018-07-22" th:field="*{dateOfBirth}" />
-        <span th:errors="*{dateOfBirth}" class="error"></span>
-    </div>
-
+<!--    TODO: fix placeholder for this select tag-->
     <div class="form-group">
         <label th:for="relationship">Relationship</label>
-        <input class="form-control" th:field="*{relationship}" placeholder="Friend, Co-worker, Wife, etc." />
+        <select class="form-control" name="relationship" th:field="*{relationship}" required>
+            <option value="" disabled selected hidden>Choose One</option>
+            <option value="Spouse">Spouse</option>
+            <option value="Parent">Parent</option>
+            <option value="Sibling">Sibling</option>
+            <option value="Child">Child</option>
+            <option value="Significant Other">Significant Other</option>
+            <option value="Friend">Friend</option>
+            <option value="Co-Worker">Co-Worker</option>
+            <option value="Other">Other</option>
+        </select>
         <span th:errors="*{relationship}" class="error"></span>
     </div>
 
-    <div class="form-group">
-        <label th:for="anniversary">Anniversary</label>
-        <input class="form-control" type="date" th:field="*{anniversary}" />
-        <span th:errors="*{anniversary}" class="error"></span>
-    </div>
+<!--    TODO: Tweak inputs for address and phone number to ensure proper formatting-->
 
     <div class="form-group">
         <label th:for="address">Address</label>
@@ -52,11 +55,10 @@
 
     <div class="form-group">
         <label th:for="phoneNumber">Phone Number</label>
-        <input class="form-control" th:field="*{phoneNumber}" placeholder="Format: 123-456-7890" />
+        <input class="form-control"
+               th:field="*{phoneNumber}" placeholder="Format: 123-456-7890" />
         <span th:errors="*{phoneNumber}" class="error"></span>
     </div>
-
-
 
     <input type="submit" class="btn btn-primary" value="Add Recipient" />
 

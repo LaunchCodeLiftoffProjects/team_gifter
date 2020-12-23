@@ -3,67 +3,63 @@ package com.liftoff.gifter.models;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.sql.Date;
+import java.sql.Array;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
 public class Recipient extends AbstractEntity {
 
     @NotNull
-    @Size(min=3, max=20, message="First name must have 3 to 20 characters.")
+    @Size(min=2, max=20, message="First name is required. Must have 2 to 20 characters.")
     private String firstName;
 
     @NotNull
-    @Size(min=3, max=20, message="Last name must have 3 to 20 characters.")
+    @Size(min=2, max=20, message="Last name is required. Must have 2 to 20 characters.")
     private String lastName;
 
-    @Email(message="Email address must be properly formed.")
+    @Email(message="Please enter a valid email.")
     private String email;
-
-    @Basic
-    private Date dateOfBirth;
-
-    private String relationship;
-
-    @Basic
-    private Date anniversary;
-
-    private String address;
 
     private String phoneNumber;
 
-    private Date creationDate;
+    private String address;
 
-    private Date updated;
+    private String relationship;
 
+    @ManyToMany
+    private final List<Occasion> occasions = new ArrayList<>();
+
+    private Date dateCreated;
+
+    private Date dateUpdated;
 
     public Recipient() {
-        creationDate = new java.sql.Date(System.currentTimeMillis());
-        updated = new java.sql.Date(System.currentTimeMillis());
+        dateCreated = new java.util.Date(System.currentTimeMillis());
+        dateUpdated = new java.util.Date(System.currentTimeMillis());
     }
 
     public Recipient(@NotNull @Size(min = 3, max = 20, message = "First name must have 3 to 20 characters.") String firstName,
                      @NotNull @Size(min = 3, max = 20, message = "Last name must have 3 to 20 characters.") String lastName,
                      @Email(message = "Email address must be properly formed.")
-                             String email,
-                     Date dateOfBirth,
+                     String email,
                      String relationship,
-                     Date anniversary,
                      String address,
                      String phoneNumber,
-                     Date creationDate,
-                     Date updated) {
+                     Date dateCreated,
+                     Date dateUpdated) {
         this();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.dateOfBirth = dateOfBirth;
         this.relationship = relationship;
-        this.anniversary = anniversary;
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
@@ -92,28 +88,12 @@ public class Recipient extends AbstractEntity {
         this.email = email;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
     public String getRelationship() {
         return relationship;
     }
 
     public void setRelationship(String relationship) {
         this.relationship = relationship;
-    }
-
-    public Date getAnniversary() {
-        return anniversary;
-    }
-
-    public void setAnniversary(Date anniversary) {
-        this.anniversary = anniversary;
     }
 
     public String getAddress() {
@@ -132,29 +112,35 @@ public class Recipient extends AbstractEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    public Date getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
-    }
-
-    public Date getUpdated() {
-        return updated;
-    }
-
-    public void setUpdated(Date updated) {
-        this.updated = updated;
+    public Date getDateCreated() {
+        return dateCreated;
     }
 
     public String getFormattedCreationDate(){
-        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getCreationDate());
+        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getDateCreated());
+    }
+
+    public void setDateCreated(Date dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
+    public Date getDateUpdated() {
+        return dateUpdated;
     }
 
     public String getFormattedUpdatedDate(){
-        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getUpdated());
+        return new SimpleDateFormat("MMM d yyyy hh:mm a").format(getDateUpdated());
     }
+
+    public void setDateUpdated(Date dateUpdated) {
+        this.dateUpdated = dateUpdated;
+    }
+
+    public List<Occasion> getOccasions() {
+        return occasions;
+    }
+
+    public void addOccasion(Occasion occasion) { this.occasions.add(occasion); }
 
     @Override
     public boolean equals(Object o) {
@@ -165,20 +151,17 @@ public class Recipient extends AbstractEntity {
         return Objects.equals(firstName, recipient.firstName)
                 && Objects.equals(lastName, recipient.lastName)
                 && Objects.equals(email, recipient.email)
-                && Objects.equals(dateOfBirth, recipient.dateOfBirth)
                 && Objects.equals(relationship, recipient.relationship)
-                && Objects.equals(anniversary, recipient.anniversary)
                 && Objects.equals(address, recipient.address)
                 && Objects.equals(phoneNumber, recipient.phoneNumber)
-                && Objects.equals(creationDate, recipient.creationDate)
-                && Objects.equals(updated, recipient.updated);
+                && Objects.equals(dateCreated, recipient.dateCreated)
+                && Objects.equals(dateUpdated, recipient.dateUpdated);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), firstName, lastName,
-                email, dateOfBirth, relationship, anniversary,
-                address, phoneNumber, creationDate, updated);
+                email, relationship, address, phoneNumber, dateCreated, dateUpdated);
     }
 
     @Override
@@ -187,13 +170,11 @@ public class Recipient extends AbstractEntity {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
                 ", relationship='" + relationship + '\'' +
-                ", anniversary=" + anniversary +
                 ", address='" + address + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", dateCreated=" + creationDate +
-                ", updated=" + updated +
+                ", dateCreated=" + dateCreated +
+                ", dateUpdated=" + dateUpdated +
                 '}';
     }
 }
