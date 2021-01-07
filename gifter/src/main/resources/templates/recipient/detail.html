@@ -27,14 +27,15 @@
         <td th:text="${recipient.address}"></td>
     </tr>
 </table>
-
-<table class="table table-striped">
-        <th:block th:each="occasion : ${occasions}">
-            <tr><th th:text="${occasion.name}"></th>
-            <td th:text="${occasion.date}"></td></tr>
-        </th:block>
-</table>
-
+<div>
+    <h3 th:text="'Occasions for ' + ${recipient.firstName}"></h3>
+    <table class="table table-striped">
+            <th:block th:each="occasion : ${occasions}">
+                <tr><th th:text="${occasion.name}"></th>
+                <td th:text="${occasion.date}"></td></tr>
+            </th:block>
+    </table>
+</div>
 <a th:href="'/recipient/add-occasion?recipientId=' + ${recipient.id}">Add Occasion</a>
 <a th:href="'/recipient/edit/' + ${recipient.id}">Edit Recipient Info</a>
 
