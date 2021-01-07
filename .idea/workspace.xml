@@ -10,8 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
