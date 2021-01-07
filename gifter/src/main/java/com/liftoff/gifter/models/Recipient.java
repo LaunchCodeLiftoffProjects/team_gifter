@@ -3,15 +3,20 @@ package com.liftoff.gifter.models;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.sql.Array;
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
 public class Recipient extends AbstractEntity {
+    @ManyToMany
+    List<Gift> gifts = new ArrayList<Gift>();
 
     @NotNull
     @Size(min=3, max=20, message="First name must have 3 to 20 characters.")
