@@ -11,6 +11,7 @@
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/GiftRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/GiftRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gifter" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gifter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gifter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -54,7 +66,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="occasionsTest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -125,6 +137,8 @@
       <list>
         <item itemvalue="Gradle.gifter [bootRun]" />
         <item itemvalue="Application.GifterApplication" />
+        <item itemvalue="Gradle.gifter [bootRun]" />
+        <item itemvalue="Application.GifterApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -172,22 +186,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1720" height="233" key="GridCell.Tab.0.bottom" timestamp="1609990131159">
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom" timestamp="1609990809750">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state width="1720" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990131159" />
-    <state width="1720" height="233" key="GridCell.Tab.0.center" timestamp="1609990131157">
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990809750" />
+    <state width="1720" height="233" key="GridCell.Tab.0.center" timestamp="1609990809749">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state width="1720" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990131157" />
-    <state width="1720" height="233" key="GridCell.Tab.0.left" timestamp="1609990131156">
+    <state width="1720" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990809749" />
+    <state width="1720" height="233" key="GridCell.Tab.0.left" timestamp="1609990809748">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state width="1720" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990131156" />
-    <state width="1720" height="233" key="GridCell.Tab.0.right" timestamp="1609990131158">
+    <state width="1720" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990809748" />
+    <state width="1720" height="233" key="GridCell.Tab.0.right" timestamp="1609990809750">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state width="1720" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990131158" />
+    <state width="1720" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990809750" />
     <state width="1720" height="329" key="GridCell.Tab.1.bottom" timestamp="1609989388777">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
@@ -208,9 +222,9 @@
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
     <state x="2006" y="254" width="874" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609989381601" />
-    <state x="2249" y="156" width="602" height="518" key="find.popup" timestamp="1609988851029">
+    <state x="2249" y="156" width="602" height="518" key="find.popup" timestamp="1609990666747">
       <screen x="1440" y="25" width="1920" height="1055" />
     </state>
-    <state x="2249" y="156" width="602" height="518" key="find.popup/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609988851029" />
+    <state x="2249" y="156" width="602" height="518" key="find.popup/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609990666747" />
   </component>
 </project>
