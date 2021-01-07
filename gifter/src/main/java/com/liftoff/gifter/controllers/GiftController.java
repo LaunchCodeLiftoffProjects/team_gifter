@@ -22,35 +22,35 @@ public class GiftController {
 
     @GetMapping("add")
     public String displayAddGiftForm(Model model) {
+        model.addAttribute("title", "Add Gift");
         model.addAttribute( new Gift());
         return "gifts/add";
     }
 
-   // public String processAddGiftForm(Gift Object newGift;
-      //   Errors errors, Model model){
 
-       // if (errors.hasErrors()){
-          //  return "add";
-       // }
+    @PostMapping("add")
+    public String processAddGiftForm(@ModelAttribute @Valid Gift newGift, Errors errors, Model model){
 
-        //giftRepository.save(newGift);
-
-       // return "redirect:...../";
-
-
-    //}
-
-    @GetMapping( "view/{recipientId}")
-        public String displayViewGift(Model model, @PathVariable int recipientId){
-            Optional<Gift> optGift = giftRepository.findById(recipientId);
-            if(optGift.isPresent()){
-                Gift gift = (Gift) optGift.get();
-                model.addAttribute("gift", "gift");
-                return "gift/view";
-            } else{
-                return "redirect:../";
-            }
+        if (errors.hasErrors()){
+            return "gift/add";
         }
+        giftRepository.save(newGift);
+        return "gift/add";
+
+
+    }
+
+//    @GetMapping( "view/{recipientId}")
+//        public String displayViewGift(Model model, @PathVariable int recipientId){
+//            Optional<Gift> optGift = giftRepository.findById(recipientId);
+//            if(optGift.isPresent()){
+//                Gift gift = (Gift) optGift.get();
+//                model.addAttribute("gift", "gift");
+//                return "gift/view";
+//            } else{
+//                return "redirect:../";
+//            }
+//        }
 
 
     }
