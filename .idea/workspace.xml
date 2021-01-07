@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="" />
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,23 +56,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
-        <option value="Thymeleaf" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Thymeleaf" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="occasions" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1lIRu5TEwgVY9GmAm0PaKV0MueD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -82,19 +91,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gifter/src/main/resources/static/images" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dev\liftoff_project\gifter\src\main\resources\static\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\dev\liftoff_project\gifter\src\main\resources\templates" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -115,10 +119,55 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="com.liftoff.gifter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="com.liftoff.gifter" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -137,14 +186,6 @@
       <option name="presentableId" value="Default" />
       <updated>1607282839620</updated>
     </task>
-    <task id="LOCAL-00001" summary="Initial commit of NavBar and Landing page">
-      <created>1609981743228</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1609981743228</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,8 +206,78 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit of NavBar and Landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of NavBar and Landing page" />
+  <component name="WindowStateProjectService">
+    <state x="1888" y="121" key="#Project_Structure" timestamp="1608358994734">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1888" y="121" key="#Project_Structure/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608358994734" />
+    <state x="2614" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1609799348771">
+      <screen x="1440" y="25" width="1920" height="993" />
+    </state>
+    <state x="2614" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608338164804" />
+    <state x="2614" y="237" key="#com.intellij.ide.util.MemberChooser/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609799348771" />
+    <state width="1720" height="201" key="GridCell.Tab.0.bottom" timestamp="1609982622262">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1501" height="271" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325931" />
+    <state width="1241" height="181" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595783" />
+    <state width="1797" height="239" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397223" />
+    <state width="1058" height="271" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012029" />
+    <state width="1465" height="201" key="GridCell.Tab.0.bottom/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485783" />
+    <state width="1720" height="201" key="GridCell.Tab.0.bottom/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685512" />
+    <state width="1720" height="201" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1609982622262" />
+    <state width="1720" height="201" key="GridCell.Tab.0.center" timestamp="1609982622259">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1501" height="271" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325927" />
+    <state width="1241" height="181" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595781" />
+    <state width="1797" height="239" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397215" />
+    <state width="1058" height="271" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012026" />
+    <state width="1465" height="201" key="GridCell.Tab.0.center/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485782" />
+    <state width="1720" height="201" key="GridCell.Tab.0.center/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685511" />
+    <state width="1720" height="201" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1609982622259" />
+    <state width="1720" height="201" key="GridCell.Tab.0.left" timestamp="1609982622258">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1501" height="271" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325924" />
+    <state width="1241" height="181" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595780" />
+    <state width="1797" height="239" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397214" />
+    <state width="1058" height="271" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012025" />
+    <state width="1465" height="201" key="GridCell.Tab.0.left/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485782" />
+    <state width="1720" height="201" key="GridCell.Tab.0.left/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685510" />
+    <state width="1720" height="201" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1609982622258" />
+    <state width="1720" height="201" key="GridCell.Tab.0.right" timestamp="1609982622261">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1501" height="271" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325928" />
+    <state width="1241" height="181" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595782" />
+    <state width="1797" height="239" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397221" />
+    <state width="1058" height="271" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012027" />
+    <state width="1465" height="201" key="GridCell.Tab.0.right/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485783" />
+    <state width="1720" height="201" key="GridCell.Tab.0.right/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685512" />
+    <state width="1720" height="201" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1609982622261" />
+    <state x="2031" y="268" key="IDE.errors.dialog" timestamp="1609981136149">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state x="2031" y="268" key="IDE.errors.dialog/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1609981136149" />
+    <state x="2076" y="121" key="SettingsEditor" timestamp="1608772864881">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2076" y="121" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608772653467" />
+    <state x="2076" y="121" key="SettingsEditor/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608772864881" />
+    <state x="1959" y="281" key="Vcs.Push.Dialog.v2" timestamp="1608169322473">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1959" y="281" key="Vcs.Push.Dialog.v2/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608169322473" />
+    <state x="2517" y="193" width="586" height="718" key="find.popup" timestamp="1609379568590">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2517" y="172" width="586" height="735" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608334450646" />
+    <state x="2517" y="172" width="586" height="735" key="find.popup/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608177602728" />
+    <state x="2517" y="193" width="586" height="718" key="find.popup/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609379568590" />
+    <state x="2479" y="315" width="670" height="676" key="search.everywhere.popup" timestamp="1608771875655">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2479" y="315" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608771875655" />
   </component>
 </project>
