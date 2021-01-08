@@ -24,11 +24,16 @@ function disableOccasionInput(){
     }
 }
 
-function lockYear() {
-    let locked = document.getElementById("recurring");
-    let year = new Date().getFullYear();
-    if(locked){
-        document.getElementById('date').setAttribute("min", year + "-01-01");
-        document.getElementById('date').setAttribute("max", year + "-12-31");
-    }
+//when user chooses "other" in the drop down list for occasion names, text input appears for their custom occasion name.
+function chooseOther(){
+    document.getElementById("customName").disabled = false;
+    document.getElementById("customName").hidden = false;
 }
+
+//when user chooses a standard occasion name, custom name input is disabled
+function chooseStandard(){
+    document.getElementById("customName").disabled = true;
+    document.getElementById("customName").hidden = true;
+
+}
+
