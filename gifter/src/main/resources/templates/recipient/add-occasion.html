@@ -7,7 +7,10 @@
 
 <form method="post">
     <div class="form-group">
-        <input class="form-control "type="hidden" th:field="${recipientOccasion.recipient}" />
+        <input class="form-control" type="hidden" th:field="${recipientOccasion.recipient}" />
+
+<!--        TODO: Stop "other" selection from saving a "," in front of occasion name-->
+
         <select th:field="${recipientOccasion.occasion.name}" id="standardName" required>
             <option value="" selected>Choose One</option>
             <option th:each="occasion : ${occasions}"
@@ -15,7 +18,7 @@
                     th:text="${occasion}"
                     onclick="chooseStandard()"
             ></option>
-            <option value="" id="other" onclick="chooseOther()">Other</option>
+            <option value="" onclick="chooseOther()">Other</option>
         </select>
         <input class="form-control" id="customName" th:field="${recipientOccasion.occasion.name}" placeholder="Add your own" hidden disabled required/>
     </div>

@@ -145,18 +145,8 @@ public class RecipientController {
         if (!errors.hasErrors()) {
             Recipient recipient = recipientOccasion.getRecipient();
             Occasion occasion = recipientOccasion.getOccasion();
-            ArrayList<String> existingOccasions = new ArrayList<>();
-            boolean alreadyExists = false;
-            //must check if recipient already has an occasion by that name
-            for(int i = 0; i < recipient.getOccasions().size(); i++) {
-                String currentOccasion = recipient.getOccasions().get(i).getName();
-                existingOccasions.add(currentOccasion);
-            }
-            if(existingOccasions.contains(occasion.getName())){
-                alreadyExists = true;
-            }
 
-            if (!alreadyExists){
+            if (!recipient.occasionNameAlreadyExists(occasion.getName()) && occasion.getName().length() > 0){
                 recipient.addOccasion(occasion);
                 occasionRepository.save(occasion);
                 recipientRepository.save(recipient);
