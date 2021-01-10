@@ -8,7 +8,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="" />
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/static/images/gift.png" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/static/images/gift.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,17 +59,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
-        <option value="Thymeleaf" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,24 +84,37 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gifter/src/main/resources/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="studioMain" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dev\liftoff_project\gifter\src\main\resources\static\images" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.liftoff.gifter.models" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\dev\liftoff_project\gifter\src\main\resources\templates" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.liftoff.gifter.models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.gifter [bootRun]">
+    <configuration name="GifterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liftoff.gifter.GifterApplication" />
+      <module name="com.liftoff.gifter.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liftoff.gifter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="gifter [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -124,7 +140,9 @@
       <list>
         <item itemvalue="Gradle.gifter [bootRun]" />
         <item itemvalue="Gradle.gifter [bootRun]" />
+        <item itemvalue="Application.GifterApplication" />
         <item itemvalue="Gradle.gifter [bootRun]" />
+        <item itemvalue="Application.GifterApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -137,12 +155,12 @@
       <option name="presentableId" value="Default" />
       <updated>1607282839620</updated>
     </task>
-    <task id="LOCAL-00001" summary="Initial commit of NavBar and Landing page">
-      <created>1609981743228</created>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1607565193058</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1609981743228</updated>
+      <updated>1607565193058</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -166,7 +184,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit of NavBar and Landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of NavBar and Landing page" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Initial commit of persistent recipients" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
   </component>
 </project>
