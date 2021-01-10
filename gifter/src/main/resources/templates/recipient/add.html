@@ -28,11 +28,10 @@
         <span th:errors="*{email}" class="error"></span>
     </div>
 
-<!--    TODO: fix placeholder for this select tag-->
     <div class="form-group">
         <label th:for="relationship">Relationship</label>
         <select class="form-control" name="relationship" th:field="*{relationship}" required>
-            <option value="" disabled selected hidden>Choose One</option>
+            <option value="" selected>Choose One</option>
             <option value="Spouse">Spouse</option>
             <option value="Parent">Parent</option>
             <option value="Sibling">Sibling</option>

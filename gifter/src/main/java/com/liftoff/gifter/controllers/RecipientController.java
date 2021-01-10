@@ -58,6 +58,7 @@ public class RecipientController {
 
         Optional<Recipient> result = recipientRepository.findById(recipientId);
 
+        //TODO: fix this to show proper error message
         if (result.isEmpty()) {
             model.addAttribute("title", "Recipient Does Not Exist");
         } else {
@@ -135,6 +136,8 @@ public class RecipientController {
             }
         }
 
+        Collections.sort(occasions);
+
         model.addAttribute("occasions", occasions);
         return "recipient/add-occasion";
     }
@@ -147,8 +150,18 @@ public class RecipientController {
         if (!errors.hasErrors()) {
             Recipient recipient = recipientOccasion.getRecipient();
             Occasion occasion = recipientOccasion.getOccasion();
+            ArrayList<String> existingOccasions = new ArrayList<>();
+            boolean alreadyExists = false;
+            //must check if recipient already has an occasion by that name
+            for(int i = 0; i < recipient.getOccasions().size(); i++) {
+                String currentOccasion = recipient.getOccasions().get(i).getName();
+                existingOccasions.add(currentOccasion);
+            }
+            if(existingOccasions.contains(occasion.getName())){
+                alreadyExists = true;
+            }
 
-            if (!recipient.getOccasions().contains(occasion)){
+            if (!alreadyExists){
                 recipient.addOccasion(occasion);
                 occasionRepository.save(occasion);
                 recipientRepository.save(recipient);

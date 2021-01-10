@@ -7,16 +7,21 @@
 
 <form method="post">
     <div class="form-group">
-        <input type="hidden" th:field="${recipientOccasion.recipient}">
-        <select th:field="${recipientOccasion.occasion.name}">
+        <input class="form-control "type="hidden" th:field="${recipientOccasion.recipient}" />
+        <select th:field="${recipientOccasion.occasion.name}" id="standardName" required>
+            <option value="" selected>Choose One</option>
             <option th:each="occasion : ${occasions}"
                     th:value="${occasion}"
                     th:text="${occasion}"
             ></option>
         </select>
+        <button type="button" id="toggleOccasionButton" class="btn btn-success" onclick="disableOccasionInput()">Click here to create your own occasion</button>
+        <input class="form-control" id="customName" th:field="${recipientOccasion.occasion.name}" placeholder="Add your own" disabled required/>
     </div>
     <div class="form-group">
-        <input type="date" class="form-control" th:field="${recipientOccasion.occasion.date}">
+        <label for="recurring">Repeat this occasion yearly</label>
+        <input type="checkbox" id="recurring" value="true" th:field="${recipientOccasion.occasion.recurring}">
+        <input type="date" class="form-control" id="date" th:field="${recipientOccasion.occasion.date}" required>
     </div>
     <input type="submit" class="btn btn-success" value="Add Occasion">
 </form>

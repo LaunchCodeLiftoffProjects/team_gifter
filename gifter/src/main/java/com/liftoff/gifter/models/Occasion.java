@@ -18,6 +18,8 @@ public class Occasion extends AbstractEntity{
     @NotBlank(message = "please select a date")
     private String date;
 
+    private boolean recurring;
+
     private static ArrayList<String> standardOccasions = new ArrayList<>(
             Arrays.asList("Christmas", "Mother's Day", "Father's Day", "Birthday", "Anniversary", "Graduation", "Valentine's Day", "Hanukkah", "Bar/Bat Mitzvah")
     );
@@ -25,10 +27,11 @@ public class Occasion extends AbstractEntity{
     @ManyToMany(mappedBy = "occasions")
     private final List<Recipient> recipients = new ArrayList<>();
 
-    public Occasion(String name, String date) {
+    public Occasion(String name, String date, boolean recurring) {
 
         this.name = name;
         this.date = date;
+        this.recurring = recurring;
     }
 
     public Occasion() {}
@@ -59,5 +62,13 @@ public class Occasion extends AbstractEntity{
 
     public static void setStandardOccasions(ArrayList<String> standardOccasions) {
         Occasion.standardOccasions = standardOccasions;
+    }
+
+    public boolean isRecurring() {
+        return recurring;
+    }
+
+    public void setRecurring(boolean recurring) {
+        this.recurring = recurring;
     }
 }
