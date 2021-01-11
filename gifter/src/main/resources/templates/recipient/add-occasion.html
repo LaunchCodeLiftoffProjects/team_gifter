@@ -7,11 +7,10 @@
 
 <form method="post">
     <div class="form-group">
+
         <input class="form-control" type="hidden" th:field="${recipientOccasion.recipient}" />
 
-<!--        TODO: Stop "other" selection from saving a "," in front of occasion name-->
-
-        <select th:field="${recipientOccasion.occasion.name}" id="standardName" required>
+        <select class="form-control" id="standardName" required>
             <option value="" selected>Choose One</option>
             <option th:each="occasion : ${occasions}"
                     th:value="${occasion}"
@@ -20,14 +19,20 @@
             ></option>
             <option value="" onclick="chooseOther()">Other</option>
         </select>
-        <input class="form-control" id="customName" th:field="${recipientOccasion.occasion.name}" placeholder="Add your own" hidden disabled required/>
+
+        <input class="form-control" id="customName" placeholder="Add your own" hidden disabled required/>
+
     </div>
+
     <div class="form-group">
         <label for="recurring">Repeat this occasion yearly</label>
         <input type="checkbox" id="recurring" value="true" th:field="${recipientOccasion.occasion.recurring}">
         <input type="date" class="form-control" id="date" th:field="${recipientOccasion.occasion.date}" required>
     </div>
-    <input type="submit" class="btn btn-success" value="Add Occasion">
+
+    <input class="form-control" id="nameField" type="hidden" th:field="${recipientOccasion.occasion.name}" />
+    <input type="submit" class="btn btn-success" value="Add Occasion" onmousedown="setOccasionName()">
+
 </form>
 <div th:replace="fragments :: footer"></div>
 </body>

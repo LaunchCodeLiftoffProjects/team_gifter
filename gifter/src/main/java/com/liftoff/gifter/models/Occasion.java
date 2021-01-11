@@ -71,4 +71,5 @@ public class Occasion extends AbstractEntity{
     public void setRecurring(boolean recurring) {
         this.recurring = recurring;
     }
+
 }

@@ -141,10 +141,10 @@ public class Recipient extends AbstractEntity {
     public boolean occasionNameAlreadyExists(String name){
         ArrayList<String> occasionNames = new ArrayList<>();
         for(int i = 0; i < this.getOccasions().size(); i++) {
-            String currentOccasion = this.getOccasions().get(i).getName();
+            String currentOccasion = this.getOccasions().get(i).getName().toLowerCase();
             occasionNames.add(currentOccasion);
         }
-        if(occasionNames.contains(name)){
+        if(occasionNames.contains(name.toLowerCase())){
             return true;
         }else{
             return false;

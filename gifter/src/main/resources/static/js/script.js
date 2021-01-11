@@ -37,3 +37,14 @@ function chooseStandard(){
 
 }
 
+function setOccasionName(){
+    let custom = document.getElementById("customName").value;
+    let standard = document.getElementById("standardName").value;
+
+    if (custom){
+        document.getElementById("nameField").value = custom;
+    } else {
+        document.getElementById("nameField").value = standard;
+    }
+}
+
