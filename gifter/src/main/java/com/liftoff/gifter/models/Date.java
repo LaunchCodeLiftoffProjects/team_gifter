@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Date {
+public class Date implements Comparable<Date>{
     private String day;
 
     private String month;
 
     private String year;
 
-    private String date;
+    private String shortDate;
 
     private String longDate;
 
@@ -31,7 +31,7 @@ public class Date {
         this.day = day;
         this.month = month;
         this.year = null;
-        this.date = day + "/" + month;
+        this.shortDate = day + "/" + month;
         this.longDate = monthNameArr.get(monthArr.indexOf(month)) + " " + day;
     }
 
@@ -39,7 +39,7 @@ public class Date {
         this.day = day;
         this.month = month;
         this.year = year;
-        this.date = day + "/" + month + "/" + year;
+        this.shortDate = day + "/" + month + "/" + year;
         this.longDate = monthNameArr.get(monthArr.indexOf(month)) + " " + day + ", " + year;
     }
 
@@ -57,8 +57,8 @@ public class Date {
         return year;
     }
 
-    public String getDate() {
-        return date;
+    public String getShortDate() {
+        return shortDate;
     }
 
     public String getLongDate() {
@@ -82,12 +82,19 @@ public class Date {
         if (this == o) return true;
         if (!(o instanceof Date)) return false;
         Date date1 = (Date) o;
-        return getDate().equals(date1.getDate()) &&
+        return getShortDate().equals(date1.getShortDate()) &&
                 getLongDate().equals(date1.getLongDate());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getDate(), getLongDate());
+        return Objects.hash(getShortDate(), getLongDate());
+    }
+
+    @Override
+    public int compareTo(Date o) {
+        if (getShortDate() == null || o.getShortDate() == null)
+            return 0;
+        return getShortDate().compareTo(o.getShortDate());
     }
 }

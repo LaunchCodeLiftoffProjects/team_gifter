@@ -6,7 +6,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -16,7 +15,7 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     private String name;
 
     @NotBlank(message = "please select a date")
-    private String date;
+    private Date date;
 
     private boolean recurring;
 
@@ -27,7 +26,7 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     @ManyToMany(mappedBy = "occasions")
     private final List<Recipient> recipients = new ArrayList<>();
 
-    public Occasion(String name, String date, boolean recurring) {
+    public Occasion(String name, Date date, boolean recurring) {
 
         this.name = name;
         this.date = date;
@@ -44,8 +43,14 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
         this.name = name;
     }
 
-    public String getDate() {
-        return date;
+    public Date getDate() { return date; }
+
+    public String getShortDate() {
+        return date.getShortDate();
+    }
+
+    public String getLongDate() {
+        return date.getLongDate();
     }
 
 //    TODO: create method to format the date for optimal readability on recipient detail page
@@ -55,7 +60,7 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 //        return formattedDate;
 //    }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
