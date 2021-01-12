@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
   <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.liftoff" externalSystemModuleType="sourceSet" externalSystemModuleVersion="0.0.1-SNAPSHOT" linkedProjectId="gifter:test" linkedProjectPath="$MODULE_DIR$/../../gifter" rootProjectPath="$MODULE_DIR$/../../gifter" />
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_13">
+  <component name="NewModuleRootManager">
     <output-test url="file://$MODULE_DIR$/../../gifter/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../gifter/src/test">

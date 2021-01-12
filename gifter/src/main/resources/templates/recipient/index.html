@@ -5,15 +5,30 @@
 
 <header th:replace="fragments :: header"></header>
 
-<h4>This page is just to test the hit on the recipient 'index' handler ... <br />I'm guessing this is where we will list the Recipients (or have the option to list Recipients)</h4>
+<div th:unless="${recipients.isEmpty()}">
+    <table class="table" >
+        <tr>
+            <!--            <th>Id</th>-->
+            <th>Name</th>
+            <th>Relationship</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
 
-<hr />
-<h5>A couple links to test the 'add' and 'edit' handlers</h5>
-<ul>
-    <li><a href="/recipient/add">Add recipient</a></li>
-    <li><a href="/recipient/edit/1">Edit recipient (with Id 1)</a></li>
-</ul>
+        <tr th:each="recipient : ${recipients}">
+            <!--            <td th:text="${recipient.id}"></td>-->
+            <td th:text="${recipient.firstName + ' ' + recipient.lastName}"></td>
+            <td th:text="${recipient.relationship}"></td>
+            <td><a th:href="@{'/recipient/detail/' + '?recipientId=' + ${recipient.id}}" title="Details for this recipient">Details</a></td>
+            <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Edit this recipient">Edit</a></td>
+            <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Remove this recipient">Remove</a></td>
+        </tr>
+    </table>
 
+    <a href="/recipient/add">Add a Recipient</a>
+
+    <div th:replace="fragments :: footer"></div>
 
 </body>
 </html>

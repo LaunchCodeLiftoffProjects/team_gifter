@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Gifter</title>
-
+    <link rel="icon" th:href="@{/images/favicon.png}" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,8 +19,9 @@
 <body>
 
 <header th:fragment="header">
-
+<!--    <img class="logo" src="/images/gift.png" alt="logo" />-->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <img class="logo" src="/images/gift.png" alt="logo" />
         <a class="navbar-brand" th:href="@{/}">Gifter</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
             <span class="navbar-toggler-icon"></span>
@@ -33,26 +34,20 @@
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/recipient/add}">Add Recipient</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/recipient/edit/1}">Edit Recipient</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/recipient}">Gifts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/recipient}">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/recipient}">Another Button</a>
-                </li>
             </ul>
 
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-light my-sm-0" type="submit">Search</button>
-            </form>
+<!--            <form class="form-inline" >-->
+<!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                <button class="btn btn-light my-sm-0" type="submit">Search</button>-->
+<!--            </form>-->
 
             <ul class="nav navbar-nav ml-auto">
+                <li>
+                    <form class="form-inline" >
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
                 </li>
@@ -63,7 +58,9 @@
         </div>
     </nav>
 
+    <br />
     <h1 th:text="${title}">Gifter</h1>
+    <br />
 
 </header>
 
@@ -72,7 +69,7 @@
     <div class="container-fluid ">
         <div class="text-muted float-right">
             <hr />
-            <div>&copy; 2021 Gifter</div>
+            <div>&copy; 2021 Gifter/TeamJane</div>
         </div>
     </div>
 </div>

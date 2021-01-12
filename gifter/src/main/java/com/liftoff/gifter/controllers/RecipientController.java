@@ -1,6 +1,5 @@
 package com.liftoff.gifter.controllers;
 
-
 import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Occasion;
@@ -27,10 +26,10 @@ public class RecipientController {
     @Autowired
     private OccasionRepository occasionRepository;
 
-
-    @RequestMapping(value = "")
+    @GetMapping(value = "")
     public String index(Model model) {
         model.addAttribute("title", "Recipients");
+        model.addAttribute("recipients", recipientRepository.findAll());
         return "recipient/index";
     }
 
@@ -38,7 +37,6 @@ public class RecipientController {
     public String displayAddRecipientForm(Model model) {
         model.addAttribute("title", "Add Recipient");
         model.addAttribute(new Recipient());  // equivalent to ("recipient", new Recipient);
-
         return "recipient/add";
     }
 
@@ -67,7 +65,6 @@ public class RecipientController {
             model.addAttribute("recipient", recipient);
             model.addAttribute("occasions", recipient.getOccasions());
         }
-
         return "recipient/detail";
     }
 
@@ -97,7 +94,6 @@ public class RecipientController {
         recipientToEdit.setDateUpdated(updated);
         recipientRepository.save(recipientToEdit);
         model.addAttribute("occasions", recipient.getOccasions());
-//        return "redirect:";
         return "redirect:detail?recipientId=" + recipientToEdit.getId();
     }
 
@@ -105,7 +101,6 @@ public class RecipientController {
     public String viewRecipients(Model model) {
         model.addAttribute("title", "All Recipients");
         model.addAttribute("recipients", recipientRepository.findAll());
-
         return "recipient/view";
     }
 
