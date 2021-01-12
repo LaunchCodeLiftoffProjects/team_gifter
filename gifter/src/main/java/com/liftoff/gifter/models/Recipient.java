@@ -153,6 +153,13 @@ public class Recipient extends AbstractEntity {
 
     public void addOccasion(Occasion occasion) { this.occasions.add(occasion); }
 
+//    public List<Occasion> getSortedOccasions(){
+//        List<Occasion> unsortedOccasions = this.getOccasions();
+//
+//
+//        return sortedOccasions;
+//    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

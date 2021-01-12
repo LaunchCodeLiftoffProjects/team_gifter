@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-public class Occasion extends AbstractEntity{
+public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     @Size(min = 1, max = 25)
     @NotBlank(message = "Please choose an occasion")
     private String name;
@@ -48,6 +48,13 @@ public class Occasion extends AbstractEntity{
         return date;
     }
 
+//    TODO: create method to format the date for optimal readability on recipient detail page
+//    public String getFormattedDate(){
+//        String formattedDate = this.getDate();
+//
+//        return formattedDate;
+//    }
+
     public void setDate(String date) {
         this.date = date;
     }
@@ -70,6 +77,13 @@ public class Occasion extends AbstractEntity{
 
     public void setRecurring(boolean recurring) {
         this.recurring = recurring;
+    }
+
+    @Override
+    public int compareTo(Occasion o) {
+        if (getDate() == null || o.getDate() == null)
+            return 0;
+        return getDate().compareTo(o.getDate());
     }
 
 }

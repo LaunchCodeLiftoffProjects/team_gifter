@@ -27,6 +27,7 @@
         <td th:text="${recipient.address}"></td>
     </tr>
 </table>
+<a th:href="'/recipient/edit/' + ${recipient.id}">Edit Recipient Info</a>
 <div>
     <h3 th:text="'Occasions for ' + ${recipient.firstName}"></h3>
     <table class="table table-striped">
@@ -37,7 +38,7 @@
     </table>
 </div>
 <a th:href="'/recipient/add-occasion?recipientId=' + ${recipient.id}">Add Occasion</a>
-<a th:href="'/recipient/edit/' + ${recipient.id}">Edit Recipient Info</a>
+
 
 <!--TODO: link to edit recipient for each blank cell. Example: if birthday is blank, text reads "Add Birthday" and links to the edit recipient page-->
 <!--<a th:href="'/recipient/edit?recipientId=' + ${recipient.id}">Edit</a>-->

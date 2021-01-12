@@ -61,9 +61,11 @@ public class RecipientController {
             model.addAttribute("title", "Recipient Does Not Exist");
         } else {
             Recipient recipient = result.get();
+            List<Occasion> occasions = recipient.getOccasions();
+            Collections.sort(occasions);
             model.addAttribute("title", recipient.getFirstName() + ' ' + recipient.getLastName());
             model.addAttribute("recipient", recipient);
-            model.addAttribute("occasions", recipient.getOccasions());
+            model.addAttribute("occasions", occasions);
         }
         return "recipient/detail";
     }
