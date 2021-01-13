@@ -16,15 +16,24 @@
     </tr>
     <tr>
         <th>Email</th>
-        <td th:text="${recipient.email}"></td>
+        <td>
+            <span th:unless="${recipient.email == ''}" th:text="${recipient.email}"></span>
+            <a th:if="${recipient.email == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Email</a>
+        </td>
     </tr>
     <tr>
         <th>Phone Number</th>
-        <td th:text="${recipient.phoneNumber}"></td>
+        <td>
+            <span th:unless="${recipient.phoneNumber == ''}" th:text="${recipient.phoneNumber}"></span>
+            <a th:if="${recipient.phoneNumber == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Phone Number</a>
+        </td>
     </tr>
     <tr>
         <th>Address</th>
-        <td th:text="${recipient.address}"></td>
+        <td>
+            <span th:unless="${recipient.address == ''}" th:text="${recipient.address}"></span>
+            <a th:if="${recipient.address == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Address</a>
+        </td>
     </tr>
 </table>
 <a th:href="'/recipient/edit/' + ${recipient.id}">Edit Recipient Info</a>
