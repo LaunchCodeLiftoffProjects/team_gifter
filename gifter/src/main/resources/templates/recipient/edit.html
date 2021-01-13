@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<form method="post" th:action="@{/recipient/edit}" class="form" style="max-width: 400px" th:object="${recipient}">
+
+    <div class="form-group">
+        <label th:for="firstName">First Name</label>
+        <input class="form-control" th:field="*{firstName}"/>
+        <span th:errors="*{firstName}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="lastName">Last Name</label>
+        <input class="form-control" th:field="*{lastName}" />
+        <span th:errors="*{lastName}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="email">Email</label>
+        <input type="email" class="form-control" th:field="*{email}" placeholder="Email must be properly formed" />
+        <span th:errors="*{email}" class="error"></span>
+    </div>
+
+    <!--    TODO: fix placeholder for this select tag-->
+    <div class="form-group">
+        <label th:for="relationship">Relationship</label>
+        <select class="form-control" name="relationship" th:field="*{relationship}" required>
+            <option value="" selected>Choose One</option>
+            <option value="Spouse">Spouse</option>
+            <option value="Parent">Parent</option>
+            <option value="Sibling">Sibling</option>
+            <option value="Child">Child</option>
+            <option value="Significant Other">Significant Other</option>
+            <option value="Friend">Friend</option>
+            <option value="Co-Worker">Co-Worker</option>
+            <option value="Other">Other</option>
+        </select>
+        <span th:errors="*{relationship}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="address">Address</label>
+        <input class="form-control" th:field="*{address}" placeholder="This input field needs some tweakin'" />
+        <span th:errors="*{address}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="phoneNumber">Phone Number</label>
+        <input class="form-control" th:field="*{phoneNumber}" placeholder="Format: 123-456-7890" />
+        <span th:errors="*{phoneNumber}" class="error"></span>
+    </div>
+
+    <input type="hidden" th:value="*{id}" name="id"  />
+    <input type="submit" value="Update Recipient" class="btn btn-primary" />
+</form>
+<div th:replace="fragments :: footer"></div>
+</body>

@@ -2,28 +2,77 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:fragment="head">
     <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Gifter</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script type="text/javascript" th:src="@{/js/jquery-1.11.min.js}"></script>
+    <link rel="icon" th:href="@{/images/favicon.png}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" th:src="@{/js/script.js}"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" th:href="@{/css/styles.css}">
 
 </head>
 <body>
 
 <header th:fragment="header">
+<!--    <img class="logo" src="/images/gift.png" alt="logo" />-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <img class="logo" src="/images/gift.png" alt="logo" />
+        <a class="navbar-brand" th:href="@{/}">Gifter</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navb" class="navbar-collapse collapse hide">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/recipient}">Recipients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/recipient/add}">Add Recipient</a>
+                </li>
+            </ul>
+
+<!--            <form class="form-inline" >-->
+<!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                <button class="btn btn-light my-sm-0" type="submit">Search</button>-->
+<!--            </form>-->
+
+            <ul class="nav navbar-nav ml-auto">
+                <li>
+                    <form class="form-inline" >
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br />
     <h1 th:text="${title}">Gifter</h1>
-    <ul class="nav" style="float:right;">
-        <li class="nav-item"><a class="nav-link" href="/logout">Log out</a></li>
-    </ul>
-    <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="/samplepath">Sample Nav Link</a></li>
-        <li class="nav-item"><a class="nav-link" href="/samplepath">Sample Nav Link</a></li>
-    </ul>
+    <br />
+
 </header>
+
+
+<div th:fragment="footer">
+    <div class="container-fluid ">
+        <div class="text-muted float-right">
+            <hr />
+            <div>&copy; 2021 Gifter/TeamJane</div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

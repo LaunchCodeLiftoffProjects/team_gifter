@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+
+<form method="post" class="form" style="max-width: 400px" th:object="${recipient}">
+
+    <div class="form-group">
+        <label th:for="firstName">First Name</label>
+        <input class="form-control" id="focus"
+               th:field="*{firstName}" placeholder="3 to 20 characters allowed" />
+        <span th:errors="*{firstName}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="lastName">Last Name</label>
+        <input class="form-control"
+               th:field="*{lastName}" placeholder="3 to 20 characters allowed" />
+        <span th:errors="*{lastName}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="email">Email</label>
+        <input type="email" class="form-control" th:field="*{email}"
+               placeholder="Email must be properly formed" />
+        <span th:errors="*{email}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="dateOfBirth">Date of Birth</label>
+        <input class="form-control"
+               th:field="*{dateOfBirth}" placeholder="Date in the form of ####-##-## (year-month-day)" />
+        <span th:errors="*{dateOfBirth}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="relationship">Relationship</label>
+        <input class="form-control"
+               th:field="*{relationship}" placeholder="Friend, Co-worker, Wife, etc." />
+        <span th:errors="*{relationship}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="anniversary">Anniversary</label>
+        <input class="form-control"
+               th:field="*{anniversary}" placeholder="Date in the form of ####-##-## (year-month-day)" />
+        <span th:errors="*{anniversary}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="address">Address</label>
+        <input class="form-control"
+               th:field="*{address}" placeholder="We need to tweak this input field" />
+        <span th:errors="*{address}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="phoneNumber">Phone Number</label>
+        <input class="form-control"
+               th:field="*{phoneNumber}" placeholder="In the form of (###) ###-####" />
+        <span th:errors="*{phoneNumber}" class="error"></span>
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Add Recipient" />
+
+</form>
+
+</body>
+</html>

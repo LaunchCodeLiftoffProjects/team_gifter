@@ -1,0 +1,118 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"0b03bb2d-5bc3-4345-b251-ef122701c721\" name=\"Default Changelist\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/AuthenticationController.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/UserRepository.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/dto/LoginFormDTO.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/dto/RegisterFormDTO.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$/gifter\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$/gifter\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"gifter\" type=\"f1a62948:ProjectNode\" />\n              </path>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"gifter\" type=\"f1a62948:ProjectNode\" />\n                <item name=\"Tasks\" type=\"e4a08cd1:TasksNode\" />\n              </path>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"gifter\" type=\"f1a62948:ProjectNode\" />\n                <item name=\"Tasks\" type=\"e4a08cd1:TasksNode\" />\n                <item name=\"application\" type=\"c8890929:TasksNode$1\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n        <option value=\"Interface\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"mavenHome\" value=\"$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"1lIRu5TEwgVY9GmAm0PaKV0MueD\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.lookFeel\" />\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"gifter [bootRun]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/gifter\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"bootRun\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.gifter [bootRun]\" />\n        <item itemvalue=\"Gradle.gifter [bootRun]\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"0b03bb2d-5bc3-4345-b251-ef122701c721\" name=\"Default Changelist\" comment=\"\" />\n      <created>1607282839620</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1607282839620</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"2506\" y=\"461\" key=\"#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog\" timestamp=\"1607472489681\">\n      <screen x=\"1440\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"2506\" y=\"461\" key=\"#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080\" timestamp=\"1607472489681\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1607470878726\">\n      <screen x=\"1440\" y=\"23\" width=\"1920\" height=\"1057\" />\n    </state>\n    <state width=\"547\" height=\"211\" key=\"GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@0.23.1440.821\" timestamp=\"1607470843843\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057\" timestamp=\"1607470878726\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.center\" timestamp=\"1607470878725\">\n      <screen x=\"1440\" y=\"23\" width=\"1920\" height=\"1057\" />\n    </state>\n    <state width=\"547\" height=\"211\" key=\"GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@0.23.1440.821\" timestamp=\"1607470843842\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057\" timestamp=\"1607470878725\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.left\" timestamp=\"1607470878724\">\n      <screen x=\"1440\" y=\"23\" width=\"1920\" height=\"1057\" />\n    </state>\n    <state width=\"547\" height=\"211\" key=\"GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@0.23.1440.821\" timestamp=\"1607470843841\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057\" timestamp=\"1607470878724\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.right\" timestamp=\"1607470878726\">\n      <screen x=\"1440\" y=\"23\" width=\"1920\" height=\"1057\" />\n    </state>\n    <state width=\"547\" height=\"211\" key=\"GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@0.23.1440.821\" timestamp=\"1607470843842\" />\n    <state width=\"1797\" height=\"210\" key=\"GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057\" timestamp=\"1607470878726\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 3c6057c4cc7a53926617c392a6062350af8f9d93)
++++ .idea/workspace.xml	(date 1608356574583)
+@@ -23,10 +23,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/AuthenticationController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/data/UserRepository.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/dto/LoginFormDTO.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/dto/RegisterFormDTO.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/gifter.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -42,6 +43,9 @@
+     <system id="GRADLE">
+       <state>
+         <task path="$PROJECT_DIR$/gifter">
++          <activation />
++        </task>
++        <task path="$PROJECT_DIR$/gifter/build.gradle">
+           <activation />
+         </task>
+         <projects_view>
+@@ -103,9 +107,29 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="project.structure.last.edited" value="Project" />
++    <property name="project.structure.proportion" value="0.15" />
++    <property name="project.structure.side.proportion" value="0.2" />
+     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+   </component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="Gradle.gifter [bootRun]">
++    <configuration name="/Users/jordyncrawford/gifter/gifter/build.gradle" type="GradleRunConfiguration" factoryName="Gradle">
++      <ExternalSystemSettings>
++        <option name="executionName" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$/gifter/build.gradle" />
++        <option name="externalSystemIdString" value="GRADLE" />
++        <option name="scriptParameters" value="" />
++        <option name="taskDescriptions">
++          <list />
++        </option>
++        <option name="taskNames">
++          <list />
++        </option>
++        <option name="vmOptions" value="" />
++      </ExternalSystemSettings>
++      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
++      <method v="2" />
++    </configuration>
+     <configuration name="gifter [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+@@ -160,25 +184,42 @@
+       <screen x="1440" y="0" width="1920" height="1080" />
+     </state>
+     <state x="2506" y="461" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1607472489681" />
+-    <state width="1797" height="210" key="GridCell.Tab.0.bottom" timestamp="1607470878726">
+-      <screen x="1440" y="23" width="1920" height="1057" />
++    <state width="1878" height="271" key="GridCell.Tab.0.bottom" timestamp="1608356511867">
++      <screen x="1440" y="0" width="1920" height="1080" />
+     </state>
++    <state width="938" height="271" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608355665109" />
+     <state width="547" height="211" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1607470843843" />
+     <state width="1797" height="210" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1607470878726" />
+-    <state width="1797" height="210" key="GridCell.Tab.0.center" timestamp="1607470878725">
+-      <screen x="1440" y="23" width="1920" height="1057" />
++    <state width="1878" height="271" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608356511867" />
++    <state width="1878" height="271" key="GridCell.Tab.0.center" timestamp="1608356511865">
++      <screen x="1440" y="0" width="1920" height="1080" />
+     </state>
++    <state width="938" height="271" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608355665107" />
+     <state width="547" height="211" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1607470843842" />
+     <state width="1797" height="210" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1607470878725" />
+-    <state width="1797" height="210" key="GridCell.Tab.0.left" timestamp="1607470878724">
+-      <screen x="1440" y="23" width="1920" height="1057" />
++    <state width="1878" height="271" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608356511865" />
++    <state width="1878" height="271" key="GridCell.Tab.0.left" timestamp="1608356511864">
++      <screen x="1440" y="0" width="1920" height="1080" />
+     </state>
++    <state width="938" height="271" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608355665106" />
+     <state width="547" height="211" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1607470843841" />
+     <state width="1797" height="210" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1607470878724" />
+-    <state width="1797" height="210" key="GridCell.Tab.0.right" timestamp="1607470878726">
+-      <screen x="1440" y="23" width="1920" height="1057" />
++    <state width="1878" height="271" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608356511864" />
++    <state width="1878" height="271" key="GridCell.Tab.0.right" timestamp="1608356511867">
++      <screen x="1440" y="0" width="1920" height="1080" />
+     </state>
++    <state width="938" height="271" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608355665108" />
+     <state width="547" height="211" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1607470843842" />
+     <state width="1797" height="210" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1607470878726" />
++    <state width="1878" height="271" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608356511867" />
++    <state x="1888" y="121" key="SettingsEditor" timestamp="1608356445965">
++      <screen x="1440" y="0" width="1920" height="1080" />
++    </state>
++    <state x="1888" y="121" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608355810597" />
++    <state x="1888" y="121" key="SettingsEditor/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608356445965" />
++    <state x="2107" y="295" width="586" height="490" key="find.popup" timestamp="1608356354659">
++      <screen x="1440" y="0" width="1920" height="1080" />
++    </state>
++    <state x="2107" y="295" width="586" height="490" key="find.popup/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608356354659" />
+   </component>
+ </project>
+\ No newline at end of file
