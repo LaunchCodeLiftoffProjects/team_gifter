@@ -1,6 +1,7 @@
 package com.liftoff.gifter.controllers;
 
 import com.liftoff.gifter.data.GiftRepository;
+import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Gift;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,13 +19,17 @@ public class GiftController {
     @Autowired
     private GiftRepository giftRepository;
     //private Gift gift;
-
+    @Autowired
+    private RecipientRepository recipientRepository;
+    //private Gift gift;
 
     @GetMapping("add")
     public String displayAddGiftForm(Model model) {
         model.addAttribute("title", "Add Gift");
         model.addAttribute( new Gift());
-        return "gifts/add";
+        model.addAttribute("recipient", recipientRepository.findAll());
+
+        return "gift/add";
     }
 
 
@@ -39,6 +44,7 @@ public class GiftController {
 
 
     }
+
 
 //    @GetMapping( "view/{recipientId}")
 //        public String displayViewGift(Model model, @PathVariable int recipientId){
