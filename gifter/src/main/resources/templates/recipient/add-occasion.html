@@ -27,7 +27,44 @@
     <div class="form-group">
         <label for="recurring">Repeat this occasion yearly</label>
         <input type="checkbox" id="recurring" value="true" th:field="${recipientOccasion.occasion.recurring}">
-        <input type="date" class="form-control" id="date" th:field="${recipientOccasion.occasion.date}" required>
+
+        <select class="form-control date-select" id="month" th:field="${recipientOccasion.occasion.date.month}" onclick="selectDaysInMonth()" required>
+            <option value="">Select Month</option>
+            <option th:each="month : ${months}"
+                    th:value="${month}"
+                    th:text="${month}"
+            ></option>
+        </select>
+
+        <select class="form-control date-select" id="day29" th:field="${recipientOccasion.occasion.date.day}" required hidden disabled>
+            <option value="">Select Day</option>
+            <option th:each="day : ${days29}"
+                    th:value="${day}"
+                    th:text="${day}"
+            ></option>
+        </select>
+        <select class="form-control date-select" id="day30" th:field="${recipientOccasion.occasion.date.day}" required hidden disabled>
+            <option value="">Select Day</option>
+            <option th:each="day : ${days30}"
+                    th:value="${day}"
+                    th:text="${day}"
+            ></option>
+        </select>
+        <select class="form-control" id="day31" th:field="${recipientOccasion.occasion.date.day}" required>
+            <option value="">Select Day</option>
+            <option th:each="day : ${days31}"
+                    th:value="${day}"
+                    th:text="${day}"
+            ></option>
+        </select>
+
+        <select class="form-control" id="year" th:field="${recipientOccasion.occasion.date.year}">
+            <option value="">Select Year</option>
+            <option th:each="year : ${years}"
+                    th:value="${year}"
+                    th:text="${year}"
+            ></option>
+        </select>
     </div>
 
     <input class="form-control" id="nameField" type="hidden" th:field="${recipientOccasion.occasion.name}" />

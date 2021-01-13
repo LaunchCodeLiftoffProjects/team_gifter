@@ -33,7 +33,7 @@
     <table class="table table-striped">
             <th:block th:each="occasion : ${occasions}">
                 <tr><th th:text="${occasion.name}"></th>
-                <td th:text="${occasion.date}"></td></tr>
+                <td th:text="${occasion.date.getLongDate()}"></td></tr>
             </th:block>
     </table>
 </div>

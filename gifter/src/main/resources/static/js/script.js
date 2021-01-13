@@ -46,5 +46,42 @@ function setOccasionName(){
     } else {
         document.getElementById("nameField").value = standard;
     }
+
+    function isLeapYear(year) {
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+    }
+}
+
+function selectDaysInMonth() {
+    let month = document.getElementById("month").value;
+
+    if (month === "02") {
+        document.getElementById("day29").hidden = false;
+        document.getElementById("day29").disabled = false;
+
+        document.getElementById("day30").hidden = true;
+        document.getElementById("day30").disabled = true;
+
+        document.getElementById("day31").hidden = true;
+        document.getElementById("day31").disabled = true;
+    } else if (month === "04" || month === "06" || month === "09" || month === "11") {
+        document.getElementById("day29").hidden = true;
+        document.getElementById("day29").disabled = true;
+
+        document.getElementById("day30").hidden = false;
+        document.getElementById("day30").disabled = false;
+
+        document.getElementById("day31").hidden = true;
+        document.getElementById("day31").disabled = true;
+    } else if (month === "01" || month === "03" || month === "05" || month === "07" || month === "08" || month === "10" || month === "12"){
+        document.getElementById("day29").hidden = true;
+        document.getElementById("day29").disabled = true;
+
+        document.getElementById("day30").hidden = true;
+        document.getElementById("day30").disabled = true;
+
+        document.getElementById("day31").hidden = false;
+        document.getElementById("day31").disabled = false;
+    }
 }
 

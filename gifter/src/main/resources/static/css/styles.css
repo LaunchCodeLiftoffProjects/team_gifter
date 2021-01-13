@@ -55,3 +55,7 @@ td{
 ul {
     list-style-type: square;
 }
+
+.date-select {
+    float: left;
+}

@@ -4,6 +4,7 @@ import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Occasion;
 import com.liftoff.gifter.models.Recipient;
+import com.liftoff.gifter.models.OccasionDate;
 import com.liftoff.gifter.models.dto.OccasionDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -111,8 +112,10 @@ public class RecipientController {
         Optional<Recipient> result = recipientRepository.findById(recipientId);
         Recipient recipient = result.get();
         model.addAttribute("title", "Add Occasions For " + recipient.getFirstName() + ' ' + recipient.getLastName());
+
         OccasionDTO recipientOccasion = new OccasionDTO();
         recipientOccasion.setRecipient(recipient);
+
         model.addAttribute("recipientOccasion", recipientOccasion);
         model.addAttribute(new Occasion());
 
@@ -136,6 +139,14 @@ public class RecipientController {
         Collections.sort(occasions);
 
         model.addAttribute("occasions", occasions);
+
+        model.addAttribute(new OccasionDate());
+        model.addAttribute("months", OccasionDate.monthArr);
+        model.addAttribute("days29", OccasionDate.dayArr29);
+        model.addAttribute("days30", OccasionDate.dayArr30);
+        model.addAttribute("days31", OccasionDate.dayArr31);
+        model.addAttribute("years", OccasionDate.yearArr);
+
         return "recipient/add-occasion";
     }
 

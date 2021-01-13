@@ -1,5 +1,6 @@
 package com.liftoff.gifter.models;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotBlank;
@@ -14,8 +15,9 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     @NotBlank(message = "Please choose an occasion")
     private String name;
 
-    @NotBlank(message = "please select a date")
-    private Date date;
+    @Embedded
+//    @NotBlank(message = "please select a date")
+    private OccasionDate date;
 
     private boolean recurring;
 
@@ -26,7 +28,7 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     @ManyToMany(mappedBy = "occasions")
     private final List<Recipient> recipients = new ArrayList<>();
 
-    public Occasion(String name, Date date, boolean recurring) {
+    public Occasion(String name, OccasionDate date, boolean recurring) {
 
         this.name = name;
         this.date = date;
@@ -43,7 +45,7 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
         this.name = name;
     }
 
-    public Date getDate() { return date; }
+    public OccasionDate getDate() { return date; }
 
     public String getShortDate() {
         return date.getShortDate();
@@ -60,7 +62,7 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 //        return formattedDate;
 //    }
 
-    public void setDate(Date date) {
+    public void setDate(OccasionDate date) {
         this.date = date;
     }
 
