@@ -83,5 +83,15 @@ function selectDaysInMonth() {
         document.getElementById("day31").hidden = false;
         document.getElementById("day31").disabled = false;
     }
+
+    function hideYear() {
+        if(!document.getElementById("recurring").checked) {
+            document.getElementById("year").hidden = true;
+            document.getElementById("year").disabled = true;
+        } else if (document.getElementById("recurring").checked){
+            document.getElementById("year").hidden = false;
+            document.getElementById("year").disabled = false;
+        }
+    }
 }
 

@@ -26,7 +26,7 @@
 
     <div class="form-group">
         <label for="recurring">Repeat this occasion yearly</label>
-        <input type="checkbox" id="recurring" value="true" th:field="${recipientOccasion.occasion.recurring}">
+        <input type="checkbox" id="recurring" th:field="${recipientOccasion.occasion.recurring}" onclick="hideYear()">
 
         <select class="form-control date-select" id="month" th:field="${recipientOccasion.occasion.date.month}" onclick="selectDaysInMonth()" required>
             <option value="">Select Month</option>
@@ -50,7 +50,7 @@
                     th:text="${day}"
             ></option>
         </select>
-        <select class="form-control" id="day31" th:field="${recipientOccasion.occasion.date.day}" required>
+        <select class="form-control date-select" id="day31" th:field="${recipientOccasion.occasion.date.day}" required>
             <option value="">Select Day</option>
             <option th:each="day : ${days31}"
                     th:value="${day}"
@@ -58,7 +58,7 @@
             ></option>
         </select>
 
-        <select class="form-control" id="year" th:field="${recipientOccasion.occasion.date.year}">
+        <select class="form-control" id="year" th:field="${recipientOccasion.occasion.date.year}" hidden disabled required>
             <option value="">Select Year</option>
             <option th:each="year : ${years}"
                     th:value="${year}"
