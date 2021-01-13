@@ -168,7 +168,26 @@ public class RecipientController {
     }
 
     // ToDo: Build handlers to "remove" recipient
+    @GetMapping("delete")
+    public String displayDeleteRecipientForm(Model model) {
+        model.addAttribute("title", "Delete Recipients");
+        Model recipients = model.addAttribute("recipients",
+                recipientRepository.findAll());
+        return "recipient/delete";
+    }
 
+    @PostMapping("delete")
+    public String processDeleteRecipientForm(@RequestParam(required = false) int[] recipientId) {
+
+        if (recipientId != null) {
+            for (int id : recipientId) {
+                recipientRepository.deleteById(id);
+                ;
+            }
+        }
+        return "redirect:";
+    }
 }
+
 
 // © 2020 Gifter

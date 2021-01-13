@@ -8,7 +8,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="" />
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_18_20__11_44_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_18_20__11_44_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,12 +85,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gifter/src/main/resources/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -115,9 +118,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -147,6 +148,9 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="shellPath" value="C:\Users\13143\Documents\LC101\Git\bin\bash.exe" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -168,5 +172,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit of NavBar and Landing page" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit of NavBar and Landing page" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="271" y="159" key="FileChooserDialogImpl" timestamp="1610574164901">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="271" y="159" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610574164901" />
+    <state x="0" y="64" key="SettingsEditor" timestamp="1610574166173">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="64" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1610574166173" />
   </component>
 </project>
