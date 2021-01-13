@@ -18,11 +18,11 @@ com/liftoff/gifter/models/dto/LoginFormDTO.java
  com.liftoff.gifter.models.dto.LoginFormDTO
 com/liftoff/gifter/controllers/RecipientController.java
  com.liftoff.gifter.controllers.RecipientController
-com/liftoff/gifter/data/GiftRepository.java
- com.liftoff.gifter.data.GiftRepository
-com/liftoff/gifter/models/AbstractEntity.java
- com.liftoff.gifter.models.AbstractEntity
 com/liftoff/gifter/data/RecipientRepository.java
  com.liftoff.gifter.data.RecipientRepository
+com/liftoff/gifter/models/AbstractEntity.java
+ com.liftoff.gifter.models.AbstractEntity
+com/liftoff/gifter/data/GiftRepository.java
+ com.liftoff.gifter.data.GiftRepository
 com/liftoff/gifter/controllers/GiftController.java
  com.liftoff.gifter.controllers.GiftController
