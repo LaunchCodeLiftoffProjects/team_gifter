@@ -58,7 +58,7 @@
             ></option>
         </select>
 
-        <select class="form-control" id="year" th:field="${recipientOccasion.occasion.date.year}" hidden disabled required>
+        <select class="form-control" id="year" th:field="${recipientOccasion.occasion.date.year}">
             <option value="">Select Year</option>
             <option th:each="year : ${years}"
                     th:value="${year}"
