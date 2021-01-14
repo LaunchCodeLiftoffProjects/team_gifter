@@ -142,6 +142,7 @@ public class RecipientController {
 
         model.addAttribute(new OccasionDate());
         model.addAttribute("months", OccasionDate.monthArr);
+        model.addAttribute("monthNames", OccasionDate.monthNameArr);
         model.addAttribute("days29", OccasionDate.dayArr29);
         model.addAttribute("days30", OccasionDate.dayArr30);
         model.addAttribute("days31", OccasionDate.dayArr31);

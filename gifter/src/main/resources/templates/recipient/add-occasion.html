@@ -30,9 +30,9 @@
 
         <select class="form-control date-select" id="month" th:field="${recipientOccasion.occasion.date.month}" onclick="selectDaysInMonth()" required>
             <option value="">Select Month</option>
-            <option th:each="month : ${months}"
+            <option th:each="month, status : ${months}"
                     th:value="${month}"
-                    th:text="${month}"
+                    th:text="${monthNames[status.index]}"
             ></option>
         </select>
 

@@ -55,6 +55,8 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
         return date.getLongDate();
     }
 
+
+
 //    TODO: create method to format the date for optimal readability on recipient detail page
 //    public String getFormattedDate(){
 //        String formattedDate = this.getDate();
