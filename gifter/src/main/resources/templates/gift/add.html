@@ -20,7 +20,7 @@
         <label th:for="recipient">Recipient</label>
         <select name="recipientId">
             <option th:each="recipient : ${recipients}"
-                    th:text="${recipient.name}"
+                    th:text="${recipient.firstName} + ' ' + ${recipient.lastName}"
                     th:value="${recipient.id}"></option>
         </select>
         <a th:href="@{'/recipient/add'}">Add Recipient</a>
