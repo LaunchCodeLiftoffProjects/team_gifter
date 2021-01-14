@@ -13,7 +13,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit" />
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +43,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gifter" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gifter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -128,9 +137,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -186,11 +193,22 @@
     <MESSAGE value="Initial commit of persistent recipients" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
   </component>
-  <component name="XDebuggerManager">
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="org.springframework.validation.support.BindingAwareModelMap" memberName="table" />
-      </pinned-members>
-    </pin-to-top-manager>
+  <component name="WindowStateProjectService">
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom" timestamp="1610588406849">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610588406849" />
+    <state width="1720" height="233" key="GridCell.Tab.0.center" timestamp="1610588406848">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610588406847" />
+    <state width="1720" height="233" key="GridCell.Tab.0.left" timestamp="1610588406846">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610588406846" />
+    <state width="1720" height="233" key="GridCell.Tab.0.right" timestamp="1610588406848">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610588406848" />
   </component>
 </project>
