@@ -9,7 +9,7 @@ import java.util.List;
 public class Gift extends AbstractEntity {
 
     private String description;
-   @ManyToMany(mappedBy="gifts")
+   @ManyToMany
     private List<Recipient> recipients = new ArrayList<Recipient>();
 
     public Gift() {

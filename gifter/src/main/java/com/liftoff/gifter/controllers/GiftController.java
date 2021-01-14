@@ -3,6 +3,7 @@ package com.liftoff.gifter.controllers;
 import com.liftoff.gifter.data.GiftRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Gift;
+import com.liftoff.gifter.models.Recipient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,18 +28,20 @@ public class GiftController {
     public String displayAddGiftForm(Model model) {
         model.addAttribute("title", "Add Gift");
         model.addAttribute( new Gift());
-        model.addAttribute("recipient", recipientRepository.findAll());
+        model.addAttribute("recipients", recipientRepository.findAll());
 
         return "gift/add";
     }
 
 
     @PostMapping("add")
-    public String processAddGiftForm(@ModelAttribute @Valid Gift newGift, Errors errors, Model model){
+    public String processAddGiftForm(@ModelAttribute @Valid Gift newGift, Integer id, Errors errors, Model model){
 
         if (errors.hasErrors()){
             return "gift/add";
         }
+        Recipient recipientToEdit = recipientRepository.findById(id).get();
+//        recipientToEdit
         giftRepository.save(newGift);
         return "gift/add";
 
