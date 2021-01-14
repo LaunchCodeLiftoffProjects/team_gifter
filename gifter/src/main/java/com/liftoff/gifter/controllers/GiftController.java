@@ -11,7 +11,6 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("gift")
@@ -19,9 +18,14 @@ public class GiftController {
 
     @Autowired
     private GiftRepository giftRepository;
-    //private Gift gift;
+    private Gift gift;
     @Autowired
     private RecipientRepository recipientRepository;
+
+    public GiftController(GiftRepository giftRepository, Gift gift) {
+        this.giftRepository = giftRepository;
+        this.gift =gift;
+    }
     //private Gift gift;
 
     @GetMapping("add")
