@@ -24,8 +24,8 @@ public class GiftController {
     private RecipientRepository recipientRepository;
     //private Gift gift;
 
-    @GetMapping("add")
-    public String displayAddGiftForm(Model model) {
+    @GetMapping(value = {"add", "add/{recipientId}"})
+    public String displayAddGiftForm(Model model, @PathVariable(required=false) Integer recipientId) {
         model.addAttribute("title", "Add Gift");
         model.addAttribute( new Gift());
         model.addAttribute("recipients", recipientRepository.findAll());
