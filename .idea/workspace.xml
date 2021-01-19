@@ -14,17 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_10_2021_4_21_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_10_2021_4_21_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_6_2021_7_13_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_6_2021_7_13_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_6_2021_9_57_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_6_2021_9_57_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_6_2021_7_20_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_6_2021_7_20_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Gift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610589557055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New inputs">
+      <created>1611016875416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611016875416</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,7 +204,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial commit of persistent recipients" />
     <MESSAGE value="Awesome team" />
-    <option name="LAST_COMMIT_MESSAGE" value="Awesome team" />
+    <MESSAGE value="New inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="New inputs" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

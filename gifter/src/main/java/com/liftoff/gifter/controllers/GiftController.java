@@ -11,6 +11,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Date;
 import java.util.Optional;
 
 @Controller
@@ -64,8 +65,14 @@ public class GiftController {
             model.addAttribute("title", "Add Gift");
             return "gift/edit";
         }
-        return null;
+       Gift giftToEdit = giftRepository.findById(id).get();
+        giftToEdit.setDescription(gift.getDescription());
+        giftToEdit.setPrice(gift.getPrice());
+        giftToEdit.setLink(gift.getLink());
+        giftRepository.save(giftToEdit);
+        return "redirect:detail?recipientId=" + giftToEdit.getId();
     }
+
 
 
 

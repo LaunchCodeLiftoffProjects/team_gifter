@@ -17,6 +17,21 @@
     </div>
 
     <div class="form-group">
+        <label th:for="price">$</label>
+        <input class="form-control"
+               th:field="*{price}" placeholder="2 to 8 characters allowed" />
+        <span th:errors="*{price}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="link">link</label>
+        <input class="form-control"
+               th:field="*{link}" placeholder="2 to 100 characters allowed" />
+        <span th:errors="*{link}" class="error"></span>
+    </div>
+
+
+    <div class="form-group">
         <label th:for="recipient">Recipient</label>
         <select name="recipientId">
             <option th:each="recipient : ${recipients}"
@@ -25,8 +40,6 @@
         </select>
         <a th:href="@{'/recipient/add'}">Add Recipient</a>
     </div>
-
-
 
     <input type="submit" class="btn btn-primary" value="Add Gift" />
 
