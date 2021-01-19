@@ -11,6 +11,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("gift")
@@ -23,8 +24,6 @@ public class GiftController {
     private RecipientRepository recipientRepository;
 
 
-
-    //private Gift gift;
 
     @GetMapping(value = {"add", "add/{recipientId}"})
     public String displayAddGiftForm(Model model, @PathVariable(required=false) Integer recipientId) {
@@ -42,26 +41,46 @@ public class GiftController {
         if (errors.hasErrors()){
             return "gift/add";
         }
-        Recipient recipientToEdit = recipientRepository.findById(id).get();
-//        recipientToEdit
+
         giftRepository.save(newGift);
         return "gift/add";
 
 
     }
 
+    @GetMapping("edit/{recipientId}")
+    public String displayEditForm(Model model, @PathVariable int recipientId) {
+        Gift giftToEdit = giftRepository.findById(recipientId).get();
+        model.addAttribute("title", "Edit Gift");
+        model.addAttribute("gift", giftToEdit);
+        return "gift/edit";
+    }
 
-//    @GetMapping( "view/{recipientId}")
-//        public String displayViewGift(Model model, @PathVariable int recipientId){
-//            Optional<Gift> optGift = giftRepository.findById(recipientId);
-//            if(optGift.isPresent()){
-//                Gift gift = (Gift) optGift.get();
-//                model.addAttribute("gift", "gift");
-//                return "gift/view";
-//            } else{
-//                return "redirect:../";
-//            }
-//        }
+
+    @PostMapping(value="edit")
+    public String processEditForm(@ModelAttribute @Valid Gift gift, int id,
+                                  Errors errors, Model model) {
+        if (errors.hasErrors()) {
+            model.addAttribute("title", "Add Gift");
+            return "gift/edit";
+        }
+        return null;
+    }
+
+
+
+
+    @GetMapping( "view/{recipientId}")
+        public String displayViewGift(Model model, @PathVariable int recipientId){
+            Optional<Gift> optGift = giftRepository.findById(recipientId);
+            if(optGift.isPresent()){
+                Gift gift = (Gift) optGift.get();
+                model.addAttribute("gift", "gift");
+                return "gift/view";
+            } else{
+                return "redirect:../";
+            }
+        }
 
 
     }
