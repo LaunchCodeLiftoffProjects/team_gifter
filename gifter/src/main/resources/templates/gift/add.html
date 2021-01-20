@@ -11,8 +11,8 @@
 
     <div class="form-group">
         <label th:for="giftTitle">Gift Title</label>
-        <input class="form-control" id="focus"
-               th:field="*{giftTitle}" placeholder="2 to 20 characters allowed" />
+        <input class="form-control"
+               th:field="*{giftTitle}"  />
         <span th:errors="*{giftTitle}" class="error"></span>
     </div>
 
