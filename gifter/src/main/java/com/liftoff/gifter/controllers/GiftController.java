@@ -70,7 +70,7 @@ public class GiftController {
         giftToEdit.setPrice(gift.getPrice());
         giftToEdit.setLink(gift.getLink());
         giftRepository.save(giftToEdit);
-        return "redirect:detail?recipientId=" + giftToEdit.getId();
+        return "redirect:gift?recipientId=" + giftToEdit.getId();
     }
 
 
