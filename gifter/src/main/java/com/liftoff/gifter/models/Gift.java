@@ -8,7 +8,7 @@ import java.util.List;
 @Entity
 public class Gift extends AbstractEntity {
 
-    private String title;
+    private String name;
     private String description;
     private String price;
     private String link;
@@ -19,17 +19,17 @@ public class Gift extends AbstractEntity {
 
     }
 
-    public Gift(String title,String description, String price, String link, List<Recipient> recipients) {
-        this.title = title;
+    public Gift(String name, String description, String price, String link, List<Recipient> recipients) {
+        this.name = name;
         this.description = description;
         this.price = price;
         this.link = link;
         this.recipients = recipients;
     }
 
-    public String getTitle() {return title; }
+    public String getName() {return name; }
 
-    public void setTitle(String title) {this.title = title; }
+    public void setName(String name) {this.name = name; }
 
     public String getDescription() {return description; }
 
