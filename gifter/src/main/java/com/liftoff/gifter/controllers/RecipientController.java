@@ -3,6 +3,7 @@ package com.liftoff.gifter.controllers;
 import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Occasion;
+import com.liftoff.gifter.models.OccasionTools;
 import com.liftoff.gifter.models.Recipient;
 import com.liftoff.gifter.models.dto.OccasionDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,14 +57,17 @@ public class RecipientController {
 
         Optional<Recipient> result = recipientRepository.findById(recipientId);
 
+
         //TODO: fix this to show proper error message
         if (result.isEmpty()) {
             model.addAttribute("title", "Recipient Does Not Exist");
         } else {
             Recipient recipient = result.get();
+            List<Occasion> occasions = recipient.getOccasions();
+            Occasion.sortOccasions(occasions);
             model.addAttribute("title", recipient.getFirstName() + ' ' + recipient.getLastName());
             model.addAttribute("recipient", recipient);
-            model.addAttribute("occasions", recipient.getOccasions());
+            model.addAttribute("occasions", occasions);
         }
         return "recipient/detail";
     }
@@ -109,8 +113,10 @@ public class RecipientController {
         Optional<Recipient> result = recipientRepository.findById(recipientId);
         Recipient recipient = result.get();
         model.addAttribute("title", "Add Occasions For " + recipient.getFirstName() + ' ' + recipient.getLastName());
+
         OccasionDTO recipientOccasion = new OccasionDTO();
         recipientOccasion.setRecipient(recipient);
+
         model.addAttribute("recipientOccasion", recipientOccasion);
         model.addAttribute(new Occasion());
 
@@ -134,6 +140,13 @@ public class RecipientController {
         Collections.sort(occasions);
 
         model.addAttribute("occasions", occasions);
+
+        model.addAttribute("monthNames", OccasionTools.monthNameArr);
+        model.addAttribute("days29", OccasionTools.dayArr29);
+        model.addAttribute("days30", OccasionTools.dayArr30);
+        model.addAttribute("days31", OccasionTools.dayArr31);
+        model.addAttribute("years", OccasionTools.yearArr);
+
         return "recipient/add-occasion";
     }
 
@@ -145,18 +158,8 @@ public class RecipientController {
         if (!errors.hasErrors()) {
             Recipient recipient = recipientOccasion.getRecipient();
             Occasion occasion = recipientOccasion.getOccasion();
-            ArrayList<String> existingOccasions = new ArrayList<>();
-            boolean alreadyExists = false;
-            //must check if recipient already has an occasion by that name
-            for(int i = 0; i < recipient.getOccasions().size(); i++) {
-                String currentOccasion = recipient.getOccasions().get(i).getName();
-                existingOccasions.add(currentOccasion);
-            }
-            if(existingOccasions.contains(occasion.getName())){
-                alreadyExists = true;
-            }
 
-            if (!alreadyExists){
+            if (!recipient.occasionNameAlreadyExists(occasion.getName()) && occasion.getName().length() > 0){
                 recipient.addOccasion(occasion);
                 occasionRepository.save(occasion);
                 recipientRepository.save(recipient);
@@ -164,7 +167,8 @@ public class RecipientController {
             return "redirect:detail?recipientId=" + recipient.getId();
         }
 
-        return "redirect:add-occasion";
+        Recipient recipient = recipientOccasion.getRecipient();
+        return "redirect:add-occasion?recipientId=" + recipient.getId();
     }
 
     // ToDo: Build handlers to "remove" recipient
