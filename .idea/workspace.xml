@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611192611264</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="worked together">
+      <created>1611193875426</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611193875426</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +271,8 @@
     <MESSAGE value="On it" />
     <MESSAGE value="No walk out of it" />
     <MESSAGE value="new edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="new edits" />
+    <MESSAGE value="worked together" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked together" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
