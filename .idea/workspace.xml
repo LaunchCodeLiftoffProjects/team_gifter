@@ -5,21 +5,15 @@
   </component>
   <component name="BranchesTreeState">
     <expand />
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/OccasionTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/OccasionTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/add-occasion.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/add-occasion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/WebApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/WebApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +41,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gifter" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="gifter" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -67,26 +55,20 @@
       <list>
         <option value="AnnotationType" />
         <option value="HTML File" />
-        <option value="Interface" />
-        <option value="Thymeleaf" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="gifter.addGift" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1lIRu5TEwgVY9GmAm0PaKV0MueD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -99,77 +81,37 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.liftoff.gifter.models" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.liftoff.gifter.models" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.gifter [bootRun]">
-    <configuration name="GifterApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gifter" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.liftoff.gifter.GifterApplicationTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="OccasionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true" show_console_on_std_out="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gifter" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.liftoff.gifter.OccasionTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="OccasionTests.testSortByDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gifter" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.liftoff.gifter.OccasionTests.testSortByDate&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="GifterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liftoff.gifter.GifterApplication" />
+      <module name="com.liftoff.gifter.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liftoff.gifter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="gifter [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -187,22 +129,18 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Gradle.gifter [bootRun]" />
-      <item itemvalue="Gradle.GifterApplicationTests" />
-      <item itemvalue="Gradle.OccasionTests" />
-      <item itemvalue="Gradle.OccasionTests.testSortByDate" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.gifter [bootRun]" />
-        <item itemvalue="Gradle.OccasionTests.testSortByDate" />
-        <item itemvalue="Gradle.OccasionTests" />
-        <item itemvalue="Gradle.GifterApplicationTests" />
         <item itemvalue="Gradle.gifter [bootRun]" />
+        <item itemvalue="Application.GifterApplication" />
+        <item itemvalue="Gradle.gifter [bootRun]" />
+        <item itemvalue="Application.GifterApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +153,42 @@
       <option name="presentableId" value="Default" />
       <updated>1607282839620</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1607565193058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607565193058</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merged the landingPage into the development branch.">
+      <created>1610318190078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610318190078</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit the problematic workspace.xml file">
+      <created>1610588000724</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610588000724</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit the problematic workspace.xml file">
+      <created>1610588463006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610588463006</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit the problematic workspace.xml file">
+      <created>1610589520090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610589520090</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,194 +207,18 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/dev" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/landingPage" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="1888" y="121" key="#Project_Structure" timestamp="1608358994734">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1888" y="121" key="#Project_Structure/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608358994734" />
-    <state x="1851" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610680063528">
-      <screen x="1440" y="25" width="1920" height="999" />
-    </state>
-    <state x="1851" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610680063528" />
-    <state x="1606" y="-49" width="1562" height="837" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1610917785878">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state x="1606" y="-49" width="1562" height="837" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1610917785878" />
-    <state x="1606" y="125" width="1562" height="792" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685188240" />
-    <state x="2614" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1611183677767">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state x="2614" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608338164804" />
-    <state x="2614" y="237" key="#com.intellij.ide.util.MemberChooser/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609799348771" />
-    <state x="2614" y="70" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611183677767" />
-    <state x="2614" y="238" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610487108065" />
-    <state x="1712" y="111" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610569129436">
-      <screen x="1440" y="25" width="1920" height="999" />
-    </state>
-    <state x="1712" y="111" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610569129436" />
-    <state x="2189" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610396470378">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2189" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610396470378" />
-    <state width="1819" height="233" key="GridCell.Tab.0.bottom" timestamp="1611191326466">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1501" height="271" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325931" />
-    <state width="1241" height="181" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595783" />
-    <state width="1797" height="239" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397223" />
-    <state width="1058" height="271" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012029" />
-    <state width="1465" height="201" key="GridCell.Tab.0.bottom/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485783" />
-    <state width="1720" height="201" key="GridCell.Tab.0.bottom/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685512" />
-    <state width="1819" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611191326466" />
-    <state width="1819" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1611023560599" />
-    <state width="1720" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610415213904" />
-    <state width="1720" height="447" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503282" />
-    <state width="1720" height="447" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681405" />
-    <state width="1819" height="233" key="GridCell.Tab.0.center" timestamp="1611191326464">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1501" height="271" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325927" />
-    <state width="1241" height="181" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595781" />
-    <state width="1797" height="239" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397215" />
-    <state width="1058" height="271" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012026" />
-    <state width="1465" height="201" key="GridCell.Tab.0.center/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485782" />
-    <state width="1720" height="201" key="GridCell.Tab.0.center/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685511" />
-    <state width="1819" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611191326464" />
-    <state width="1819" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1611023560598" />
-    <state width="1720" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610415213900" />
-    <state width="1720" height="447" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503281" />
-    <state width="1720" height="447" key="GridCell.Tab.0.center/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681403" />
-    <state width="1819" height="233" key="GridCell.Tab.0.left" timestamp="1611191326463">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1501" height="271" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325924" />
-    <state width="1241" height="181" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595780" />
-    <state width="1797" height="239" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397214" />
-    <state width="1058" height="271" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012025" />
-    <state width="1465" height="201" key="GridCell.Tab.0.left/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485782" />
-    <state width="1720" height="201" key="GridCell.Tab.0.left/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685510" />
-    <state width="1819" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611191326463" />
-    <state width="1819" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1611023560597" />
-    <state width="1720" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610415213898" />
-    <state width="1720" height="447" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503280" />
-    <state width="1720" height="447" key="GridCell.Tab.0.left/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681402" />
-    <state width="1819" height="233" key="GridCell.Tab.0.right" timestamp="1611191326465">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1501" height="271" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608774325928" />
-    <state width="1241" height="181" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1609273595782" />
-    <state width="1797" height="239" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608167397221" />
-    <state width="1058" height="271" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608178012027" />
-    <state width="1465" height="201" key="GridCell.Tab.0.right/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609735485783" />
-    <state width="1720" height="201" key="GridCell.Tab.0.right/0.25.1440.813/1440.25.1920.993@1440.25.1920.993" timestamp="1609807685512" />
-    <state width="1819" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611191326465" />
-    <state width="1819" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1611023560598" />
-    <state width="1720" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610415213901" />
-    <state width="1720" height="447" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503282" />
-    <state width="1720" height="447" key="GridCell.Tab.0.right/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681404" />
-    <state width="1819" height="377" key="GridCell.Tab.1.bottom" timestamp="1611181684740">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1819" height="377" key="GridCell.Tab.1.bottom/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611181684740" />
-    <state width="1720" height="447" key="GridCell.Tab.1.bottom/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503285" />
-    <state width="1720" height="447" key="GridCell.Tab.1.bottom/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681408" />
-    <state width="1819" height="377" key="GridCell.Tab.1.center" timestamp="1611181684738">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1819" height="377" key="GridCell.Tab.1.center/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611181684738" />
-    <state width="1720" height="447" key="GridCell.Tab.1.center/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503284" />
-    <state width="1720" height="447" key="GridCell.Tab.1.center/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681406" />
-    <state width="1819" height="377" key="GridCell.Tab.1.left" timestamp="1611181684737">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1819" height="377" key="GridCell.Tab.1.left/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611181684737" />
-    <state width="1720" height="447" key="GridCell.Tab.1.left/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503283" />
-    <state width="1720" height="447" key="GridCell.Tab.1.left/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681406" />
-    <state width="1819" height="377" key="GridCell.Tab.1.right" timestamp="1611181684739">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state width="1819" height="377" key="GridCell.Tab.1.right/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611181684739" />
-    <state width="1720" height="447" key="GridCell.Tab.1.right/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610685503285" />
-    <state width="1720" height="447" key="GridCell.Tab.1.right/0.25.1440.875/1440.25.1920.999@1440.25.1920.999" timestamp="1610822681407" />
-    <state x="2031" y="268" key="IDE.errors.dialog" timestamp="1609981136149">
-      <screen x="1440" y="25" width="1920" height="999" />
-    </state>
-    <state x="2031" y="268" key="IDE.errors.dialog/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1609981136149" />
-    <state x="2076" y="143" key="SettingsEditor" timestamp="1610415486878">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2076" y="121" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608772653467" />
-    <state x="2076" y="121" key="SettingsEditor/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608772864881" />
-    <state x="2076" y="143" key="SettingsEditor/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610415486878" />
-    <state x="2076" y="137" key="SettingsEditor/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610153854694" />
-    <state x="1959" y="281" key="Vcs.Push.Dialog.v2" timestamp="1608169322473">
-      <screen x="1440" y="23" width="1920" height="1057" />
-    </state>
-    <state x="1959" y="281" key="Vcs.Push.Dialog.v2/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1608169322473" />
-    <state x="1847" y="197" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1610153853467">
-      <screen x="1440" y="25" width="1920" height="999" />
-    </state>
-    <state x="1847" y="197" key="com.intellij.javaee.MapExternalResourceDialog/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610153853467" />
-    <state x="2005" y="-41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611179844400">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state x="2005" y="-41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611179844400" />
-    <state x="1904" y="94" width="965" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611180824927">
-      <screen x="1440" y="-155" width="1920" height="1055" />
-    </state>
-    <state x="1904" y="94" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.25.1440.819/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1611180824927" />
-    <state x="1904" y="261" width="965" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610684742295" />
-    <state x="2358" y="125" width="586" height="718" key="find.popup" timestamp="1610063014083">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2517" y="172" width="586" height="735" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608334450646" />
-    <state x="2517" y="172" width="586" height="735" key="find.popup/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608177602728" />
-    <state x="2517" y="193" width="586" height="718" key="find.popup/0.25.1440.813/1440.25.1920.1055@1440.25.1920.1055" timestamp="1609379568590" />
-    <state x="2358" y="125" width="586" height="718" key="find.popup/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610063014083" />
-    <state x="2142" y="238" key="git4idea.branch.GitSmartOperationDialog" timestamp="1610587901681">
-      <screen x="1440" y="25" width="1920" height="999" />
-    </state>
-    <state x="2142" y="238" key="git4idea.branch.GitSmartOperationDialog/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610587901681" />
-    <state x="1699" y="151" width="1379" height="761" key="new project wizard" timestamp="1610415958659">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="1699" y="151" width="1379" height="761" key="new project wizard/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610415958659" />
-    <state x="2479" y="333" width="670" height="661" key="search.everywhere.popup" timestamp="1610415831676">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2479" y="315" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1608771875655" />
-    <state x="2479" y="333" width="670" height="661" key="search.everywhere.popup/0.25.1440.819/1440.25.1920.1055@1440.25.1920.1055" timestamp="1610415831676" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Initial commit of persistent recipients" />
+    <MESSAGE value="Merged the landingPage into the development branch." />
+    <MESSAGE value="Commit the problematic workspace.xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit the problematic workspace.xml file" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="4" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
