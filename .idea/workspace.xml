@@ -134,6 +134,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.GifterApplication" />
+      <item itemvalue="Gradle.gifter [bootRun]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.gifter [bootRun]" />
