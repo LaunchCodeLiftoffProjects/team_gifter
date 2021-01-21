@@ -4,19 +4,22 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Entity
-public class Occasion extends AbstractEntity{
+public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     @Size(min = 1, max = 25)
     @NotBlank(message = "Please choose an occasion")
     private String name;
 
-    @NotBlank(message = "please select a date")
+    @NotBlank(message = "please select a valid date")
     private String date;
+
+    private java.util.Date sortableDate;
+
+    public static SimpleDateFormat formatter = new SimpleDateFormat("MMMM dd, yyyy");
 
     private boolean recurring;
 
@@ -44,12 +47,18 @@ public class Occasion extends AbstractEntity{
         this.name = name;
     }
 
-    public String getDate() {
-        return date;
-    }
+    public String getDate() { return date; }
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public Date getSortableDate() {
+        return sortableDate;
+    }
+
+    public void setSortableDate() throws ParseException{
+        this.sortableDate = formatter.parse(date);;
     }
 
     public List<Recipient> getRecipients() {
@@ -71,4 +80,30 @@ public class Occasion extends AbstractEntity{
     public void setRecurring(boolean recurring) {
         this.recurring = recurring;
     }
+
+    @Override
+    public int compareTo(Occasion o) {
+        Calendar cal1 = Calendar.getInstance();
+        try {
+            this.setSortableDate();
+            o.setSortableDate();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        cal1.setTime(this.getSortableDate());
+        Calendar cal2 = Calendar.getInstance();
+        cal2.setTime(o.getSortableDate());
+
+        int month1 = cal1.get(Calendar.MONTH);
+        int month2 = cal2.get(Calendar.MONTH);
+
+        if(month1 < month2)
+            return -1;
+        else if(month1 == month2)
+            return cal1.get(Calendar.DAY_OF_MONTH) - cal2.get(Calendar.DAY_OF_MONTH);
+
+        else return 1;
+
+    }
+
 }

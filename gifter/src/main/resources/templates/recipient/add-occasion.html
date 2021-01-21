@@ -7,23 +7,70 @@
 
 <form method="post">
     <div class="form-group">
-        <input class="form-control "type="hidden" th:field="${recipientOccasion.recipient}" />
-        <select th:field="${recipientOccasion.occasion.name}" id="standardName" required>
+
+        <input class="form-control" type="hidden" th:field="${recipientOccasion.recipient}" />
+
+        <select class="form-control" id="standardName" required>
             <option value="" selected>Choose One</option>
             <option th:each="occasion : ${occasions}"
                     th:value="${occasion}"
                     th:text="${occasion}"
+                    onclick="chooseStandard()"
+            ></option>
+            <option value="" onclick="chooseOther()">Other</option>
+        </select>
+
+        <input class="form-control" id="customName" placeholder="Add your own" hidden disabled required/>
+
+    </div>
+
+    <div class="form-group">
+        <p>Repeat this occasion yearly?</p>
+        <label for="isRecurring">Yes</label>
+        <input type="radio" id="isRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="1">
+        <label for="notRecurring">No</label>
+        <input type="radio" id="notRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="0">
+
+        <input type="hidden" id="year" value="">
+
+        <select class="form-control date-select" id="month" onclick="selectDaysInMonth()" required>
+            <option value="">Select Month</option>
+            <option th:each="month : ${monthNames}"
+                    th:value="${month}"
+                    th:text="${month}"
             ></option>
         </select>
-        <button type="button" id="toggleOccasionButton" class="btn btn-success" onclick="disableOccasionInput()">Click here to create your own occasion</button>
-        <input class="form-control" id="customName" th:field="${recipientOccasion.occasion.name}" placeholder="Add your own" disabled required/>
+
+        <select class="form-control date-select" id="day29" required hidden disabled>
+            <option value="">Select Day</option>
+            <option th:each="day : ${days29}"
+                    th:value="${day}"
+                    th:text="${day}"
+            ></option>
+        </select>
+        <select class="form-control date-select" id="day30" required hidden disabled>
+            <option value="">Select Day</option>
+            <option th:each="day : ${days30}"
+                    th:value="${day}"
+                    th:text="${day}"
+            ></option>
+        </select>
+        <select class="form-control date-select" id="day31" required>
+            <option value="">Select Day</option>
+            <option th:each="day : ${days31}"
+                    th:value="${day}"
+                    th:text="${day}"
+            ></option>
+        </select>
+
+        <input class="form-control" id="date" type="hidden" th:field="${recipientOccasion.occasion.date}">
     </div>
-    <div class="form-group">
-        <label for="recurring">Repeat this occasion yearly</label>
-        <input type="checkbox" id="recurring" value="true" th:field="${recipientOccasion.occasion.recurring}">
-        <input type="date" class="form-control" id="date" th:field="${recipientOccasion.occasion.date}" required>
-    </div>
-    <input type="submit" class="btn btn-success" value="Add Occasion">
+
+
+    <input class="form-control" id="nameField" type="hidden" th:field="${recipientOccasion.occasion.name}" />
+
+    <input type="submit" class="btn btn-success" value="Add Occasion" onmousedown="submitOccasion()">
+
 </form>
 <div th:replace="fragments :: footer"></div>
 </body>

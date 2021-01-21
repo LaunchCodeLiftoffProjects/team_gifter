@@ -138,7 +138,27 @@ public class Recipient extends AbstractEntity {
         return occasions;
     }
 
+    public boolean occasionNameAlreadyExists(String name){
+        ArrayList<String> occasionNames = new ArrayList<>();
+        for(int i = 0; i < this.getOccasions().size(); i++) {
+            String currentOccasion = this.getOccasions().get(i).getName().toLowerCase();
+            occasionNames.add(currentOccasion);
+        }
+        if(occasionNames.contains(name.toLowerCase())){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public void addOccasion(Occasion occasion) { this.occasions.add(occasion); }
+
+//    public List<Occasion> getSortedOccasions(){
+//        List<Occasion> unsortedOccasions = this.getOccasions();
+//
+//
+//        return sortedOccasions;
+//    }
 
     @Override
     public boolean equals(Object o) {
