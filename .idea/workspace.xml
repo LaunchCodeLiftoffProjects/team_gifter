@@ -15,6 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
+>>>>>>> 6fa78cf8f2430a39d75eddd8bc3ae76961a5594e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +46,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gifter" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="gifter" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -136,7 +134,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <list>
@@ -169,7 +169,70 @@
       <option name="project" value="LOCAL" />
       <updated>1607565193058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Awesome team">
+      <created>1610589557055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610589557055</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New inputs">
+      <created>1611016875416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611016875416</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Keep on working">
+      <created>1611025225054</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611025225054</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Always on it">
+      <created>1611185104028</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611185104028</updated>
+    </task>
+    <task id="LOCAL-00006" summary="edit">
+      <created>1611185424173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611185424173</updated>
+    </task>
+    <task id="LOCAL-00007" summary="On it">
+      <created>1611185696605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611185696605</updated>
+    </task>
+    <task id="LOCAL-00008" summary="On it">
+      <created>1611186099139</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611186099139</updated>
+    </task>
+    <task id="LOCAL-00009" summary="On it">
+      <created>1611186304970</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611186304970</updated>
+    </task>
+    <task id="LOCAL-00010" summary="No walk out of it">
+      <created>1611186907809</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611186907809</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +257,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial commit of persistent recipients" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
   </component>
   <component name="WindowStateProjectService">
@@ -213,5 +277,22 @@
       <screen x="1440" y="25" width="1920" height="999" />
     </state>
     <state width="1720" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497566" />
+=======
+    <MESSAGE value="Awesome team" />
+    <MESSAGE value="New inputs" />
+    <MESSAGE value="Keep on working" />
+    <MESSAGE value="Always on it" />
+    <MESSAGE value="edit" />
+    <MESSAGE value="On it" />
+    <MESSAGE value="No walk out of it" />
+    <option name="LAST_COMMIT_MESSAGE" value="No walk out of it" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.validation.support.BindingAwareModelMap" memberName="table" />
+      </pinned-members>
+    </pin-to-top-manager>
+>>>>>>> 6fa78cf8f2430a39d75eddd8bc3ae76961a5594e
   </component>
 </project>
