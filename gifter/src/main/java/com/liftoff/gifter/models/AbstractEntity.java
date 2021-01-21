@@ -6,7 +6,7 @@ import javax.persistence.MappedSuperclass;
 import java.util.Objects;
 
 @MappedSuperclass
-public abstract class AbstractEntity {
+public abstract class AbstractEntity extends OccasionTools{
 
     @Id
     @GeneratedValue
@@ -16,13 +16,13 @@ public abstract class AbstractEntity {
         return id;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        AbstractEntity entity = (AbstractEntity) o;
-        return id == entity.id;
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        AbstractEntity entity = (AbstractEntity) o;
+//        return id == entity.id;
+//    }
 
     @Override
     public int hashCode() {

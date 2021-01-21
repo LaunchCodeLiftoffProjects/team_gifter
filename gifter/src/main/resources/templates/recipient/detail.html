@@ -9,15 +9,18 @@
     <span th:text="${recipient.relationship}"></span>
 </div>
 <div class="contact-info">
-    <span th:unless="${recipient.email == ''}" th:text="${recipient.email}"></span>
+    <span th:unless="${recipient.email == ''}" th:text="'Email: ' + ${recipient.email}"></span>
     <a th:if="${recipient.email == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Email</a>
 </div>
+
 <div class="contact-info">
-    <span th:unless="${recipient.phoneNumber == ''}" th:text="' | ' + ${recipient.phoneNumber}"></span>
+    <span th:unless="${recipient.phoneNumber == ''}" th:text="'Phone: ' + ${recipient.phoneNumber}"></span>
     <a th:if="${recipient.phoneNumber == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Phone Number</a>
 </div>
+
+<!--TODO: get address on next line-->
 <div id="recipient-address">
-    <span th:unless="${recipient.address == ''}" th:text="${recipient.address}"></span>
+    <span th:unless="${recipient.address == ''}" th:text="'Address: ' + ${recipient.address}"></span>
     <a th:if="${recipient.address == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Address</a>
 </div>
 
@@ -49,24 +52,22 @@
 <!--        </td>-->
 <!--    </tr>-->
 <!--</table>-->
-<a th:href="'/recipient/edit/' + ${recipient.id}">Edit Recipient Info</a>
+
 <div>
     <h3 th:text="'Occasions for ' + ${recipient.firstName}"></h3>
     <table class="table table-striped">
             <th:block th:each="occasion : ${occasions}">
                 <tr>
                     <th th:text="${occasion.name}"></th>
-                    <td th:text="${occasion.date.getLongDate()}"></td>
-                    <td>Show gift names here, link to gift detail page. If occasion has no gifts, link to Add Gift</td>
+                    <td th:text="${occasion.date}"></td>
+                    <td>Show gift idea names, link to gift detail page. If there are no gifts, link to Add Gift</td>
                 </tr>
             </th:block>
     </table>
 </div>
 <a th:href="'/recipient/add-occasion?recipientId=' + ${recipient.id}">Add Occasion</a>
+<a th:href="'/recipient/edit/' + ${recipient.id}">Edit Recipient Info</a>
 
-
-<!--TODO: link to edit recipient for each blank cell. Example: if birthday is blank, text reads "Add Birthday" and links to the edit recipient page-->
-<!--<a th:href="'/recipient/edit?recipientId=' + ${recipient.id}">Edit</a>-->
 
 <div th:replace="fragments :: footer"></div>
 </body>

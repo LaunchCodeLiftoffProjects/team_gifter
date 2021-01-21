@@ -3,8 +3,8 @@ package com.liftoff.gifter.controllers;
 import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Occasion;
+import com.liftoff.gifter.models.OccasionTools;
 import com.liftoff.gifter.models.Recipient;
-import com.liftoff.gifter.models.OccasionDate;
 import com.liftoff.gifter.models.dto.OccasionDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -63,7 +63,7 @@ public class RecipientController {
         } else {
             Recipient recipient = result.get();
             List<Occasion> occasions = recipient.getOccasions();
-            Collections.sort(occasions);
+            Occasion.sortOccasions(occasions);
             model.addAttribute("title", recipient.getFirstName() + ' ' + recipient.getLastName());
             model.addAttribute("recipient", recipient);
             model.addAttribute("occasions", occasions);
@@ -140,13 +140,13 @@ public class RecipientController {
 
         model.addAttribute("occasions", occasions);
 
-        model.addAttribute(new OccasionDate());
-        model.addAttribute("months", OccasionDate.monthArr);
-        model.addAttribute("monthNames", OccasionDate.monthNameArr);
-        model.addAttribute("days29", OccasionDate.dayArr29);
-        model.addAttribute("days30", OccasionDate.dayArr30);
-        model.addAttribute("days31", OccasionDate.dayArr31);
-        model.addAttribute("years", OccasionDate.yearArr);
+//        model.addAttribute(new OccasionTools());
+        model.addAttribute("months", OccasionTools.monthArr);
+        model.addAttribute("monthNames", OccasionTools.monthNameArr);
+        model.addAttribute("days29", OccasionTools.dayArr29);
+        model.addAttribute("days30", OccasionTools.dayArr30);
+        model.addAttribute("days31", OccasionTools.dayArr31);
+        model.addAttribute("years", OccasionTools.yearArr);
 
         return "recipient/add-occasion";
     }
@@ -168,7 +168,8 @@ public class RecipientController {
             return "redirect:detail?recipientId=" + recipient.getId();
         }
 
-        return "redirect:add-occasion";
+        Recipient recipient = recipientOccasion.getRecipient();
+        return "redirect:add-occasion?recipientId=" + recipient.getId();
     }
 
     // ToDo: Build handlers to "remove" recipient
