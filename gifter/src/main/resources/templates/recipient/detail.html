@@ -11,9 +11,7 @@
 <div class="contact-info">
     <span th:unless="${recipient.email == ''}" th:text="'Email: ' + ${recipient.email}"></span>
     <a th:if="${recipient.email == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Email</a>
-</div>
 
-<div class="contact-info">
     <span th:unless="${recipient.phoneNumber == ''}" th:text="'Phone: ' + ${recipient.phoneNumber}"></span>
     <a th:if="${recipient.phoneNumber == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Phone Number</a>
 </div>
@@ -23,35 +21,6 @@
     <span th:unless="${recipient.address == ''}" th:text="'Address: ' + ${recipient.address}"></span>
     <a th:if="${recipient.address == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Address</a>
 </div>
-
-
-<!--<table class="table table-striped">-->
-<!--    <tr>-->
-<!--        <th>Relationship</th>-->
-<!--        <td th:text="${recipient.relationship}"></td>-->
-<!--    </tr>-->
-<!--    <tr>-->
-<!--        <th>Email</th>-->
-<!--        <td>-->
-<!--            <span th:unless="${recipient.email == ''}" th:text="${recipient.email}"></span>-->
-<!--            <a th:if="${recipient.email == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Email</a>-->
-<!--        </td>-->
-<!--    </tr>-->
-<!--    <tr>-->
-<!--        <th>Phone Number</th>-->
-<!--        <td>-->
-<!--            <span th:unless="${recipient.phoneNumber == ''}" th:text="${recipient.phoneNumber}"></span>-->
-<!--            <a th:if="${recipient.phoneNumber == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Phone Number</a>-->
-<!--        </td>-->
-<!--    </tr>-->
-<!--    <tr>-->
-<!--        <th>Address</th>-->
-<!--        <td>-->
-<!--            <span th:unless="${recipient.address == ''}" th:text="${recipient.address}"></span>-->
-<!--            <a th:if="${recipient.address == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Address</a>-->
-<!--        </td>-->
-<!--    </tr>-->
-<!--</table>-->
 
 <div>
     <h3 th:text="'Occasions for ' + ${recipient.firstName}"></h3>

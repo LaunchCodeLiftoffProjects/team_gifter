@@ -106,11 +106,4 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 
     }
 
-//TODO: fix this toString method to use java.sql.Date
-
-//    @Override
-//    public String toString() {
-//        return name + ", " + date + ", recurring: " + recurring;
-//    }
-
 }

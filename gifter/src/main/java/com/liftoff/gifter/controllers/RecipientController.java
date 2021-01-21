@@ -57,6 +57,7 @@ public class RecipientController {
 
         Optional<Recipient> result = recipientRepository.findById(recipientId);
 
+
         //TODO: fix this to show proper error message
         if (result.isEmpty()) {
             model.addAttribute("title", "Recipient Does Not Exist");
@@ -140,8 +141,6 @@ public class RecipientController {
 
         model.addAttribute("occasions", occasions);
 
-//        model.addAttribute(new OccasionTools());
-        model.addAttribute("months", OccasionTools.monthArr);
         model.addAttribute("monthNames", OccasionTools.monthNameArr);
         model.addAttribute("days29", OccasionTools.dayArr29);
         model.addAttribute("days30", OccasionTools.dayArr30);
