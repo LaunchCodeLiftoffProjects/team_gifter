@@ -5,7 +5,7 @@
 
 <header th:replace="fragments :: header"></header>
 
-<form method="post">
+<form method="post" class="form" style="max-width: 400px" th:object="${occasion}">
     <div class="form-group">
 
         <input class="form-control" type="hidden" th:field="${recipientOccasion.recipient}" />
@@ -27,9 +27,9 @@
     <div class="form-group">
         <p>Repeat this occasion yearly?</p>
         <label for="isRecurring">Yes</label>
-        <input type="radio" id="isRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="1">
+        <input type="radio" id="isRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="true" th:checked="true">
         <label for="notRecurring">No</label>
-        <input type="radio" id="notRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="0">
+        <input type="radio" id="notRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="false">
 
         <input type="hidden" id="year" value="">
 

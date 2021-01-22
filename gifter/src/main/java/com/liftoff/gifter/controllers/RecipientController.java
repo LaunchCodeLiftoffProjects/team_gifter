@@ -118,7 +118,9 @@ public class RecipientController {
         recipientOccasion.setRecipient(recipient);
 
         model.addAttribute("recipientOccasion", recipientOccasion);
-        model.addAttribute(new Occasion());
+        Occasion occasion = new Occasion();
+        occasion.setRecurring(true);
+        model.addAttribute(occasion);
 
         ArrayList<String> standardOccasions = Occasion.getStandardOccasions();
         ArrayList<Occasion> customOccasions = (ArrayList<Occasion>) occasionRepository.findAll();

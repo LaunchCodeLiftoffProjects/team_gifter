@@ -33,25 +33,20 @@ public abstract class OccasionTools {
     public static List<Occasion> sortOccasions(List<Occasion> occasions) {
         Collections.sort(occasions); /* occasions are now in chronological order from Jan 1 to Dec 31 */
 
-        int currentMonth = (Calendar.getInstance().get(Calendar.MONTH));
-        int currentDay = (Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+        int currentDay = (Calendar.getInstance().get(Calendar.DAY_OF_YEAR));
 
         int j = 0;
         for (int i = 0; i < occasions.size(); i++) {
             Calendar cal = Calendar.getInstance();
             Occasion occasion = occasions.get(j);
             cal.setTime(occasion.getSortableDate());
-            int occasionMonth = cal.get(Calendar.MONTH);
-            int occasionDay = cal.get(Calendar.DAY_OF_MONTH);
+            int occasionDay = cal.get(Calendar.DAY_OF_YEAR);
 
-
-
-            if(occasionMonth < currentMonth) {
+            if(occasionDay < currentDay) {
                 occasions.add(occasion);
                 occasions.remove(occasion);
-            } else if(occasionMonth == currentMonth && occasionDay < currentDay) {
-                occasions.add(occasion);
-                occasions.remove(occasion);
+            } else {
+                j++;
             }
         }
 
