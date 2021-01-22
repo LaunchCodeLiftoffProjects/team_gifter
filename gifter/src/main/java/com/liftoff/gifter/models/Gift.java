@@ -8,6 +8,7 @@ import java.util.List;
 @Entity
 public class Gift extends AbstractEntity {
 
+
     private String name;
     private String description;
     private String price;
