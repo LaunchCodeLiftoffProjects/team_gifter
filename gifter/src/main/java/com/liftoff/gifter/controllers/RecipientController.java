@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
 import java.util.*;
 
 import javax.validation.Valid;
@@ -53,7 +54,7 @@ public class RecipientController {
     }
 
     @GetMapping("detail")
-    public String displayRecipientDetails(@RequestParam Integer recipientId, Model model) {
+    public String displayRecipientDetails(@RequestParam Integer recipientId, Model model) throws ParseException {
 
         Optional<Recipient> result = recipientRepository.findById(recipientId);
 
@@ -155,7 +156,7 @@ public class RecipientController {
     @PostMapping("add-occasion")
     public String processAddOccasionForm(@ModelAttribute @Valid OccasionDTO recipientOccasion,
                                     Errors errors,
-                                    Model model){
+                                    Model model) throws ParseException {
 
         if (!errors.hasErrors()) {
             Recipient recipient = recipientOccasion.getRecipient();
@@ -163,6 +164,7 @@ public class RecipientController {
 
             if (!recipient.occasionNameAlreadyExists(occasion.getName()) && occasion.getName().length() > 0){
                 recipient.addOccasion(occasion);
+//                occasion.setSortableDate();
                 occasionRepository.save(occasion);
                 recipientRepository.save(recipient);
             }

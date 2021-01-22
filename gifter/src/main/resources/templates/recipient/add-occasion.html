@@ -24,15 +24,15 @@
 
     </div>
 
-    <div class="form-group">
+    <div class="form-group" onclick="hideYear()">
         <p>Repeat this occasion yearly?</p>
         <label for="isRecurring">Yes</label>
-        <input type="radio" id="isRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="true" th:checked="true">
+        <input type="radio" id="isRecurring" th:field="${recipientOccasion.occasion.recurring}" th:value="true">
         <label for="notRecurring">No</label>
-        <input type="radio" id="notRecurring" name="recurring" th:field="${recipientOccasion.occasion.recurring}" th:value="false">
+        <input type="radio" id="notRecurring" th:field="${recipientOccasion.occasion.recurring}" th:value="false">
+    </div>
 
-        <input type="hidden" id="year" value="">
-
+    <div class="form-group">
         <select class="form-control date-select" id="month" onclick="selectDaysInMonth()" required>
             <option value="">Select Month</option>
             <option th:each="month : ${monthNames}"
@@ -63,6 +63,15 @@
             ></option>
         </select>
 
+        <select class="form-control date-select" id="yearSelect" >
+            <option value="">Select Year</option>
+            <option th:each="year : ${years}"
+                    th:value="${year}"
+                    th:text="${year}"
+            ></option>
+        </select>
+
+        <input type="hidden" id="year" value="">
         <input class="form-control" id="date" type="hidden" th:field="${recipientOccasion.occasion.date}">
     </div>
 

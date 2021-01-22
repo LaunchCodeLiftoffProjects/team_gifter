@@ -20,7 +20,6 @@ function chooseOther(){
 function chooseStandard(){
     document.getElementById("customName").disabled = true;
     document.getElementById("customName").hidden = true;
-
 }
 
 function setOccasionName(){
@@ -72,19 +71,20 @@ function selectDaysInMonth() {
 }
 
 function setYear() {
-    let isRecurring = document.getElementById("isRecurring").value;
-
-    let year = document.getElementById("year");
+    let isRecurring = document.getElementById("isRecurring").checked;
+    let year = document.getElementById("year").value;
+    let selectedYear = document.getElementById("yearSelect").value;
 
     if (isRecurring) {
-        year.value = "9999"
+        document.getElementById("year").value = "1000"
     } else {
-        year.value = new Date().getFullYear();
+        document.getElementById("year").value = selectedYear;
     }
 
-    console.log("setYear function:");
-    console.log("Year: " + year.value);
+    console.log("setYear function---------");
+    console.log("selectedYear: " + selectedYear);
     console.log("Recurring: " + isRecurring);
+    console.log("Year: " + year);
 }
 
 function setDate() {
@@ -107,10 +107,10 @@ function setDate() {
 
     dateStr = month + " " + day + ", " + year;
     date.value = dateStr;
-//    console.log("setDate function:");
-//    console.log("day:" + day);
-//    console.log("month: " + month);
-//    console.log("year: " + year);
+    console.log("setDate function--------");
+    console.log("day:" + day);
+    console.log("month: " + month);
+    console.log("year: " + year);
 }
 
 function submitOccasion() {
@@ -118,6 +118,19 @@ function submitOccasion() {
     setOccasionName();
     setYear();
     setDate();
+}
+
+function hideYear() {
+    let year = document.getElementById("yearSelect");
+    let recurring = document.getElementById("isRecurring").checked;
+
+    if (recurring) {
+        year.hidden = true;
+        year.disabled = true;
+    } else {
+        year.hidden = false;
+        year.disabled = false;
+    }
 }
 
 
