@@ -36,7 +36,7 @@ public class GiftController {
     }
 
 
-    @PostMapping("add")
+    @PostMapping(value = {"add", "add/{recipientId}"})
     public String processAddGiftForm(@ModelAttribute @Valid Gift newGift, Integer id, Errors errors, Model model){
 
         if (errors.hasErrors()){
@@ -45,7 +45,6 @@ public class GiftController {
 
         giftRepository.save(newGift);
         return "gift/add";
-
 
     }
 
