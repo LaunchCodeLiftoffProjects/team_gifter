@@ -12,7 +12,9 @@
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit" />
 =======
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" afterDir="false" />
@@ -25,6 +27,14 @@
       <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/fragments.html" afterDir="false" />
 >>>>>>> 1c1a42b1dfba3572280578303c971949f11c07f0
+=======
+=======
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
+>>>>>>> 6fa78cf8f2430a39d75eddd8bc3ae76961a5594e
+=======
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
+>>>>>>> 206c0ec62ee422d7dde29efbec7b82822af3655e
+>>>>>>> gifter.addGift
     </list>
 >>>>>>> occasion
     <option name="SHOW_DIALOG" value="false" />
@@ -179,6 +189,7 @@
       <option name="project" value="LOCAL" />
       <updated>1607565193058</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="Merged the landingPage into the development branch.">
       <created>1610318190078</created>
       <option name="number" value="00002" />
@@ -208,6 +219,86 @@
       <updated>1610589520090</updated>
     </task>
     <option name="localTasksCounter" value="6" />
+=======
+    <task id="LOCAL-00002" summary="Awesome team">
+      <created>1610589557055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610589557055</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New inputs">
+      <created>1611016875416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611016875416</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Keep on working">
+      <created>1611025225054</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611025225054</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Always on it">
+      <created>1611185104028</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611185104028</updated>
+    </task>
+    <task id="LOCAL-00006" summary="edit">
+      <created>1611185424173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611185424173</updated>
+    </task>
+    <task id="LOCAL-00007" summary="On it">
+      <created>1611185696605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611185696605</updated>
+    </task>
+    <task id="LOCAL-00008" summary="On it">
+      <created>1611186099139</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611186099139</updated>
+    </task>
+    <task id="LOCAL-00009" summary="On it">
+      <created>1611186304970</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611186304970</updated>
+    </task>
+    <task id="LOCAL-00010" summary="No walk out of it">
+      <created>1611186907809</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611186907809</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new edits">
+      <created>1611192611264</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611192611264</updated>
+    </task>
+    <task id="LOCAL-00012" summary="worked together">
+      <created>1611193875426</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611193875426</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+>>>>>>> gifter.addGift
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +319,7 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state x="1888" y="121" key="#Project_Structure" timestamp="1608358994734">
@@ -432,5 +524,50 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+=======
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Initial commit of persistent recipients" />
+<<<<<<< HEAD
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom" timestamp="1610589497567">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497567" />
+    <state width="1720" height="233" key="GridCell.Tab.0.center" timestamp="1610589497565">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497565" />
+    <state width="1720" height="233" key="GridCell.Tab.0.left" timestamp="1610589497565">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497565" />
+    <state width="1720" height="233" key="GridCell.Tab.0.right" timestamp="1610589497566">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497566" />
+=======
+    <MESSAGE value="Awesome team" />
+    <MESSAGE value="New inputs" />
+    <MESSAGE value="Keep on working" />
+    <MESSAGE value="Always on it" />
+    <MESSAGE value="edit" />
+    <MESSAGE value="On it" />
+    <MESSAGE value="No walk out of it" />
+    <MESSAGE value="new edits" />
+    <MESSAGE value="worked together" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked together" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.validation.support.BindingAwareModelMap" memberName="table" />
+      </pinned-members>
+    </pin-to-top-manager>
+>>>>>>> 6fa78cf8f2430a39d75eddd8bc3ae76961a5594e
+>>>>>>> gifter.addGift
   </component>
 </project>

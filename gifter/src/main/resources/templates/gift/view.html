@@ -7,6 +7,18 @@
 
 <nav th:replace="fragments :: page-header"></nav>
 
+<div class="gift-listing">
+    <p th:text="${'Name: ' + gift.name}"></p>
+    <p th:text="${'Description: ' + gift.description}"></p>
+    <p>Gift:
+
+    <ul>
+        <li th:each="gift : ${gift.recipient}">
+            <a th:href="@{'/gifts/view/' + ${recipient.id}}" th:text="${gift.title}"></a>
+        </li>
+    </ul>
+    </p>
+</div>
 
 
 </body>
