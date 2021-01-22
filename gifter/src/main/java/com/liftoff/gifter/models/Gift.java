@@ -8,10 +8,12 @@ import java.util.List;
 @Entity
 public class Gift extends AbstractEntity {
 
-    private String giftName;
+
+    private String name;
     private String description;
     private String price;
     private String link;
+
    @ManyToMany
     private List<Recipient> recipients = new ArrayList<Recipient>();
 
@@ -19,17 +21,17 @@ public class Gift extends AbstractEntity {
 
     }
 
-    public Gift(String name, String description, String price, String link, List<Recipient> recipients) {
-        this.giftName = giftName;
+    public Gift(String name,String description, String price, String link, List<Recipient> recipients) {
+        this.name = name;
         this.description = description;
         this.price = price;
         this.link = link;
         this.recipients = recipients;
     }
 
-    public String getGiftName() {return giftName; }
+    public String getName() {return name; }
 
-    public void setGiftName(String name) {this.giftName= giftName; }
+    public void setName(String name) {this.name = name; }
 
     public String getDescription() {return description; }
 

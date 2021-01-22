@@ -14,7 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
+>>>>>>> 6fa78cf8f2430a39d75eddd8bc3ae76961a5594e
+=======
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
+>>>>>>> 206c0ec62ee422d7dde29efbec7b82822af3655e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +143,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.GifterApplication" />
+      <item itemvalue="Gradle.gifter [bootRun]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.gifter [bootRun]" />
@@ -238,14 +250,7 @@
       <option name="project" value="LOCAL" />
       <updated>1611193875426</updated>
     </task>
-    <task id="LOCAL-00013" summary="among many others">
-      <created>1611194208433</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1611194208433</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +275,27 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial commit of persistent recipients" />
+<<<<<<< HEAD
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of persistent recipients" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom" timestamp="1610589497567">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497567" />
+    <state width="1720" height="233" key="GridCell.Tab.0.center" timestamp="1610589497565">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497565" />
+    <state width="1720" height="233" key="GridCell.Tab.0.left" timestamp="1610589497565">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497565" />
+    <state width="1720" height="233" key="GridCell.Tab.0.right" timestamp="1610589497566">
+      <screen x="1440" y="25" width="1920" height="999" />
+    </state>
+    <state width="1720" height="233" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.999@1440.25.1920.999" timestamp="1610589497566" />
+=======
     <MESSAGE value="Awesome team" />
     <MESSAGE value="New inputs" />
     <MESSAGE value="Keep on working" />
@@ -279,8 +305,7 @@
     <MESSAGE value="No walk out of it" />
     <MESSAGE value="new edits" />
     <MESSAGE value="worked together" />
-    <MESSAGE value="among many others" />
-    <option name="LAST_COMMIT_MESSAGE" value="among many others" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked together" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -288,5 +313,6 @@
         <PinnedItemInfo parentTag="org.springframework.validation.support.BindingAwareModelMap" memberName="table" />
       </pinned-members>
     </pin-to-top-manager>
+>>>>>>> 6fa78cf8f2430a39d75eddd8bc3ae76961a5594e
   </component>
 </project>
