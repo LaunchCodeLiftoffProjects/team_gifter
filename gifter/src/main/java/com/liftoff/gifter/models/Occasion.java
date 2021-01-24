@@ -86,6 +86,7 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
         Calendar cal1 = Calendar.getInstance();
         try {
             this.setSortableDate();
+            System.out.println(this.getSortableDate());
             o.setSortableDate();
         } catch (ParseException e) {
             e.printStackTrace();
