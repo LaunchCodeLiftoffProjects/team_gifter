@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org/" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:fragment="head">
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -49,20 +49,15 @@
 <!--                <li class="nav-item">-->
 <!--                    <a class="nav-link" href="/register"><span class="fas fa-user"></span> Register</a>-->
 <!--                </li>-->
-                <li class="nav-item">
+                <li class="nav-item" th:if="${session.isEmpty()}">
                     <a class="nav-link" href="/login"><span class="fas fa-sign-in-alt"></span> Login</a>
                 </li>
-                <li sec:authorize="isAuthenticated()" class="nav-item">
+                <li class="nav-item" th:unless="${session.isEmpty()}">
                     <a class="nav-link" href="/logout"><span class="fas fa-sign-out-alt"></span> Logout</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-    <div class="float-right p-2">
-        Is session empty?
-        <th:block th:text="${session.isEmpty()} ? 'Yes' : 'No'">Yes</th:block>
-    </div>
 
     <br />
     <h1 th:text="${title}">Gifter</h1>
