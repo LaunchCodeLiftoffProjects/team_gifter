@@ -2,11 +2,9 @@
   <library name="Gradle: org.springframework:spring-webmvc:5.2.10.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.10.RELEASE/efbd76044be879472b2e6dc5cfa715587f38d447/spring-webmvc-5.2.10.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.10.RELEASE/efbd76044be879472b2e6dc5cfa715587f38d447/spring-webmvc-5.2.10.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.10.RELEASE/4dae5058fa738a78a4bdc4b4231687c92def1b60/spring-webmvc-5.2.10.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.10.RELEASE/4dae5058fa738a78a4bdc4b4231687c92def1b60/spring-webmvc-5.2.10.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
