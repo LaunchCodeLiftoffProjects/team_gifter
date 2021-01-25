@@ -32,19 +32,22 @@ public abstract class OccasionTools {
     }};
 
     public static List<Occasion> sortOccasions(List<Occasion> occasions) throws ParseException {
-        Collections.sort(occasions); /* occasions are now in chronological order from Jan 1 to Dec 31 */
+        Collections.sort(occasions); /* occasions are now in chronological order from Jan 1 to Dec 31*/
 
         int currentDay = (Calendar.getInstance().get(Calendar.DAY_OF_YEAR));
+        int currentYear = (Calendar.getInstance().get(Calendar.YEAR));
+
 
         int j = 0;
         for (int i = 0; i < occasions.size(); i++) {
-            Calendar cal = Calendar.getInstance();
+            Calendar cal1 = Calendar.getInstance();
             Occasion occasion = occasions.get(j);
             occasion.setSortableDate();
-            cal.setTime(occasion.getSortableDate());
-            int occasionDay = cal.get(Calendar.DAY_OF_YEAR);
+            cal1.setTime(occasion.getSortableDate());
+            int occasionDay = cal1.get(Calendar.DAY_OF_YEAR);
+            int occasionYear = cal1.get(Calendar.YEAR);
 
-            if(occasionDay < currentDay) {
+            if(occasionDay < currentDay || occasionYear > currentYear) {
                 occasions.add(occasion);
                 occasions.remove(occasion);
             } else {
@@ -52,15 +55,14 @@ public abstract class OccasionTools {
             }
         }
 
-        for (int i = 0; i < occasions.size(); i++) {
+        for (Occasion occasion : occasions) {
             Calendar cal = Calendar.getInstance();
-            Occasion occasion = occasions.get(i);
             cal.setTime(occasion.getSortableDate());
             int occasionYear = cal.get(Calendar.YEAR);
             int occasionMonth = cal.get(Calendar.MONTH);
             int occasionDay = cal.get(Calendar.DAY_OF_MONTH);
 
-            if(occasionYear == 1000) {
+            if (occasionYear == 1000) {
                 occasion.setDate(OccasionTools.monthNameArr.get(occasionMonth) + " " + occasionDay);
             }
         }
