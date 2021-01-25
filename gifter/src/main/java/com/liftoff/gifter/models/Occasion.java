@@ -2,6 +2,7 @@ package com.liftoff.gifter.models;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.text.ParseException;
@@ -27,8 +28,8 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
             Arrays.asList("Christmas", "Mother's Day", "Father's Day", "Birthday", "Anniversary", "Graduation", "Valentine's Day", "Hanukkah", "Bar/Bat Mitzvah")
     );
 
-    @ManyToMany(mappedBy = "occasions")
-    private final List<Recipient> recipients = new ArrayList<>();
+    @ManyToOne
+    private Recipient recipient;
 
     public Occasion(String name, String date, boolean recurring) {
 
@@ -58,11 +59,15 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     }
 
     public void setSortableDate() throws ParseException{
-        this.sortableDate = formatter.parse(date);;
+        this.sortableDate = formatter.parse(date);
     }
 
-    public List<Recipient> getRecipients() {
-        return recipients;
+    public void setRecipient(Recipient recipient){
+        this.recipient = recipient;
+    }
+
+    public Recipient getRecipient() {
+        return recipient;
     }
 
     public static ArrayList<String> getStandardOccasions() {

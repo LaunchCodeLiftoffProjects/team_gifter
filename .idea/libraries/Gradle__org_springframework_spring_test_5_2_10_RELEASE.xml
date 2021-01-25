@@ -2,9 +2,11 @@
   <library name="Gradle: org.springframework:spring-test:5.2.10.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.2.10.RELEASE/dc0d631468fd62866359dd5a40e2cc8708228537/spring-test-5.2.10.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.2.10.RELEASE/dc0d631468fd62866359dd5a40e2cc8708228537/spring-test-5.2.10.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.2.10.RELEASE/d9b4a09b1912585e20efde0a42baa675d5434052/spring-test-5.2.10.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.2.10.RELEASE/d9b4a09b1912585e20efde0a42baa675d5434052/spring-test-5.2.10.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
