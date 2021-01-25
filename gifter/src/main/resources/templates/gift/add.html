@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container body-content">
+<h1>Add Gift</h1>
+
+<header th:replace="fragments :: header"></header>
+
+
+<form method="post" class="form" style="max-width: 400px" th:object="${gift}">
+
+    <div class="form-group">
+
+        <label th:for="name">Gift Name</label>
+        <input class="form-control"
+               th:field="*{name}"  />
+        <span th:errors="*{name}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="description">Description</label>
+        <input class="form-control"
+               th:field="*{description}"  />
+        <span th:errors="*{description}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="price">Only numerics allowed(Optional)</label>
+        <input class="form-control"
+               th:field="*{price}" placeholder=" 00000.00" />
+        <span th:errors="*{price}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="link">Include a link if bought online(Optional)</label>
+        <input class="form-control"
+               th:field="*{link}" placeholder="2 to 100 characters allowed" />
+        <span th:errors="*{link}" class="error"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label th:for="recipient">Recipient</label>
+        <select name="recipientId">
+            <option th:each="recipient : ${recipients}"
+                    th:text="${recipient.firstName} + ' ' + ${recipient.lastName}"
+                    th:value="${recipient.id}"></option>
+        </select>
+        <a th:href="@{'/recipient/add'}">Add Recipient</a>
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Add Gift" />
+
+</form>
+
+</body>
+</html>
