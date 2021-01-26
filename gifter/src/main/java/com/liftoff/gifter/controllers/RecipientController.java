@@ -115,12 +115,13 @@ public class RecipientController {
         Recipient recipient = result.get();
         model.addAttribute("title", "Add Occasions For " + recipient.getFirstName() + ' ' + recipient.getLastName());
 
-        OccasionDTO recipientOccasion = new OccasionDTO();
-        recipientOccasion.setRecipient(recipient);
+//        OccasionDTO recipientOccasion = new OccasionDTO();
+//        occasion.setRecipient(recipient);
 
-        model.addAttribute("recipientOccasion", recipientOccasion);
+//        model.addAttribute("recipientOccasion", recipientOccasion);
         Occasion occasion = new Occasion();
         occasion.setRecurring(true);
+        occasion.setRecipient(recipient);
         model.addAttribute(occasion);
 
         ArrayList<String> standardOccasions = Occasion.getStandardOccasions();
@@ -154,25 +155,78 @@ public class RecipientController {
     }
 
     @PostMapping("add-occasion")
-    public String processAddOccasionForm(@ModelAttribute @Valid OccasionDTO recipientOccasion,
+    public String processAddOccasionForm(@ModelAttribute @Valid Occasion newOccasion,
                                     Errors errors,
                                     Model model) throws ParseException {
 
         if (!errors.hasErrors()) {
-            Recipient recipient = recipientOccasion.getRecipient();
-            Occasion occasion = recipientOccasion.getOccasion();
+            Recipient recipient = newOccasion.getRecipient();
 
-            if (!recipient.occasionNameAlreadyExists(occasion.getName()) && occasion.getName().length() > 0){
-                recipient.addOccasion(occasion);
+            if (!recipient.occasionNameAlreadyExists(newOccasion.getName()) && newOccasion.getName().length() > 0){
+                recipient.addOccasion(newOccasion);
 //                occasion.setSortableDate();
-                occasionRepository.save(occasion);
+                occasionRepository.save(newOccasion);
                 recipientRepository.save(recipient);
             }
             return "redirect:detail?recipientId=" + recipient.getId();
         }
 
-        Recipient recipient = recipientOccasion.getRecipient();
+        Recipient recipient = newOccasion.getRecipient();
         return "redirect:add-occasion?recipientId=" + recipient.getId();
+    }
+
+    @GetMapping("edit-occasion/{occasionId}")
+    public String displayEditOccasionForm(Model model, @PathVariable int occasionId) {
+        Occasion occasionToEdit = occasionRepository.findById(occasionId).get();
+        model.addAttribute("title", "Edit " + occasionToEdit.getName());
+        model.addAttribute("occasion", occasionToEdit);
+
+        ArrayList<String> standardOccasions = Occasion.getStandardOccasions();
+        ArrayList<Occasion> customOccasions = (ArrayList<Occasion>) occasionRepository.findAll();
+        ArrayList<String> occasions = new ArrayList<>();
+
+        for(int j = 0; j<standardOccasions.size(); j++){
+            occasions.add(standardOccasions.get(j));
+        }
+
+        if(customOccasions.size()>0){
+            for(int i = 0; i < customOccasions.size(); i++){
+                String occasionName = customOccasions.get(i).getName();
+                if(!standardOccasions.contains(occasionName)){
+                    occasions.add(occasionName);
+                }
+            }
+        }
+
+        Collections.sort(occasions);
+
+        model.addAttribute("occasions", occasions);
+
+        model.addAttribute("monthNames", OccasionTools.monthNameArr);
+        model.addAttribute("days29", OccasionTools.dayArr29);
+        model.addAttribute("days30", OccasionTools.dayArr30);
+        model.addAttribute("days31", OccasionTools.dayArr31);
+        model.addAttribute("years", OccasionTools.yearArr);
+
+        return "recipient/edit-occasion";
+    }
+
+    @PostMapping(value="edit-occasion")
+    public String processEditOccasionForm(@ModelAttribute @Valid Occasion occasion, Integer id,
+                                  Errors errors, Model model) throws ParseException {
+        if (errors.hasErrors()){
+            model.addAttribute("title", "Edit Occasion");
+            return "recipient/edit-occasion";
+        }
+
+        Occasion occasionToEdit = occasionRepository.findById(id).get();
+        occasionToEdit.setName(occasion.getName());
+        occasionToEdit.setDate(occasion.getDate());
+        occasionToEdit.setSortableDate();
+        occasionToEdit.setRecurring(occasion.isRecurring());
+        occasionRepository.save(occasionToEdit);
+//        model.addAttribute("occasions", recipient.getOccasions());
+        return "redirect:detail?recipientId=" + occasionToEdit.getRecipient().getId();
     }
 
     // ToDo: Build handlers to "remove" recipient

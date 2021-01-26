@@ -2,12 +2,12 @@
   <library name="Gradle: org.springframework.data:spring-data-jpa:2.2.11.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.11.RELEASE/37c75ff121d0e7eeb477229a8ec12121275e1356/spring-data-jpa-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.11.RELEASE/37c75ff121d0e7eeb477229a8ec12121275e1356/spring-data-jpa-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.11.RELEASE/37c75ff121d0e7eeb477229a8ec12121275e1356/spring-data-jpa-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.11.RELEASE/e878af04282016849dbb33cc2b87b0882abcbeaf/spring-data-jpa-2.2.11.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.11.RELEASE/e878af04282016849dbb33cc2b87b0882abcbeaf/spring-data-jpa-2.2.11.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.11.RELEASE/e878af04282016849dbb33cc2b87b0882abcbeaf/spring-data-jpa-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

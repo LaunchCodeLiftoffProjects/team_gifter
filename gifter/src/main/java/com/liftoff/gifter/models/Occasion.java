@@ -2,6 +2,7 @@ package com.liftoff.gifter.models;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.text.ParseException;
@@ -27,8 +28,8 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
             Arrays.asList("Christmas", "Mother's Day", "Father's Day", "Birthday", "Anniversary", "Graduation", "Valentine's Day", "Hanukkah", "Bar/Bat Mitzvah")
     );
 
-    @ManyToMany(mappedBy = "occasions")
-    private final List<Recipient> recipients = new ArrayList<>();
+    @ManyToOne
+    private Recipient recipient;
 
     public Occasion(String name, String date, boolean recurring) {
 
@@ -58,11 +59,15 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     }
 
     public void setSortableDate() throws ParseException{
-        this.sortableDate = formatter.parse(date);;
+        this.sortableDate = formatter.parse(date);
     }
 
-    public List<Recipient> getRecipients() {
-        return recipients;
+    public void setRecipient(Recipient recipient){
+        this.recipient = recipient;
+    }
+
+    public Recipient getRecipient() {
+        return recipient;
     }
 
     public static ArrayList<String> getStandardOccasions() {
@@ -86,7 +91,6 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
         Calendar cal1 = Calendar.getInstance();
         try {
             this.setSortableDate();
-            System.out.println(this.getSortableDate());
             o.setSortableDate();
         } catch (ParseException e) {
             e.printStackTrace();
@@ -97,13 +101,19 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 
         int month1 = cal1.get(Calendar.MONTH);
         int month2 = cal2.get(Calendar.MONTH);
+        int year1 = cal1.get(Calendar.YEAR);
+        int year2 = cal2.get(Calendar.YEAR);
 
-        if(month1 < month2)
+
+        if(year1 < year2) {
             return -1;
-        else if(month1 == month2)
+        } else if(year1 == year2 && month1 < month2) {
+            return -1;
+        } else if(month1 == month2) {
             return cal1.get(Calendar.DAY_OF_MONTH) - cal2.get(Calendar.DAY_OF_MONTH);
-
-        else return 1;
+        } else {
+            return 1;
+        }
 
     }
 

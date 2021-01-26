@@ -2,12 +2,12 @@
   <library name="Gradle: org.springframework:spring-aop:5.2.10.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.10.RELEASE/b875a6bce7b6b0040816f1fb945f5fd9557e1205/spring-aop-5.2.10.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.10.RELEASE/b875a6bce7b6b0040816f1fb945f5fd9557e1205/spring-aop-5.2.10.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.10.RELEASE/b875a6bce7b6b0040816f1fb945f5fd9557e1205/spring-aop-5.2.10.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.10.RELEASE/e910876e551087661054e38bbd2f9cca6b2c10ff/spring-aop-5.2.10.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.10.RELEASE/e910876e551087661054e38bbd2f9cca6b2c10ff/spring-aop-5.2.10.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.10.RELEASE/e910876e551087661054e38bbd2f9cca6b2c10ff/spring-aop-5.2.10.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

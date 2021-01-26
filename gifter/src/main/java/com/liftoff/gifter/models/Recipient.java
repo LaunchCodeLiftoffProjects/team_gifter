@@ -3,6 +3,7 @@ package com.liftoff.gifter.models;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -32,7 +33,7 @@ public class Recipient extends AbstractEntity {
 
     private String relationship;
 
-    @ManyToMany
+    @OneToMany(mappedBy = "recipient")
     private final List<Occasion> occasions = new ArrayList<>();
 
     private Date dateCreated;

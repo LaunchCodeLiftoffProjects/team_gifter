@@ -5,7 +5,7 @@
 
 <header th:replace="fragments :: header"></header>
 
-<form method="post" class="form" style="max-width: 400px" th:object="${occasion}">
+<form method="post" class="form" th:action="@{/recipient/edit-occasion}" style="max-width: 400px" th:object="${occasion}">
     <div class="form-group">
 
         <input class="form-control" type="hidden" th:field="${occasion.recipient}" />
@@ -78,7 +78,8 @@
 
     <input class="form-control" id="nameField" type="hidden" th:field="${occasion.name}" />
 
-    <input type="submit" class="btn btn-success" value="Add Occasion" onmousedown="submitOccasion()">
+    <input type="hidden" th:value="${occasion.id}" name="id"  />
+    <input type="submit" class="btn btn-success" value="Update Occasion" onmousedown="submitOccasion()">
 
 </form>
 <div th:replace="fragments :: footer"></div>
