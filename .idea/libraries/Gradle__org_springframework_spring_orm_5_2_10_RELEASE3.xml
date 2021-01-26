@@ -2,11 +2,9 @@
   <library name="Gradle: org.springframework:spring-orm:5.2.10.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.2.10.RELEASE/776384b37665f4b8022a65a2dc1cd3bb1172b3b7/spring-orm-5.2.10.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.2.10.RELEASE/776384b37665f4b8022a65a2dc1cd3bb1172b3b7/spring-orm-5.2.10.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.2.10.RELEASE/a18e5d3813c60f493386f4ec762dbf86893cafbb/spring-orm-5.2.10.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.2.10.RELEASE/a18e5d3813c60f493386f4ec762dbf86893cafbb/spring-orm-5.2.10.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
