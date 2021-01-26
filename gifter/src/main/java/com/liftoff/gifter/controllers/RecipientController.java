@@ -178,7 +178,7 @@ public class RecipientController {
     @GetMapping("edit-occasion/{occasionId}")
     public String displayEditOccasionForm(Model model, @PathVariable int occasionId) {
         Occasion occasionToEdit = occasionRepository.findById(occasionId).get();
-        model.addAttribute("title", "Edit Occasion");
+        model.addAttribute("title", "Edit " + occasionToEdit.getName());
         model.addAttribute("occasion", occasionToEdit);
 
         ArrayList<String> standardOccasions = Occasion.getStandardOccasions();
