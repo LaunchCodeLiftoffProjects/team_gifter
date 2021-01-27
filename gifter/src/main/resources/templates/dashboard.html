@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<div>
+    <span th:if="${numUpcoming == 1}">You have 1 upcoming occasion!</span>
+    <span th:unless="${numUpcoming == 1}" th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions!'"></span>
+<!--    <p th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions!'"></p>-->
+</div>
+
+
+</body>
+</html>

@@ -2,9 +2,11 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:2.2.11.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.2.11.RELEASE/dc0b619ba333fa3322fc9757aae65a748360767c/spring-boot-starter-data-jpa-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.2.11.RELEASE/dc0b619ba333fa3322fc9757aae65a748360767c/spring-boot-starter-data-jpa-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.2.11.RELEASE/6956b4cc8cd7a6dbccab20e9022452676f803a96/spring-boot-starter-data-jpa-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.2.11.RELEASE/6956b4cc8cd7a6dbccab20e9022452676f803a96/spring-boot-starter-data-jpa-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>

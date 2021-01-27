@@ -1,20 +1,27 @@
 package com.liftoff.gifter.controllers;
 
+import com.liftoff.gifter.AuthenticationFilter;
 import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
+import com.liftoff.gifter.data.UserRepository;
 import com.liftoff.gifter.models.Occasion;
 import com.liftoff.gifter.models.OccasionTools;
 import com.liftoff.gifter.models.Recipient;
-import com.liftoff.gifter.models.dto.OccasionDTO;
+import com.liftoff.gifter.models.User;
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.security.Principal;
 import java.text.ParseException;
 import java.util.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.ArrayList;
 
@@ -28,10 +35,17 @@ public class RecipientController {
     @Autowired
     private OccasionRepository occasionRepository;
 
+    @Autowired
+    UserRepository userRepository;
+
+    @Autowired
+    AuthenticationController authenticationController;
+
     @GetMapping(value = "")
     public String index(Model model) {
         model.addAttribute("title", "Recipients");
         model.addAttribute("recipients", recipientRepository.findAll());
+
         return "recipient/index";
     }
 
@@ -39,6 +53,7 @@ public class RecipientController {
     public String displayAddRecipientForm(Model model) {
         model.addAttribute("title", "Add Recipient");
         model.addAttribute(new Recipient());  // equivalent to ("recipient", new Recipient);
+
         return "recipient/add";
     }
 
