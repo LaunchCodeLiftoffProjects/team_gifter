@@ -32,7 +32,7 @@ public class GiftController {
         model.addAttribute( new Gift());
         model.addAttribute("recipients", recipientRepository.findAll());
 
-        return "gift/add";
+        return "gift/add-occasion";
     }
 
 
@@ -40,11 +40,11 @@ public class GiftController {
     public String processAddGiftForm(@ModelAttribute @Valid Gift newGift, Integer id, Errors errors, Model model){
 
         if (errors.hasErrors()){
-            return "gift/add";
+            return "gift/add-occasion";
         }
 
         giftRepository.save(newGift);
-        return "gift/add";
+        return "gift/add-occasion";
 
     }
 
