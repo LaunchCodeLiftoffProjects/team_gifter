@@ -49,6 +49,17 @@
         <a th:href="@{'/recipient/add'}">Add Recipient</a>
     </div>
 
+    <div class="form-group">
+        <label th:for="occasion">Occasion</label>
+        <select name="occasionId">
+            <option th:each="occasion : ${occasions}"
+                    th:text="${recipient.firstName} + ' ' + ${recipient.lastName}"
+                    th:value="${occasion.id}"></option>
+        </select>
+        <a th:href="@{'/occasion/add'}">Add Occasion</a>
+    </div>
+
+
     <input type="submit" class="btn btn-primary" value="Add Gift" />
 
 </form>
