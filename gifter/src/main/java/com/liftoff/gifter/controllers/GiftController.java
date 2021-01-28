@@ -65,7 +65,7 @@ public class GiftController {
             return "gift/edit";
         }
        Gift giftToEdit = giftRepository.findById(id).get();
-        giftToEdit.setName(gift.getName());
+        giftToEdit.setGiftName(gift.getGiftName());
         giftToEdit.setDescription(gift.getDescription());
         giftToEdit.setPrice(gift.getPrice());
         giftToEdit.setLink(gift.getLink());
