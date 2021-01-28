@@ -29,7 +29,10 @@
                 <tr>
                     <th th:text="${occasion.name}"></th>
                     <td th:text="${occasion.date}"></td>
-                    <td>Show gift idea names, link to gift detail page. If there are no gifts, link to Add Gift</td>
+                    <td th:unless="${occasion.gifts.size() > 0}">
+                        <span>You haven't added any gifts for this occasion.</span>
+                        <a href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>
+                    </td>
                     <td>
                         <a th:href="'/recipient/edit-occasion/' + ${occasion.id}">Edit</a>
                     </td>

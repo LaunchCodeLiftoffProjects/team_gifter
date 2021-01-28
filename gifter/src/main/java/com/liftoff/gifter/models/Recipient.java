@@ -35,7 +35,7 @@ public class Recipient extends AbstractEntity {
     private String relationship;
 
     @OneToMany(mappedBy = "recipient")
-    private final List<Occasion> occasions = new ArrayList<>();
+    private List<Occasion> occasions = new ArrayList<>();
 
     @ManyToOne
     private User user;
@@ -141,6 +141,10 @@ public class Recipient extends AbstractEntity {
 
     public List<Occasion> getOccasions() {
         return occasions;
+    }
+
+    public void setOccasions(List<Occasion> occasions) {
+        this.occasions = occasions;
     }
 
     public boolean occasionNameAlreadyExists(String name){

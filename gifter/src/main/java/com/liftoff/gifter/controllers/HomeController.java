@@ -44,7 +44,7 @@ public class HomeController {
     @GetMapping("/dashboard")
     public String dashboard(Model model) throws ParseException {
 
-        model.addAttribute("title", "Welcome to Gifter!");
+        model.addAttribute("title", "Welcome to Gifter");
 
         model.addAttribute("recipients", recipientRepository.findAll());
         List<Occasion> occasions = (List<Occasion>) occasionRepository.findAll();
@@ -56,7 +56,7 @@ public class HomeController {
         int currentDay = cal1.get(Calendar.DAY_OF_YEAR);
         int currentYear = cal1.get(Calendar.YEAR);
         Calendar cal2 = Calendar.getInstance();
-        int diff = 100;
+
         ArrayList<Occasion> upcoming = new ArrayList<>();
 
         for (int i = 0; i < occasions.size(); i++) {
@@ -64,6 +64,7 @@ public class HomeController {
             cal2.setTime(occasion.getSortableDate());
             int occasionDay = cal2.get(Calendar.DAY_OF_YEAR);
             int occasionYear = cal2.get(Calendar.YEAR);
+            int diff = 100;
 
             if (occasionYear == 1000 && occasionDay > currentDay) {
                 occasionYear = currentYear;

@@ -6,9 +6,28 @@
 <header th:replace="fragments :: header"></header>
 
 <div>
-    <span th:if="${numUpcoming == 1}">You have 1 upcoming occasion!</span>
-    <span th:unless="${numUpcoming == 1}" th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions!'"></span>
+    <h2 th:if="${numUpcoming == 1}">You have 1 upcoming occasion</h2>
+    <h2 th:unless="${numUpcoming == 1}" th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions'"></h2>
 <!--    <p th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions!'"></p>-->
+</div>
+
+<div th:if="${numUpcoming > 0}">
+    <table class="table table-striped">
+        <th:block th:each="occasion : ${upcoming}">
+            <tr>
+                <th th:text="${occasion.recipient.firstName} + ' ' + ${occasion.recipient.lastName}"></th>
+                <td th:text="${occasion.name}"></td>
+                <td th:text="${occasion.date}"></td>
+                <td th:unless="${occasion.gifts.size() > 0}">
+                    <span>You haven't added any gifts for this occasion.</span>
+                    <a href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>
+                </td>
+                <td>
+                    <a th:href="'/recipient/edit-occasion/' + ${occasion.id}">Edit</a>
+                </td>
+            </tr>
+        </th:block>
+    </table>
 </div>
 
 

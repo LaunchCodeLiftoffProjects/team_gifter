@@ -20,7 +20,7 @@ public class User extends AbstractEntity {
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
     @OneToMany(mappedBy = "user")
-    private final List<Recipient> recipients = new ArrayList<>();
+    private List<Recipient> recipients = new ArrayList<>();
 
     public User() {}
 
@@ -37,4 +37,11 @@ public class User extends AbstractEntity {
         return encoder.matches(password, pwHash);
     }
 
+    public List<Recipient> getRecipients() {
+        return recipients;
+    }
+
+    public void setRecipients(List<Recipient> recipients) {
+        this.recipients = recipients;
+    }
 }

@@ -32,38 +32,48 @@ public abstract class OccasionTools {
     }};
 
     public static List<Occasion> sortOccasions(List<Occasion> occasions) throws ParseException {
-        Collections.sort(occasions); /* occasions are now in chronological order from Jan 1 to Dec 31*/
 
         int currentDay = (Calendar.getInstance().get(Calendar.DAY_OF_YEAR));
         int currentYear = (Calendar.getInstance().get(Calendar.YEAR));
 
+        for(int i = 0; i < occasions.size(); i++) {
+            Calendar cal = Calendar.getInstance();
+            Occasion occasion = occasions.get(i);
+            occasion.setSortableDate();
+            cal.setTime(occasion.getSortableDate());
+            int occasionDay = cal.get(Calendar.DAY_OF_YEAR);
+            int occasionMonth = cal.get(Calendar.MONTH);
+            int occasionDayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
+
+            if (occasion.isRecurring() && occasionDay > currentDay) {
+                occasion.setDate(OccasionTools.monthNameArr.get(occasionMonth) + " " + occasionDayOfMonth + ", " + currentYear);
+            } else if (occasion.isRecurring() && occasionDay < currentDay) {
+                occasion.setDate(OccasionTools.monthNameArr.get(occasionMonth) + " " + occasionDayOfMonth + ", " + (currentYear + 1));
+            }
+        }
+
+        Collections.sort(occasions); /* occasions are now in absolute chronological order*/
 
         int j = 0;
         for (int i = 0; i < occasions.size(); i++) {
-            Calendar cal1 = Calendar.getInstance();
+            Calendar cal = Calendar.getInstance();
             Occasion occasion = occasions.get(j);
             occasion.setSortableDate();
-            cal1.setTime(occasion.getSortableDate());
-            int occasionDay = cal1.get(Calendar.DAY_OF_YEAR);
-            int occasionYear = cal1.get(Calendar.YEAR);
+            cal.setTime(occasion.getSortableDate());
+            int occasionDay = cal.get(Calendar.DAY_OF_YEAR);
+            int occasionYear = cal.get(Calendar.YEAR);
+            int occasionMonth = cal.get(Calendar.MONTH);
+            int occasionDayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
+
+//            if (occasion.isRecurring()) {
+//                occasion.setDate(OccasionTools.monthNameArr.get(occasionMonth) + " " + occasionDayOfMonth);
+//            }
 
             if(occasionDay < currentDay || occasionYear > currentYear) {
                 occasions.add(occasion);
                 occasions.remove(occasion);
             } else {
                 j++;
-            }
-        }
-
-        for (Occasion occasion : occasions) {
-            Calendar cal = Calendar.getInstance();
-            cal.setTime(occasion.getSortableDate());
-            int occasionYear = cal.get(Calendar.YEAR);
-            int occasionMonth = cal.get(Calendar.MONTH);
-            int occasionDay = cal.get(Calendar.DAY_OF_MONTH);
-
-            if (occasionYear == 1000) {
-                occasion.setDate(OccasionTools.monthNameArr.get(occasionMonth) + " " + occasionDay);
             }
         }
 

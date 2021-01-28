@@ -4,10 +4,7 @@ import com.liftoff.gifter.AuthenticationFilter;
 import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.data.UserRepository;
-import com.liftoff.gifter.models.Occasion;
-import com.liftoff.gifter.models.OccasionTools;
-import com.liftoff.gifter.models.Recipient;
-import com.liftoff.gifter.models.User;
+import com.liftoff.gifter.models.*;
 import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -80,7 +77,25 @@ public class RecipientController {
         } else {
             Recipient recipient = result.get();
             List<Occasion> occasions = recipient.getOccasions();
+
             Occasion.sortOccasions(occasions);
+
+            //deletes non-recurring dates that have passed.
+            //NOTE: they are deleted from the recipient but not the repository. This leaves possibility for them to be restored or archived for future reference.
+            java.util.Date currentDate = new java.util.Date();
+            ArrayList<Occasion> toBeRemoved = new ArrayList<>();
+            for (Occasion occasion : occasions) {
+                if (!occasion.isRecurring() && occasion.getSortableDate().compareTo(currentDate) < 0) {
+//                    occasionRepository.delete(occasion);
+                    toBeRemoved.add(occasion);
+                }
+            }
+
+            for (Occasion occasion : toBeRemoved) {
+                occasions.remove(occasion);
+            }
+            recipient.setOccasions(occasions);
+
             model.addAttribute("title", recipient.getFirstName() + ' ' + recipient.getLastName());
             model.addAttribute("recipient", recipient);
             model.addAttribute("occasions", occasions);

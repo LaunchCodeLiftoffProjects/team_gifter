@@ -63,3 +63,8 @@ ul {
 .contact-info {
     float: left;
 }
+
+html, body{
+    margin:0px;
+    padding:0px;
+}
