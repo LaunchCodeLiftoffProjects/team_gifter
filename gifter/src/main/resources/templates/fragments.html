@@ -19,10 +19,10 @@
 <body>
 
 <header th:fragment="header">
-<!--    <img class="logo" src="/images/gift.png" alt="logo" />-->
+
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
         <img class="logo" src="/images/gift.png" alt="logo" />
-        <a class="navbar-brand" th:href="@{/}">Gifter</a>
+        <a class="navbar-brand" th:href="@{/gifter}">Gifter</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,25 +34,26 @@
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/recipient/add}">Add Recipient</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/gift/add}">Add gift</a>
+                </li>
             </ul>
 
-<!--            <form class="form-inline" >-->
-<!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-<!--                <button class="btn btn-light my-sm-0" type="submit">Search</button>-->
-<!--            </form>-->
-
             <ul class="nav navbar-nav ml-auto">
-                <li>
-                    <form class="form-inline" >
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-light my-sm-0" type="submit">Search</button>
-                    </form>
+<!--                <li>-->
+<!--                    <form class="form-inline" >-->
+<!--                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                        <button class="btn btn-light my-sm-0" type="submit">Search</button>-->
+<!--                    </form>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/register"><span class="fas fa-user"></span> Register</a>-->
+<!--                </li>-->
+                <li class="nav-item" th:if="${session.isEmpty()}">
+                    <a class="nav-link" href="/login"><span class="fas fa-sign-in-alt"></span> Login</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+                <li class="nav-item" th:unless="${session.isEmpty()}">
+                    <a class="nav-link" href="/logout"><span class="fas fa-sign-out-alt"></span> Logout</a>
                 </li>
             </ul>
         </div>

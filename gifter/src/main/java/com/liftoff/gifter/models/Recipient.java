@@ -3,6 +3,7 @@ package com.liftoff.gifter.models;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -32,7 +33,7 @@ public class Recipient extends AbstractEntity {
 
     private String relationship;
 
-    @ManyToMany
+    @OneToMany(mappedBy = "recipient")
     private final List<Occasion> occasions = new ArrayList<>();
 
     private Date dateCreated;
@@ -138,7 +139,27 @@ public class Recipient extends AbstractEntity {
         return occasions;
     }
 
+    public boolean occasionNameAlreadyExists(String name){
+        ArrayList<String> occasionNames = new ArrayList<>();
+        for(int i = 0; i < this.getOccasions().size(); i++) {
+            String currentOccasion = this.getOccasions().get(i).getName().toLowerCase();
+            occasionNames.add(currentOccasion);
+        }
+        if(occasionNames.contains(name.toLowerCase())){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public void addOccasion(Occasion occasion) { this.occasions.add(occasion); }
+
+//    public List<Occasion> getSortedOccasions(){
+//        List<Occasion> unsortedOccasions = this.getOccasions();
+//
+//
+//        return sortedOccasions;
+//    }
 
     @Override
     public boolean equals(Object o) {
