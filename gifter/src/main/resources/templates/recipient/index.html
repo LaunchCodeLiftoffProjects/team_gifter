@@ -7,22 +7,11 @@
 
 <div th:unless="${recipients.isEmpty()}">
     <table class="table" >
-        <tr>
-            <!--            <th>Id</th>-->
-            <th>Name</th>
-            <th>Relationship</th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-
         <tr th:each="recipient : ${recipients}">
-            <!--            <td th:text="${recipient.id}"></td>-->
-            <td th:text="${recipient.firstName + ' ' + recipient.lastName}"></td>
-            <td th:text="${recipient.relationship}"></td>
-            <td><a th:href="@{'/recipient/detail/' + '?recipientId=' + ${recipient.id}}" title="Details for this recipient">Details</a></td>
-            <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Edit this recipient">Edit</a></td>
-            <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Remove this recipient">Remove</a></td>
+            <td>
+                <a th:text="${recipient.firstName + ' ' + recipient.lastName}" th:href="@{'/recipient/detail/' + '?recipientId=' + ${recipient.id}}" title="Details for this recipient"></a>
+            </td>
+            <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Edit this recipient">Edit/Remove</a></td>
         </tr>
     </table>
 
