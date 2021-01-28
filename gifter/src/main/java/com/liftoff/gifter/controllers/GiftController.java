@@ -26,21 +26,21 @@ public class GiftController {
 
 
 
-    @GetMapping(value = {"add", "add/{recipientId-occasion}"})
+    @GetMapping(value = {"add", "add/{recipientId}"})
     public String displayAddGiftForm(Model model, @PathVariable(required=false) Integer recipientId) {
         model.addAttribute("title", "Add Gift");
         model.addAttribute( new Gift());
         model.addAttribute("recipients", recipientRepository.findAll());
 
-        return "gift/add-occasion";
+        return "gift/add";
     }
 
 
-    @PostMapping(value = {"add", "add/{recipientId-occasion}"})
+    @PostMapping(value = {"add", "add/{recipientId}"})
     public String processAddGiftForm(@ModelAttribute @Valid Gift newGift, Integer id, Errors errors, Model model){
 
         if (errors.hasErrors()){
-            return "gift/add-occasion";
+            return "gift/add";
         }
 
         giftRepository.save(newGift);
