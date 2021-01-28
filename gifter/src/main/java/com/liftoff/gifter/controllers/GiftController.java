@@ -32,7 +32,7 @@ public class GiftController {
         model.addAttribute( new Gift());
         model.addAttribute("recipients", recipientRepository.findAll());
 
-        return "gift/add-occasion";
+        return "gift/add";
     }
 
 
