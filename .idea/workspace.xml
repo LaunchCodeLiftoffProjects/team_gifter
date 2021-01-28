@@ -240,7 +240,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611798281808</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="keep on doing it">
+      <created>1611798391101</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611798391101</updated>
+    </task>
+    <task id="LOCAL-00006" summary="All">
+      <created>1611798593217</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611798593217</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,7 +301,9 @@
     <MESSAGE value="new updates" />
     <MESSAGE value=" updates" />
     <MESSAGE value="not done" />
-    <option name="LAST_COMMIT_MESSAGE" value="not done" />
+    <MESSAGE value="keep on doing it" />
+    <MESSAGE value="All" />
+    <option name="LAST_COMMIT_MESSAGE" value="All" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -40,7 +40,7 @@ public class GiftController {
     public String processAddGiftForm(@ModelAttribute @Valid Gift newGift, Integer id, Errors errors, Model model){
 
         if (errors.hasErrors()){
-            return "gift/add-occasion";
+            return "gift/add";
         }
 
         giftRepository.save(newGift);
