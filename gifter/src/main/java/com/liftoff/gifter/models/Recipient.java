@@ -8,14 +8,12 @@ import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @Entity
-public class Recipient extends AbstractEntity {
+public class Recipient extends AbstractEntity implements Comparable<Recipient>{
 
     @NotNull
     @Size(min=2, max=20, message="First name is required. Must have 2 to 20 characters.")
@@ -162,12 +160,10 @@ public class Recipient extends AbstractEntity {
 
     public void addOccasion(Occasion occasion) { this.occasions.add(occasion); }
 
-//    public List<Occasion> getSortedOccasions(){
-//        List<Occasion> unsortedOccasions = this.getOccasions();
-//
-//
-//        return sortedOccasions;
-//    }
+    @Override
+    public int compareTo(Recipient o) {
+        return this.firstName.compareTo(o.firstName);
+    }
 
     @Override
     public boolean equals(Object o) {

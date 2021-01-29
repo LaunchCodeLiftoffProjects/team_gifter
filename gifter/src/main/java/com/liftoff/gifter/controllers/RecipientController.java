@@ -41,7 +41,9 @@ public class RecipientController {
     @GetMapping(value = "")
     public String index(Model model) {
         model.addAttribute("title", "Recipients");
-        model.addAttribute("recipients", recipientRepository.findAll());
+        List<Recipient> recipients = (List) recipientRepository.findAll();
+        Collections.sort(recipients); /
+        model.addAttribute("recipients", recipients);
 
         return "recipient/index";
     }
