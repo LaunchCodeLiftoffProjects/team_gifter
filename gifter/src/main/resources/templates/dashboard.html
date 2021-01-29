@@ -11,13 +11,32 @@
 <!--    <p th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions!'"></p>-->
 </div>
 
+<!--<div th:if="${numUpcoming > 0}">-->
+<!--    <table class="table table-striped">-->
+<!--        <th:block th:each="occasion : ${upcoming}">-->
+<!--            <tr>-->
+<!--                <th th:text="${occasion.date}"></th>-->
+<!--                <td th:text="${occasion.recipient.firstName} + ' ' + ${occasion.recipient.lastName}"></td>-->
+<!--                <td th:text="${occasion.name}"></td>-->
+<!--                <td th:unless="${occasion.gifts.size() > 0}">-->
+<!--                    <span>You haven't added any gifts for this occasion.</span>-->
+<!--                    <a href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <a th:href="'/recipient/edit-occasion/' + ${occasion.id}">Edit</a>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--        </th:block>-->
+<!--    </table>-->
+<!--</div>-->
+
 <div th:if="${numUpcoming > 0}">
     <table class="table table-striped">
         <th:block th:each="occasion : ${upcoming}">
             <tr>
-                <th th:text="${occasion.recipient.firstName} + ' ' + ${occasion.recipient.lastName}"></th>
+                <th th:text="${occasion.date}"></th>
+                <td th:text="${occasion.recipient.firstName} + ' ' + ${occasion.recipient.lastName}"></td>
                 <td th:text="${occasion.name}"></td>
-                <td th:text="${occasion.date}"></td>
                 <td th:unless="${occasion.gifts.size() > 0}">
                     <span>You haven't added any gifts for this occasion.</span>
                     <a href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>

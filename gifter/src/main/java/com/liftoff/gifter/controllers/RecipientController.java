@@ -42,7 +42,7 @@ public class RecipientController {
     public String index(Model model) {
         model.addAttribute("title", "Recipients");
         List<Recipient> recipients = (List) recipientRepository.findAll();
-        Collections.sort(recipients); /
+        Collections.sort(recipients);
         model.addAttribute("recipients", recipients);
 
         return "recipient/index";

@@ -18,7 +18,7 @@ import java.util.Calendar;
 import java.util.List;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/gifter")
 public class HomeController {
 
     @Autowired
