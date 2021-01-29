@@ -22,6 +22,7 @@
     <a th:if="${recipient.address == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Address</a>
 </div>
 
+<!--TODO: get rid of table, format more like dashboard-->
 <div>
     <h3 th:text="'Occasions for ' + ${recipient.firstName}"></h3>
     <table class="table table-striped">
