@@ -53,10 +53,10 @@
         <label th:for="occasion">Occasion</label>
         <select name="occasionId">
             <option th:each="occasion : ${occasions}"
-                    th:text="${recipient.firstName} + ' ' + ${recipient.lastName}"
+                    th:text="${occasion.name} "
                     th:value="${occasion.id}"></option>
         </select>
-        <a th:href="@{'/occasion/add'}">Add Occasion</a>
+        <a th:href="/recipient/add-occasion">Add Occasion</a>
     </div>
 
 

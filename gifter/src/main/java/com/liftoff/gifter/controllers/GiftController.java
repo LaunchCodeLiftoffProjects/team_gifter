@@ -31,6 +31,7 @@ public class GiftController {
         model.addAttribute("title", "Add Gift");
         model.addAttribute( new Gift());
         model.addAttribute("recipients", recipientRepository.findAll());
+        model.addAttribute("occasions", occasionRepository.findAll());
 
         return "gift/add";
     }
@@ -44,7 +45,7 @@ public class GiftController {
         }
 
         giftRepository.save(newGift);
-        return "gift/add-occasion";
+        return "gift/add";
 
     }
 
