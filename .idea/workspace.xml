@@ -13,7 +13,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit" />
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/recipient/detail.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -261,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611798992035</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="working">
+      <created>1611799722232</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611799722232</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,7 +322,8 @@
     <MESSAGE value="keep on doing it" />
     <MESSAGE value="All" />
     <MESSAGE value="mmm" />
-    <option name="LAST_COMMIT_MESSAGE" value="mmm" />
+    <MESSAGE value="working" />
+    <option name="LAST_COMMIT_MESSAGE" value="working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
