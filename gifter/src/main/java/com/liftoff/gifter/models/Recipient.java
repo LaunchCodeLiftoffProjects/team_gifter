@@ -2,15 +2,16 @@ package com.liftoff.gifter.models;
 
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
 
 @Entity
 public class Recipient extends AbstractEntity implements Comparable<Recipient>{
@@ -47,9 +48,9 @@ public class Recipient extends AbstractEntity implements Comparable<Recipient>{
         dateUpdated = new java.util.Date(System.currentTimeMillis());
     }
 
-    public Recipient(@NotNull @Size(min = 3, max = 20, message = "First name must have 3 to 20 characters.") String firstName,
-                     @NotNull @Size(min = 3, max = 20, message = "Last name must have 3 to 20 characters.") String lastName,
-                     @Email(message = "Email address must be properly formed.")
+    public Recipient(@NotNull @Size(min = 1, max = 50, message = "First name must have 1 to 50 characters.") String firstName,
+                     @NotNull @Size(min = 1, max = 50, message = "Last name must have 1 to 50 characters.") String lastName,
+                     @Email(message = "Please enter a valid email")
                      String email,
                      String relationship,
                      String address,
