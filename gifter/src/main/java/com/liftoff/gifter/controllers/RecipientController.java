@@ -39,11 +39,15 @@ public class RecipientController {
     AuthenticationController authenticationController;
 
     @GetMapping(value = "")
-    public String index(Model model) {
+    public String index(Model model) throws ParseException {
         model.addAttribute("title", "Recipients");
-        List<Recipient> recipients = (List) recipientRepository.findAll();
+        List<Recipient> recipients = (List<Recipient>) recipientRepository.findAll();
         Collections.sort(recipients);
         model.addAttribute("recipients", recipients);
+
+        for (Recipient recipient : recipients) {
+            Occasion.findUpcoming(recipient.getOccasions());
+        }
 
         return "recipient/index";
     }
@@ -147,10 +151,6 @@ public class RecipientController {
         Recipient recipient = result.get();
         model.addAttribute("title", "Add Occasions For " + recipient.getFirstName() + ' ' + recipient.getLastName());
 
-//        OccasionDTO recipientOccasion = new OccasionDTO();
-//        occasion.setRecipient(recipient);
-
-//        model.addAttribute("recipientOccasion", recipientOccasion);
         Occasion occasion = new Occasion();
         occasion.setRecurring(true);
         occasion.setRecipient(recipient);
