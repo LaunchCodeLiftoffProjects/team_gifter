@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.2.11.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.2.11.RELEASE/227e5ee1e3b35865b4075cf7a83f7906b8820560/spring-boot-starter-logging-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.2.11.RELEASE/227e5ee1e3b35865b4075cf7a83f7906b8820560/spring-boot-starter-logging-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.2.11.RELEASE/227e5ee1e3b35865b4075cf7a83f7906b8820560/spring-boot-starter-logging-2.2.11.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.2.11.RELEASE/528e927de784b2677b18c743653a3ed39a005c55/spring-boot-starter-logging-2.2.11.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.2.11.RELEASE/528e927de784b2677b18c743653a3ed39a005c55/spring-boot-starter-logging-2.2.11.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.2.11.RELEASE/528e927de784b2677b18c743653a3ed39a005c55/spring-boot-starter-logging-2.2.11.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

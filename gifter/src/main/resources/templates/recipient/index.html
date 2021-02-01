@@ -15,7 +15,7 @@
                 <span th:text="${T(com.liftoff.gifter.models.Occasion).findUpcoming(recipient.occasions).size() + ' upcoming occasions'}"></span>
             </td>
             <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Edit this recipient">Edit</a></td>
-            <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Remove this recipient">Remove</a></td>
+            <td><a th:href="@{'/recipient/remove/' + ${recipient.id}}" title="Remove this recipient">Remove</a></td>
         </tr>
     </table>
 
