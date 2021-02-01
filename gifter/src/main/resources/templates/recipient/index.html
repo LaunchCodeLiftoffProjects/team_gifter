@@ -22,7 +22,7 @@
             <td th:text="${recipient.relationship}"></td>
             <td><a th:href="@{'/recipient/detail/' + '?recipientId=' + ${recipient.id}}" title="Details for this recipient">Details</a></td>
             <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Edit this recipient">Edit</a></td>
-            <td><a th:href="@{'/recipient/edit/' + ${recipient.id}}" title="Remove this recipient">Remove</a></td>
+            <td><a th:href="@{'/recipient/remove/' + ${recipient.id}}" title="Remove this recipient">Remove</a></td>
         </tr>
     </table>
 
