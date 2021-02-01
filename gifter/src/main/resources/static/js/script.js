@@ -134,6 +134,10 @@ function hideYear() {
 }
 
 function phoneMask() {
+    const key = event.keyCode || event.charCode;
+    if( key === 8 || key === 46 ) {
+        return; //if it's del or backspace, exit the function
+    }
     let phoneInput = document.getElementById("phoneNumber")
     let num = $(phoneInput).val().replace(/\D/g,'');
     $(phoneInput).val('(' + num.substring(0,3) + ') ' + num.substring(3,6) + '-' + num.substring(6,10));
