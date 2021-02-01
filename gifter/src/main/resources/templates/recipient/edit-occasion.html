@@ -10,7 +10,7 @@
 
         <input class="form-control" type="hidden" th:field="${occasion.recipient}" />
 
-        <select class="form-control" id="standardName" required>
+        <select class="form-control" id="standardName" th:field="*{name}" required>
             <option value="" selected>Choose One</option>
             <option th:each="occasion : ${occasions}"
                     th:value="${occasion}"

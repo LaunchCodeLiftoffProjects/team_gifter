@@ -2,12 +2,10 @@
   <library name="Gradle: org.springframework.boot:spring-boot-devtools:2.2.11.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.2.11.RELEASE/3edbd8c90983a8f651d6316524a2c18345506a65/spring-boot-devtools-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.2.11.RELEASE/3edbd8c90983a8f651d6316524a2c18345506a65/spring-boot-devtools-2.2.11.RELEASE.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.2.11.RELEASE/3edbd8c90983a8f651d6316524a2c18345506a65/spring-boot-devtools-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.2.11.RELEASE/4bf44b3a21803ef72f269062a874c4ffc066f6d5/spring-boot-devtools-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.2.11.RELEASE/4bf44b3a21803ef72f269062a874c4ffc066f6d5/spring-boot-devtools-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.2.11.RELEASE/4bf44b3a21803ef72f269062a874c4ffc066f6d5/spring-boot-devtools-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
