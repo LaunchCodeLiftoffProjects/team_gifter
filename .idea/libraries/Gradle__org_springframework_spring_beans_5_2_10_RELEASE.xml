@@ -2,12 +2,10 @@
   <library name="Gradle: org.springframework:spring-beans:5.2.10.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.2.10.RELEASE/88d4eb1380940163b7cbfe1f991158f4a4cd7058/spring-beans-5.2.10.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.2.10.RELEASE/88d4eb1380940163b7cbfe1f991158f4a4cd7058/spring-beans-5.2.10.RELEASE.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.2.10.RELEASE/88d4eb1380940163b7cbfe1f991158f4a4cd7058/spring-beans-5.2.10.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.2.10.RELEASE/6a8c0bfd3f9f567ab226309f783dcf728c343be/spring-beans-5.2.10.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.2.10.RELEASE/6a8c0bfd3f9f567ab226309f783dcf728c343be/spring-beans-5.2.10.RELEASE-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.2.10.RELEASE/6a8c0bfd3f9f567ab226309f783dcf728c343be/spring-beans-5.2.10.RELEASE-sources.jar!/" />
     </SOURCES>
