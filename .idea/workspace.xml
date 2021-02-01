@@ -16,6 +16,9 @@
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Gift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +82,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1lIRu5TEwgVY9GmAm0PaKV0MueD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -278,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611890493324</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Edit on gift controller">
+      <created>1611891412522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611891412522</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,7 +348,8 @@
     <MESSAGE value="mmm" />
     <MESSAGE value="working" />
     <MESSAGE value="New changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="New changes" />
+    <MESSAGE value="Edit on gift controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit on gift controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
