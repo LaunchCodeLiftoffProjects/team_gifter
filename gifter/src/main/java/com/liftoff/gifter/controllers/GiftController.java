@@ -1,8 +1,10 @@
 package com.liftoff.gifter.controllers;
 
 import com.liftoff.gifter.data.GiftRepository;
+import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Gift;
+import com.liftoff.gifter.models.Occasion;
 import com.liftoff.gifter.models.Recipient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,6 +25,8 @@ public class GiftController {
 //    private Gift gift;
     @Autowired
     private RecipientRepository recipientRepository;
+    @Autowired
+    private OccasionRepository occasionRepository;
 
 
 
@@ -31,6 +35,7 @@ public class GiftController {
         model.addAttribute("title", "Add Gift");
         model.addAttribute( new Gift());
         model.addAttribute("recipients", recipientRepository.findAll());
+        model.addAttribute("occasions", occasionRepository.findAll());
 
         return "gift/add";
     }
@@ -43,11 +48,15 @@ public class GiftController {
             return "gift/add";
         }
 
+        Occasion occasion = newGift.getOccasion();
+        occasionRepository.save(occasion);
+
         giftRepository.save(newGift);
         return "gift/add";
 
     }
 
+    
     @GetMapping("edit/{recipientId}")
     public String displayEditForm(Model model, @PathVariable int recipientId) {
         Gift giftToEdit = giftRepository.findById(recipientId).get();

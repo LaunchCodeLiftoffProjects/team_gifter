@@ -2,14 +2,12 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:2.2.11.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/cb6cb012e3329fbda1eec504d4a84d0d458ab1ae/spring-boot-starter-jdbc-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/cb6cb012e3329fbda1eec504d4a84d0d458ab1ae/spring-boot-starter-jdbc-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/cb6cb012e3329fbda1eec504d4a84d0d458ab1ae/spring-boot-starter-jdbc-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/cb6cb012e3329fbda1eec504d4a84d0d458ab1ae/spring-boot-starter-jdbc-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/23b13958d7b00dd95dc7770bfe91da139d2dfe70/spring-boot-starter-jdbc-2.2.11.RELEASE-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/23b13958d7b00dd95dc7770bfe91da139d2dfe70/spring-boot-starter-jdbc-2.2.11.RELEASE-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/23b13958d7b00dd95dc7770bfe91da139d2dfe70/spring-boot-starter-jdbc-2.2.11.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.11.RELEASE/23b13958d7b00dd95dc7770bfe91da139d2dfe70/spring-boot-starter-jdbc-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

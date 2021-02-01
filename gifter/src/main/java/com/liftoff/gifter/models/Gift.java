@@ -15,22 +15,19 @@ public class Gift extends AbstractEntity {
     private String price;
     private String link;
 
-   @ManyToMany
-    private List<Recipient> recipients = new ArrayList<Recipient>();
-
    @ManyToOne
-   private Occasion occasion;
+    private Occasion occasion ;
 
     public Gift() {
 
     }
 
-    public Gift(String name,String description, String price, String link, List<Recipient> recipients) {
+    public Gift(String giftName,String description, String price, String link, Occasion occasion ) {
         this.giftName= giftName;
         this.description = description;
         this.price = price;
         this.link = link;
-        this.recipients = recipients;
+        this.occasion = occasion;
     }
 
     public String getGiftName() {return giftName; }
@@ -51,14 +48,6 @@ public class Gift extends AbstractEntity {
 
     public void setLink(String link) {
         this.link= link;
-    }
-
-    public List<Recipient> getRecipients() {
-        return recipients;
-    }
-
-    public void setRecipients(List<Recipient> recipients) {
-        this.recipients = recipients;
     }
 
     public Occasion getOccasion() {

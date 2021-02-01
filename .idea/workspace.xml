@@ -4,35 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
+    <expand />
+    <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Recipient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/GiftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Gift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/models/Occasion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/gifter">
@@ -63,11 +54,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="gifter" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -80,20 +66,30 @@
       <list>
         <option value="AnnotationType" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Thymeleaf" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/dev" />
+    <option name="BRANCH" value="dev" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gifter.addGift" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1lIRu5TEwgVY9GmAm0PaKV0MueD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -106,37 +102,83 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.liftoff.gifter.models" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.liftoff.gifter.models" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.gifter [bootRun]">
-    <configuration name="GifterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liftoff.gifter.GifterApplication" />
-      <module name="com.liftoff.gifter.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liftoff.gifter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="GifterApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gifter" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.liftoff.gifter.GifterApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="OccasionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true" show_console_on_std_out="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gifter" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.liftoff.gifter.OccasionTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="OccasionTests.testSortByDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gifter" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.liftoff.gifter.OccasionTests.testSortByDate&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="gifter [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -154,20 +196,24 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.GifterApplication" />
       <item itemvalue="Gradle.gifter [bootRun]" />
+      <item itemvalue="Gradle.GifterApplicationTests" />
+      <item itemvalue="Gradle.OccasionTests" />
+      <item itemvalue="Gradle.OccasionTests.testSortByDate" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.gifter [bootRun]" />
-        <item itemvalue="Application.GifterApplication" />
+        <item itemvalue="Gradle.OccasionTests.testSortByDate" />
+        <item itemvalue="Gradle.OccasionTests" />
+        <item itemvalue="Gradle.GifterApplicationTests" />
         <item itemvalue="Gradle.gifter [bootRun]" />
-        <item itemvalue="Gradle.gifter [bootRun]" />
-        <item itemvalue="Application.GifterApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -180,91 +226,77 @@
       <option name="presentableId" value="Default" />
       <updated>1607282839620</updated>
     </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1607565193058</created>
+    <task id="LOCAL-00001" summary="updated gift controller">
+      <created>1611795212269</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1607565193058</updated>
+      <updated>1611795212269</updated>
     </task>
-    <task id="LOCAL-00002" summary="Merged the landingPage into the development branch.">
-      <created>1610318190078</created>
+    <task id="LOCAL-00002" summary="new updates">
+      <created>1611796747459</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1610318190078</updated>
+      <updated>1611796747459</updated>
     </task>
-    <task id="LOCAL-00003" summary="Commit the problematic workspace.xml file">
-      <created>1610588000724</created>
+    <task id="LOCAL-00003" summary=" updates">
+      <created>1611796910068</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1610588000724</updated>
+      <updated>1611796910068</updated>
     </task>
-    <task id="LOCAL-00004" summary="Commit the problematic workspace.xml file">
-      <created>1610588463006</created>
+    <task id="LOCAL-00004" summary="not done">
+      <created>1611798281808</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1610588463006</updated>
+      <updated>1611798281808</updated>
     </task>
-    <task id="LOCAL-00005" summary="Commit the problematic workspace.xml file">
-      <created>1610589520090</created>
+    <task id="LOCAL-00005" summary="keep on doing it">
+      <created>1611798391101</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1610589520090</updated>
+      <updated>1611798391101</updated>
     </task>
-    <task id="LOCAL-00006" summary="commit before pull">
-      <created>1611629815035</created>
+    <task id="LOCAL-00006" summary="All">
+      <created>1611798593217</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1611629815035</updated>
+      <updated>1611798593217</updated>
     </task>
-    <task id="LOCAL-00007" summary="commit before pull">
-      <created>1611630155342</created>
+    <task id="LOCAL-00007" summary="mmm">
+      <created>1611798992035</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1611630155342</updated>
+      <updated>1611798992035</updated>
     </task>
-    <task id="LOCAL-00008" summary="Auto-focus Username on load.">
-      <created>1612140531618</created>
+    <task id="LOCAL-00008" summary="working">
+      <created>1611799722232</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1612140531618</updated>
+      <updated>1611799722232</updated>
     </task>
-    <task id="LOCAL-00009" summary="Login Form ==&gt; Auto-focus Username on load.">
-      <created>1612141135192</created>
+    <task id="LOCAL-00009" summary="New changes">
+      <created>1611890493324</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1612141135192</updated>
+      <updated>1611890493324</updated>
     </task>
-    <task id="LOCAL-00010" summary="Login Form ==&gt; Auto-focus Username on load.">
-      <created>1612141214302</created>
+    <task id="LOCAL-00010" summary="Edit on gift controller">
+      <created>1611891412522</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1612141214302</updated>
+      <updated>1611891412522</updated>
     </task>
-    <task id="LOCAL-00011" summary="Added handler to remove recipient.">
-      <created>1612144064503</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1612144064503</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Edit occasion ==&gt; Auto-fills the name of the occasion.">
-      <created>1612175875474</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1612175875474</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,49 +315,55 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/dev" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/landingPage" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Initial commit of persistent recipients" />
-    <MESSAGE value="Merged the landingPage into the development branch." />
-    <MESSAGE value="Commit the problematic workspace.xml file" />
-    <MESSAGE value="commit before pull" />
-    <MESSAGE value="Auto-focus Username on load." />
-    <MESSAGE value="Login Form ==&gt; Auto-focus Username on load." />
-    <MESSAGE value="Added handler to remove recipient." />
-    <MESSAGE value="Edit occasion ==&gt; Auto-fills the name of the occasion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit occasion ==&gt; Auto-fills the name of the occasion." />
+    <MESSAGE value="Pull from dev" />
+    <MESSAGE value="updated gift controller" />
+    <MESSAGE value="new updates" />
+    <MESSAGE value=" updates" />
+    <MESSAGE value="not done" />
+    <MESSAGE value="keep on doing it" />
+    <MESSAGE value="All" />
+    <MESSAGE value="mmm" />
+    <MESSAGE value="working" />
+    <MESSAGE value="New changes" />
+    <MESSAGE value="Edit on gift controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit on gift controller" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1819" height="180" key="GridCell.Tab.0.bottom" timestamp="1612213690388">
-      <screen x="1440" y="-155" width="1920" height="999" />
-    </state>
-    <state width="1819" height="180" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612213690388" />
-    <state width="1819" height="180" key="GridCell.Tab.0.center" timestamp="1612213690386">
-      <screen x="1440" y="-155" width="1920" height="999" />
-    </state>
-    <state width="1819" height="180" key="GridCell.Tab.0.center/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612213690386" />
-    <state width="1819" height="180" key="GridCell.Tab.0.left" timestamp="1612213690385">
-      <screen x="1440" y="-155" width="1920" height="999" />
-    </state>
-    <state width="1819" height="180" key="GridCell.Tab.0.left/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612213690385" />
-    <state width="1819" height="180" key="GridCell.Tab.0.right" timestamp="1612213690387">
-      <screen x="1440" y="-155" width="1920" height="999" />
-    </state>
-    <state width="1819" height="180" key="GridCell.Tab.0.right/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612213690387" />
-    <state x="1805" y="3" key="MergeDialog" timestamp="1612209776939">
-      <screen x="1440" y="-155" width="1920" height="999" />
-    </state>
-    <state x="1805" y="3" key="MergeDialog/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612209776939" />
-    <state x="2014" y="110" key="MultipleFileMergeDialog" timestamp="1612209777017">
-      <screen x="1440" y="-155" width="1920" height="999" />
-    </state>
-    <state x="2014" y="110" key="MultipleFileMergeDialog/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612209777017" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gifter/src/main/java/com/liftoff/gifter/controllers/RecipientController.java</url>
+          <line>213</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
