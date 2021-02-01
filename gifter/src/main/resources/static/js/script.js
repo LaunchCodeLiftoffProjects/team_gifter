@@ -133,4 +133,11 @@ function hideYear() {
     }
 }
 
+function phoneMask() {
+    let phoneInput = document.getElementById("phoneNumber")
+    let num = $(phoneInput).val().replace(/\D/g,'');
+    $(phoneInput).val('(' + num.substring(0,3) + ') ' + num.substring(3,6) + '-' + num.substring(6,10));
+
+}
+
 

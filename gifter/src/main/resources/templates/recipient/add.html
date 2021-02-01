@@ -37,7 +37,7 @@
             <option value="Child">Child</option>
             <option value="Significant Other">Significant Other</option>
             <option value="Friend">Friend</option>
-            <option value="Co-Worker">Co-Worker</option>
+            <option value="Coworker">Co-Worker</option>
             <option value="Other">Other</option>
         </select>
         <span th:errors="*{relationship}" class="error"></span>
@@ -53,8 +53,8 @@
 
     <div class="form-group">
         <label th:for="phoneNumber">Phone Number</label>
-        <input type="tel" class="form-control"
-               th:field="*{phoneNumber}" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" />
+        <input type="tel" class="form-control" id="phoneNumber" onkeyup="phoneMask()"
+               th:field="*{phoneNumber}" placeholder="(123) 456-7890"/>
         <span th:errors="*{phoneNumber}" class="error"></span>
     </div>
 

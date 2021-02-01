@@ -50,7 +50,8 @@
 
     <div class="form-group">
         <label th:for="phoneNumber">Phone Number</label>
-        <input class="form-control" th:field="*{phoneNumber}" placeholder="Format: 123-456-7890" />
+        <input type="tel" class="form-control" id="phoneNumber" onkeyup="phoneMask()"
+               th:field="*{phoneNumber}" placeholder="(123) 456-7890"/>
         <span th:errors="*{phoneNumber}" class="error"></span>
     </div>
 
