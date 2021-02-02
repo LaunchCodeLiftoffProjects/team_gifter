@@ -1,8 +1,8 @@
 package com.liftoff.gifter.models;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.text.ParseException;
@@ -30,6 +30,9 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 
     @ManyToOne
     private Recipient recipient;
+
+    @OneToMany(mappedBy="occasion")
+    private List<Gift> gifts = new ArrayList<>();
 
     public Occasion(String name, String date, boolean recurring) {
 
@@ -84,6 +87,14 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 
     public void setRecurring(boolean recurring) {
         this.recurring = recurring;
+    }
+
+    public List<Gift> getGifts() {
+        return gifts;
+    }
+
+    public void setGifts(List<Gift> gifts) {
+        this.gifts = gifts;
     }
 
     @Override

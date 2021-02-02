@@ -3,13 +3,11 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.2.11.RELEASE/a0b76e7b9ce40d74ade299969947b17d8ffa0107/spring-boot-starter-validation-2.2.11.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.2.11.RELEASE/a0b76e7b9ce40d74ade299969947b17d8ffa0107/spring-boot-starter-validation-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.2.11.RELEASE/a0b76e7b9ce40d74ade299969947b17d8ffa0107/spring-boot-starter-validation-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.2.11.RELEASE/8e34f7361dcb341016d6e85955d2817ba071e4f9/spring-boot-starter-validation-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.2.11.RELEASE/8e34f7361dcb341016d6e85955d2817ba071e4f9/spring-boot-starter-validation-2.2.11.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.2.11.RELEASE/8e34f7361dcb341016d6e85955d2817ba071e4f9/spring-boot-starter-validation-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
