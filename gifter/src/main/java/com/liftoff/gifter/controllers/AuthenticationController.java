@@ -79,7 +79,7 @@ public class AuthenticationController {
         userRepository.save(newUser);
         setUserInSession(request.getSession(), newUser);
 
-        return "dashboard";
+        return "redirect:/gifter/dashboard";
     }
 
     @GetMapping("/login")
@@ -117,7 +117,7 @@ public class AuthenticationController {
 
         setUserInSession(request.getSession(), theUser);
 
-        return "dashboard";
+        return "redirect:/gifter/dashboard";
     }
 
     @GetMapping("/logout")
