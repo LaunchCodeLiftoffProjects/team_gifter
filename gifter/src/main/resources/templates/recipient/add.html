@@ -5,31 +5,27 @@
 
 <header th:replace="fragments :: header"></header>
 
-<form method="post" class="form" style="max-width: 400px" th:object="${recipient}">
+<form method="post" class="form" style="max-width: 550px" th:object="${recipient}">
 
-    <div class="form-group">
-        <label th:for="firstName">First Name</label>
-        <input class="form-control" id="focus"
-               th:field="*{firstName}" placeholder="2 to 20 characters allowed" />
-        <span th:errors="*{firstName}" class="error"></span>
-    </div>
+    <div class="form-row">
+        <div class="form-group col-md-5">
+            <label th:for="firstName">First Name</label>
+            <input class="form-control" id="focus"
+                   th:field="*{firstName}" placeholder="" />
+            <span th:errors="*{firstName}" class="error"></span>
+        </div>
 
-    <div class="form-group">
-        <label th:for="lastName">Last Name</label>
-        <input class="form-control"
-               th:field="*{lastName}" placeholder="2 to 20 characters allowed" />
-        <span th:errors="*{lastName}" class="error"></span>
-    </div>
-
-    <div class="form-group">
-        <label th:for="email">Email</label>
-        <input type="email" class="form-control" th:field="*{email}" placeholder="name@example.com" />
-        <span th:errors="*{email}" class="error"></span>
+        <div class="form-group col-md-7">
+            <label th:for="lastName">Last Name</label>
+            <input class="form-control"
+                   th:field="*{lastName}" placeholder="" />
+            <span th:errors="*{lastName}" class="error"></span>
+        </div>
     </div>
 
     <div class="form-group">
         <label th:for="relationship">Relationship</label>
-        <select class="form-control" name="relationship" th:field="*{relationship}" required>
+        <select class="form-control col-md-5" name="relationship" th:field="*{relationship}" required>
             <option value="" selected>Choose One</option>
             <option value="Spouse">Spouse</option>
             <option value="Parent">Parent</option>
@@ -37,25 +33,31 @@
             <option value="Child">Child</option>
             <option value="Significant Other">Significant Other</option>
             <option value="Friend">Friend</option>
-            <option value="Co-Worker">Co-Worker</option>
+            <option value="Coworker">Co-Worker</option>
             <option value="Other">Other</option>
         </select>
         <span th:errors="*{relationship}" class="error"></span>
     </div>
 
-<!--    TODO: Tweak inputs for address and phone number to ensure proper formatting-->
+    <div class="form-row">
+        <div class="form-group col-md-5">
+            <label th:for="phoneNumber">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" onkeyup="phoneMask()"
+                   th:field="*{phoneNumber}" placeholder="(123) 456-7890"/>
+            <span th:errors="*{phoneNumber}" class="error"></span>
+        </div>
 
-    <div class="form-group">
-        <label th:for="address">Address</label>
-        <input class="form-control" th:field="*{address}" placeholder="This input field needs some tweakin'" />
-        <span th:errors="*{address}" class="error"></span>
+        <div class="form-group col-md-7">
+            <label th:for="email">Email</label>
+            <input type="email" class="form-control" th:field="*{email}" placeholder="name@example.com" />
+            <span th:errors="*{email}" class="error"></span>
+        </div>
     </div>
 
     <div class="form-group">
-        <label th:for="phoneNumber">Phone Number</label>
-        <input type="tel" class="form-control"
-               th:field="*{phoneNumber}" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" />
-        <span th:errors="*{phoneNumber}" class="error"></span>
+        <label th:for="address">Shipping Address</label>
+        <input class="form-control" th:field="*{address}" placeholder="" />
+        <span th:errors="*{address}" class="error"></span>
     </div>
 
     <input type="submit" class="btn btn-primary" value="Add Recipient" />
