@@ -12,7 +12,7 @@
 
         <label th:for="giftName">Gift Name</label>
         <input class="form-control"
-               th:field="*{name}"  />
+               th:field="*{name}"/>
         <span th:errors="*{name}" class="error"></span>
     </div>
 
@@ -60,11 +60,11 @@
                 <!--                    th:selected="${occasion.id == occasionId}"-->
             </option>
         </select>
-        <a th:href="'/recipient/add-occasion'">Add New Occasion</a>
+        <a th:href="'/recipient/add-occasion?recipientId=' + ${recipientId}">Add New Occasion</a>
     </div>
 
 
-    <input type="submit" class="btn btn-primary" value="Add Gift" th:href="'/recipient/detail'"/>
+    <input type="submit" class="btn btn-primary" value="Add Gift"/>
 
 </form>
 
