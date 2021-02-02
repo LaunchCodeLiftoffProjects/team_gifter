@@ -2,25 +2,24 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
 <body class="container body-content">
-<h1>Add Gift</h1>
 
 <header th:replace="fragments :: header"></header>
 
 
 <form method="post" class="form" style="max-width: 400px" th:object="${gift}">
 
-   <div class="form-group">
+    <div class="form-group">
 
-        <label th:for="name">Gift Name</label>
+        <label th:for="giftName">Gift Name</label>
         <input class="form-control"
-               th:field="*{giftName}"  />
-        <span th:errors="*{giftName}" class="error"></span>
+               th:field="*{name}"/>
+        <span th:errors="*{name}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="description">Description</label>
         <input class="form-control"
-               th:field="*{description}"  />
+               th:field="*{description}"/>
         <span th:errors="*{description}" class="error"></span>
     </div>
 
@@ -39,28 +38,33 @@
     </div>
 
 
-    <div class="form-group">
-        <label th:for="recipient">Recipient</label>
-        <select name="recipientId">
-            <option th:each="recipient : ${recipients}"
-                    th:text="${recipient.firstName} + ' ' + ${recipient.lastName}"
-                    th:value="${recipient.id}"></option>
-        </select>
-        <a th:href="@{'/recipient/add'}">Add Recipient</a>
-    </div>
+    <!--    <div class="form-group">-->
+    <!--        <label th:for="recipient">Recipient</label>-->
+    <!--        <select name="recipientId" id="recipientSelect"/>-->
+    <!--            <option value="">Choose One</option>-->
+    <!--            <option th:each="recipient : ${recipients}"-->
+    <!--                    th:text="${recipient.firstName} + ' ' + ${recipient.lastName}"-->
+    <!--                    th:value="${recipient.id}"-->
+    <!--                    th:selected="${recipient.id == recipientId}"></option>-->
+    <!--        </select>-->
+    <!--        <a th:href="@{'/recipient/add'}">Add New Recipient</a>-->
+    <!--    </div>-->
 
-    <div class="form-group">
+    <div class="form-group" >
         <label th:for="occasion">Occasion</label>
         <select th:field="${gift.occasion}" name="occasionId">
             <option th:each="occasion : ${occasions}"
-                    th:text="${occasion.name} "
-                    th:value="${occasion.id}"></option>
+                    th:if="${occasion.recipient.id == recipientId}"
+                    th:text="${occasion.name}"
+                    th:value="${occasion.id}">
+                <!--                    th:selected="${occasion.id == occasionId}"-->
+            </option>
         </select>
-        <a th:href="'/recipient/add-occasion'">Add Occasion</a>
+        <a th:href="'/recipient/add-occasion?recipientId=' + ${recipientId}">Add New Occasion</a>
     </div>
 
 
-    <input type="submit" class="btn btn-primary" value="Add Gift" />
+    <input type="submit" class="btn btn-primary" value="Add Gift"/>
 
 </form>
 

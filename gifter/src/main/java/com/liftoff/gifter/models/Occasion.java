@@ -1,7 +1,6 @@
 package com.liftoff.gifter.models;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
@@ -32,9 +31,8 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
     @ManyToOne
     private Recipient recipient;
 
-    @OneToMany(mappedBy = "occasion")
+    @OneToMany(mappedBy="occasion")
     private List<Gift> gifts = new ArrayList<>();
-
 
     public Occasion(String name, String date, boolean recurring) {
 
@@ -89,6 +87,48 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 
     public void setRecurring(boolean recurring) {
         this.recurring = recurring;
+    }
+
+    public List<Gift> getGifts() {
+        return gifts;
+    }
+
+    public void setGifts(List<Gift> gifts) {
+        this.gifts = gifts;
+    }
+
+    public static List<Occasion> findUpcoming(List<Occasion> occasions) throws ParseException {
+        Occasion.sortOccasions(occasions);
+        Calendar cal1 = Calendar.getInstance();
+        int currentDay = cal1.get(Calendar.DAY_OF_YEAR);
+        int currentYear = cal1.get(Calendar.YEAR);
+        Calendar cal2 = Calendar.getInstance();
+
+        ArrayList<Occasion> upcoming = new ArrayList<>();
+
+        for (int i = 0; i < occasions.size(); i++) {
+            Occasion occasion = occasions.get(i);
+            cal2.setTime(occasion.getSortableDate());
+            int occasionDay = cal2.get(Calendar.DAY_OF_YEAR);
+            int occasionYear = cal2.get(Calendar.YEAR);
+            int diff = 100;
+
+            if (occasionYear == 1000 && occasionDay > currentDay) {
+                occasionYear = currentYear;
+            } else if (occasionYear == 1000 && occasionDay < currentDay) {
+                occasionYear = currentYear+1;
+            }
+            if (currentDay > 319 && occasionYear == currentYear+1) {
+                diff = (364-currentDay) + occasionDay;
+            } else if (occasionDay - currentDay >=0 && occasionYear == currentYear) {
+                diff = (occasionDay - currentDay);
+            }
+
+            if (diff<45) {
+                upcoming.add(occasion);
+            }
+        }
+        return upcoming;
     }
 
     @Override

@@ -3,13 +3,13 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/59d75268daa1aea763e8f9c786c0e71de90f7cb3/spring-data-commons-2.2.11.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/59d75268daa1aea763e8f9c786c0e71de90f7cb3/spring-data-commons-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/59d75268daa1aea763e8f9c786c0e71de90f7cb3/spring-data-commons-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/59d75268daa1aea763e8f9c786c0e71de90f7cb3/spring-data-commons-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/9c5a3cb58200d25bd2d8707bfcf47da44c4579f9/spring-data-commons-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/9c5a3cb58200d25bd2d8707bfcf47da44c4579f9/spring-data-commons-2.2.11.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/9c5a3cb58200d25bd2d8707bfcf47da44c4579f9/spring-data-commons-2.2.11.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.2.11.RELEASE/9c5a3cb58200d25bd2d8707bfcf47da44c4579f9/spring-data-commons-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

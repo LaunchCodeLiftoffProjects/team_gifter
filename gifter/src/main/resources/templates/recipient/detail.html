@@ -22,36 +22,46 @@
     <a th:if="${recipient.address == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Address</a>
 </div>
 
+<!--TODO: get rid of table, format more like dashboard-->
 <div>
     <h3 th:text="'Occasions for ' + ${recipient.firstName}"></h3>
     <table class="table table-striped">
-            <th:block th:each="occasion : ${occasions}">
-                <tr>
-                    <th th:text="${occasion.name}"></th>
-                    <td th:text="${occasion.date}"></td>
-                    <td>Show gift idea names, link to gift detail page. If there are no gifts, link to Add Gift</td>
-                    <td>
-                        <a th:href="'/recipient/edit-occasion/' + ${occasion.id}">Edit</a>
-                    </td>
-                </tr>
-            </th:block>
-    </table>
-</div>
-<div>
-    <h3 th:text="'Gifts for ' + ${recipient.firstName}"></h3>
-    <table class="table table-striped">
-        <th:block th:each="gift : ${gifts}">
+        <th:block th:each="occasion : ${occasions}">
             <tr>
-                <th th:text="${gift.name}"></th>
-                <td th:text="${gift.date}"></td>
-                <td>Show gift idea names, link to gift detail page. If there are no gifts, link to Add Gift</td>
+                <th th:text="${occasion.name}"></th>
+                <td th:text="${occasion.date}"></td>
+                <td th:unless="${occasion.gifts.size() > 0}">
+                    <span>You haven't added any gifts for this occasion.</span>
+                    <a th:href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>
+                </td>
+                <td th:if="${occasion.gifts.size() > 0}">
+                        <span th:each="gift : ${occasion.gifts}">
+                            <span th:text="${gift.name} + ' --'"></span>
+                        </span>
+                    <a th:href="'/gift/add/' + ${occasion.recipient.id}">Add another</a>
+                </td>
                 <td>
-                    <a th:href="'/recipient/add-occasion/' + ${occasion.id}">Add Gift</a>
+                    <a th:href="'/recipient/edit-occasion/' + ${occasion.id}">Edit</a>
                 </td>
             </tr>
         </th:block>
     </table>
 </div>
+<!--<div>-->
+<!--    <h3 th:text="'Gifts for ' + ${recipient.firstName}"></h3>-->
+<!--    <table class="table table-striped">-->
+<!--        <th:block th:each="gift : ${gifts}">-->
+<!--            <tr>-->
+<!--                <th th:text="${gift.name}"></th>-->
+<!--                <td th:text="${gift.date}"></td>-->
+<!--                <td>Show gift idea names, link to gift detail page. If there are no gifts, link to Add Gift</td>-->
+<!--                <td>-->
+<!--                    <a th:href="'/recipient/add-occasion/' + ${occasion.id}">Add Gift</a>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--        </th:block>-->
+<!--    </table>-->
+<!--</div>-->
 <!--<a th:href="'/recipient/add-occasion?recipientId=' + ${recipient.id}">Add Occasion</a>-->
 <a th:href="'/recipient/add-occasion?recipientId=' + ${recipient.id}">Add Occasion</a>
 <a th:href="'/recipient/edit/' + ${recipient.id}">Edit Recipient Info</a>

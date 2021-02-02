@@ -5,18 +5,15 @@ import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Occasion;
 import com.liftoff.gifter.models.OccasionTools;
 import com.liftoff.gifter.models.Recipient;
-import com.liftoff.gifter.models.dto.OccasionDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.text.ParseException;
 import java.util.*;
-
-import javax.validation.Valid;
-import java.util.ArrayList;
 
 @Controller
 @RequestMapping("recipient")
@@ -230,6 +227,13 @@ public class RecipientController {
     }
 
     // ToDo: Build handlers to "remove" recipient
+    @GetMapping(value = "remove/{id}")
+    public String processRemoveRecipientForm(Model model, @PathVariable int id) {
+        recipientRepository.delete(recipientRepository.findById(id).get());
+        model.addAttribute("title", "Recipients");
+        model.addAttribute("recipients", recipientRepository.findAll());
+        return "recipient/index";
+    }
 
 }
 

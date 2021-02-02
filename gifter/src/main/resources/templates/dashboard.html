@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<div>
+    <h2 th:if="${numUpcoming == 1}">You have 1 upcoming occasion</h2>
+    <h2 th:unless="${numUpcoming == 1}" th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions'"></h2>
+    <!--    <p th:text="'You have ' + ${numUpcoming}+ ' upcoming occasions!'"></p>-->
+</div>
+
+<div th:if="${numUpcoming > 0}">
+    <th:block th:each="occasion : ${upcoming}">
+        <div>
+            <h4 th:text="${occasion.date}"></h4>
+            <!--           TODO: indent these lines, style for readability-->
+            <span th:text="${occasion.recipient.firstName} + ' ' + ${occasion.recipient.lastName} + ':'"></span>
+            <span th:text="${occasion.name}"></span>
+            <span>
+                <a th:href="'/recipient/edit-occasion/' + ${occasion.id}">Edit This Occasion</a>
+            </span>
+        </div>
+        <div>
+            <span th:unless="${occasion.gifts.size() > 0}">
+                <span>You haven't added any gifts for this occasion.</span>
+                <a href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>
+            </span>
+
+            <!--            TODO: th:if to display gifts for this occasion-->
+
+        </div>
+        <p></p>
+    </th:block>
+</div>
+
+
+</body>
+</html>
