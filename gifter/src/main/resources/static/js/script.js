@@ -144,4 +144,7 @@ function phoneMask() {
 
 }
 
-
+function toggleOccasionSelect() {
+    let recipientId = document.getElementById("recipientSelect").value;
+    let recipients =
+}

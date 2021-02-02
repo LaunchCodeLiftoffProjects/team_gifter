@@ -32,7 +32,13 @@
                     <td th:text="${occasion.date}"></td>
                     <td th:unless="${occasion.gifts.size() > 0}">
                         <span>You haven't added any gifts for this occasion.</span>
-                        <a href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>
+                        <a th:href="'/gift/add/' + ${occasion.recipient.id}">Add one now</a>
+                    </td>
+                    <td th:if="${occasion.gifts.size() > 0}">
+                        <span th:each="gift : ${occasion.gifts}">
+                            <span th:text="${gift.giftName} + ' --'"></span>
+                        </span>
+                        <a th:href="'/gift/add/' + ${occasion.recipient.id}">Add another</a>
                     </td>
                     <td>
                         <a th:href="'/recipient/edit-occasion/' + ${occasion.id}">Edit</a>

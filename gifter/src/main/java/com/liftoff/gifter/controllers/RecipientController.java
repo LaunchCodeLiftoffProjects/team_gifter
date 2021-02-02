@@ -76,7 +76,6 @@ public class RecipientController {
 
         Optional<Recipient> result = recipientRepository.findById(recipientId);
 
-
         //TODO: fix this to show proper error message
         if (result.isEmpty()) {
             model.addAttribute("title", "Recipient Does Not Exist");
@@ -189,14 +188,13 @@ public class RecipientController {
     @PostMapping("add-occasion")
     public String processAddOccasionForm(@ModelAttribute @Valid Occasion newOccasion,
                                     Errors errors,
-                                    Model model) throws ParseException {
+                                    Model model) {
 
         if (!errors.hasErrors()) {
             Recipient recipient = newOccasion.getRecipient();
 
             if (!recipient.occasionNameAlreadyExists(newOccasion.getName()) && newOccasion.getName().length() > 0){
                 recipient.addOccasion(newOccasion);
-//                occasion.setSortableDate();
                 occasionRepository.save(newOccasion);
                 recipientRepository.save(recipient);
             }

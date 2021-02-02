@@ -3,13 +3,11 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.2.11.RELEASE/c730f68aafa083ba205c1723c158bd28c9dbfaca/spring-boot-starter-web-2.2.11.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.2.11.RELEASE/c730f68aafa083ba205c1723c158bd28c9dbfaca/spring-boot-starter-web-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.2.11.RELEASE/c730f68aafa083ba205c1723c158bd28c9dbfaca/spring-boot-starter-web-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.2.11.RELEASE/d38201dc2b9d00364a194f536b4062381f2e5eae/spring-boot-starter-web-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.2.11.RELEASE/d38201dc2b9d00364a194f536b4062381f2e5eae/spring-boot-starter-web-2.2.11.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.2.11.RELEASE/d38201dc2b9d00364a194f536b4062381f2e5eae/spring-boot-starter-web-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

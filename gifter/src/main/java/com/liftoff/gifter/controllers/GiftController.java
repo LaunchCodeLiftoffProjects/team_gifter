@@ -13,8 +13,8 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.Date;
-import java.util.Optional;
+import java.text.ParseException;
+import java.util.*;
 
 @Controller
 @RequestMapping("gift")
@@ -22,7 +22,7 @@ public class GiftController {
 
     @Autowired
     private GiftRepository giftRepository;
-//    private Gift gift;
+
     @Autowired
     private RecipientRepository recipientRepository;
     @Autowired
@@ -32,10 +32,17 @@ public class GiftController {
 
     @GetMapping(value = {"add", "add/{recipientId}"})
     public String displayAddGiftForm(Model model, @PathVariable(required=false) Integer recipientId) {
-        model.addAttribute("title", "Add Gift");
-        model.addAttribute( new Gift());
-        model.addAttribute("recipients", recipientRepository.findAll());
+        Optional<Recipient> result = recipientRepository.findById(recipientId);
+        Recipient recipient = result.get();
+        model.addAttribute("title", "Add Gift for " + recipient.getFirstName());
+        model.addAttribute(new Gift());
+        model.addAttribute("recipientId", recipientId);
+
+        List<Recipient> recipients = (List<Recipient>) recipientRepository.findAll();
+        model.addAttribute("recipients", recipients);
+
         model.addAttribute("occasions", occasionRepository.findAll());
+
 
         return "gift/add";
     }
@@ -55,7 +62,6 @@ public class GiftController {
         return "gift/add";
 
     }
-
     
     @GetMapping("edit/{recipientId}")
     public String displayEditForm(Model model, @PathVariable int recipientId) {
