@@ -1,9 +1,7 @@
 package com.liftoff.gifter.models;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Gift extends AbstractEntity {
@@ -14,19 +12,24 @@ public class Gift extends AbstractEntity {
     private String price;
     private String link;
 
-   @ManyToMany
-    private List<Recipient> recipients = new ArrayList<Recipient>();
+   @ManyToOne
+    private Occasion occasion;
 
     public Gift() {
 
     }
 
-    public Gift(String giftName,String description, String price, String link, List<Recipient> recipients) {
-        this.giftName = giftName;
+<<<<<<<<< Temporary merge branch 1
+    public Gift(String name,String description, String price, String link, List<Recipient> recipients) {
+        this.giftName= giftName;
+=========
+    public Gift(String name,String description, String price, String link, Occasion occasion) {
+        this.name = name;
+>>>>>>>>> Temporary merge branch 2
         this.description = description;
         this.price = price;
         this.link = link;
-        this.recipients = recipients;
+        this.occasion = occasion;
     }
 
     public String getGiftName() {return giftName; }
@@ -49,16 +52,11 @@ public class Gift extends AbstractEntity {
         this.link= link;
     }
 
-    public List<Recipient> getRecipients() {
-        return recipients;
-    }
-
-    public void setRecipients(List<Recipient> recipients) {
-        this.recipients = recipients;
-    }
-
-    @Override
     public Occasion getOccasion() {
-        return null;
+        return occasion;
+    }
+
+    public void setOccasion(Occasion occasion) {
+        this.occasion = occasion;
     }
 }

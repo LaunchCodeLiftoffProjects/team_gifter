@@ -2,12 +2,12 @@
   <library name="Gradle: org.springframework:spring-expression:5.2.10.RELEASE">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.2.10.RELEASE/4a863c13e8b263a1f867258b43443df7480702d1/spring-expression-5.2.10.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.2.10.RELEASE/4a863c13e8b263a1f867258b43443df7480702d1/spring-expression-5.2.10.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.2.10.RELEASE/4a863c13e8b263a1f867258b43443df7480702d1/spring-expression-5.2.10.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.2.10.RELEASE/91c8c08203c54c235ebc926cf36fe77d63b046c4/spring-expression-5.2.10.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.2.10.RELEASE/91c8c08203c54c235ebc926cf36fe77d63b046c4/spring-expression-5.2.10.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.2.10.RELEASE/91c8c08203c54c235ebc926cf36fe77d63b046c4/spring-expression-5.2.10.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
