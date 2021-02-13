@@ -29,4 +29,5 @@ public abstract class AbstractEntity extends OccasionTools{
         return Objects.hash(id);
     }
 
+    public abstract Occasion getOccasion();
 }

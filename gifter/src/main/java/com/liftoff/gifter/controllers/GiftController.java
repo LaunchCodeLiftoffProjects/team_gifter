@@ -5,7 +5,6 @@ import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.models.Gift;
 import com.liftoff.gifter.models.Occasion;
-import com.liftoff.gifter.models.Recipient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,7 +12,6 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.Date;
 import java.util.Optional;
 
 @Controller
