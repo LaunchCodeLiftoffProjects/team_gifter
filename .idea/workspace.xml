@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit" />
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/gifter/src/main/resources/templates/gift/add.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +111,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -152,9 +155,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <list>
@@ -264,14 +265,7 @@
       <option name="project" value="LOCAL" />
       <updated>1612175875474</updated>
     </task>
-    <task id="LOCAL-00013" summary="until we get it right">
-      <created>1613257358770</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1613257358770</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,8 +297,33 @@
     <MESSAGE value="Login Form ==&gt; Auto-focus Username on load." />
     <MESSAGE value="Added handler to remove recipient." />
     <MESSAGE value="Edit occasion ==&gt; Auto-fills the name of the occasion." />
-    <MESSAGE value="until we get it right" />
-    <option name="LAST_COMMIT_MESSAGE" value="until we get it right" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit occasion ==&gt; Auto-fills the name of the occasion." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2194" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1612228276388">
+      <screen x="1440" y="-155" width="1920" height="999" />
+    </state>
+    <state x="2194" y="33" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612228276388" />
+    <state width="1819" height="180" key="GridCell.Tab.0.bottom" timestamp="1612230706939">
+      <screen x="1440" y="-155" width="1920" height="999" />
+    </state>
+    <state width="1819" height="180" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612230706939" />
+    <state width="1819" height="180" key="GridCell.Tab.0.center" timestamp="1612230706938">
+      <screen x="1440" y="-155" width="1920" height="999" />
+    </state>
+    <state width="1819" height="180" key="GridCell.Tab.0.center/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612230706938" />
+    <state width="1819" height="180" key="GridCell.Tab.0.left" timestamp="1612230706937">
+      <screen x="1440" y="-155" width="1920" height="999" />
+    </state>
+    <state width="1819" height="180" key="GridCell.Tab.0.left/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612230706937" />
+    <state width="1819" height="180" key="GridCell.Tab.0.right" timestamp="1612230706939">
+      <screen x="1440" y="-155" width="1920" height="999" />
+    </state>
+    <state width="1819" height="180" key="GridCell.Tab.0.right/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612230706939" />
+    <state x="2046" y="67" width="670" height="676" key="search.everywhere.popup" timestamp="1612228143414">
+      <screen x="1440" y="-155" width="1920" height="999" />
+    </state>
+    <state x="2046" y="67" width="670" height="676" key="search.everywhere.popup/0.25.1440.819/1440.-155.1920.999@1440.-155.1920.999" timestamp="1612228143414" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

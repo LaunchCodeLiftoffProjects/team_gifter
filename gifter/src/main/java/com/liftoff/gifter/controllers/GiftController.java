@@ -79,8 +79,13 @@ public class GiftController {
             model.addAttribute("title", "Add Gift");
             return "gift/edit";
         }
+<<<<<<<<< Temporary merge branch 1
+       Gift giftToEdit = giftRepository.findById(id).get();
+        giftToEdit.setGiftName(gift.getGiftName());
+=========
         Gift giftToEdit = giftRepository.findById(id).get();
         giftToEdit.setName(gift.getName());
+>>>>>>>>> Temporary merge branch 2
         giftToEdit.setDescription(gift.getDescription());
         giftToEdit.setPrice(gift.getPrice());
         giftToEdit.setLink(gift.getLink());

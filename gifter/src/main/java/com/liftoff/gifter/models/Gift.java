@@ -7,7 +7,7 @@ import javax.persistence.ManyToOne;
 public class Gift extends AbstractEntity {
 
 
-    private String name;
+    private String giftName;
     private String description;
     private String price;
     private String link;
@@ -19,17 +19,22 @@ public class Gift extends AbstractEntity {
 
     }
 
+<<<<<<<<< Temporary merge branch 1
+    public Gift(String name,String description, String price, String link, List<Recipient> recipients) {
+        this.giftName= giftName;
+=========
     public Gift(String name,String description, String price, String link, Occasion occasion) {
         this.name = name;
+>>>>>>>>> Temporary merge branch 2
         this.description = description;
         this.price = price;
         this.link = link;
         this.occasion = occasion;
     }
 
-    public String getName() {return name; }
+    public String getGiftName() {return giftName; }
 
-    public void setName(String name) {this.name = name; }
+    public void setGiftName(String giftName) {this.giftName = giftName; }
 
     public String getDescription() {return description; }
 
