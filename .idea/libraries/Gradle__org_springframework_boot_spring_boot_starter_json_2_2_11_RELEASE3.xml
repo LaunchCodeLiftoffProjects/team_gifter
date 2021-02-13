@@ -3,13 +3,13 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/951127fa8b85a974fed3bd2cb96e4ed9683947de/spring-boot-starter-json-2.2.11.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/951127fa8b85a974fed3bd2cb96e4ed9683947de/spring-boot-starter-json-2.2.11.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/951127fa8b85a974fed3bd2cb96e4ed9683947de/spring-boot-starter-json-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/951127fa8b85a974fed3bd2cb96e4ed9683947de/spring-boot-starter-json-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/4fcae98b1cad8c89053c98efb86691acf0261615/spring-boot-starter-json-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/4fcae98b1cad8c89053c98efb86691acf0261615/spring-boot-starter-json-2.2.11.RELEASE-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/4fcae98b1cad8c89053c98efb86691acf0261615/spring-boot-starter-json-2.2.11.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.2.11.RELEASE/4fcae98b1cad8c89053c98efb86691acf0261615/spring-boot-starter-json-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
