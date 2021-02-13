@@ -3,11 +3,13 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.2.11.RELEASE/2ed363f969a4830a58119087d3560ea3f37dda1f/spring-boot-starter-thymeleaf-2.2.11.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.2.11.RELEASE/2ed363f969a4830a58119087d3560ea3f37dda1f/spring-boot-starter-thymeleaf-2.2.11.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.2.11.RELEASE/2ed363f969a4830a58119087d3560ea3f37dda1f/spring-boot-starter-thymeleaf-2.2.11.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.2.11.RELEASE/46701ae042149c82b5441cda403ca9d0d740356f/spring-boot-starter-thymeleaf-2.2.11.RELEASE-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.2.11.RELEASE/46701ae042149c82b5441cda403ca9d0d740356f/spring-boot-starter-thymeleaf-2.2.11.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.2.11.RELEASE/46701ae042149c82b5441cda403ca9d0d740356f/spring-boot-starter-thymeleaf-2.2.11.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
