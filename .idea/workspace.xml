@@ -13,10 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0b03bb2d-5bc3-4345-b251-ef122701c721" name="Default Changelist" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612233147694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AFTER A SCREAM OUT">
+      <created>1613254376775</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613254376775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +255,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="After it yelled" />
-    <option name="LAST_COMMIT_MESSAGE" value="After it yelled" />
+    <MESSAGE value="AFTER A SCREAM OUT" />
+    <option name="LAST_COMMIT_MESSAGE" value="AFTER A SCREAM OUT" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
