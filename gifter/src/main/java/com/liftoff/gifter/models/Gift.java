@@ -19,13 +19,10 @@ public class Gift extends AbstractEntity {
 
     }
 
-<<<<<<<<< Temporary merge branch 1
-    public Gift(String name,String description, String price, String link, List<Recipient> recipients) {
-        this.giftName= giftName;
-=========
-    public Gift(String name,String description, String price, String link, Occasion occasion) {
-        this.name = name;
->>>>>>>>> Temporary merge branch 2
+
+
+    public Gift(String giftName,String description, String price, String link, Occasion occasion) {
+        this.giftName = giftName;
         this.description = description;
         this.price = price;
         this.link = link;
@@ -52,7 +49,7 @@ public class Gift extends AbstractEntity {
         this.link= link;
     }
 
-    public Occasion getOccasion() {
+    public Occasion getOccasion(){
         return occasion;
     }
 
