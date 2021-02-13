@@ -162,4 +162,8 @@ public class Occasion extends AbstractEntity implements Comparable<Occasion>{
 
     }
 
+    @Override
+    public Occasion getOccasion() {
+        return null;
+    }
 }

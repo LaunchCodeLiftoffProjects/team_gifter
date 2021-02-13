@@ -2,7 +2,6 @@ package com.liftoff.gifter.models;
 
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -181,6 +180,11 @@ public class Recipient extends AbstractEntity {
     public int hashCode() {
         return Objects.hash(super.hashCode(), firstName, lastName,
                 email, relationship, address, phoneNumber, dateCreated, dateUpdated);
+    }
+
+    @Override
+    public Occasion getOccasion() {
+        return null;
     }
 
     @Override
