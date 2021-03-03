@@ -5,7 +5,6 @@ import com.liftoff.gifter.data.OccasionRepository;
 import com.liftoff.gifter.data.RecipientRepository;
 import com.liftoff.gifter.data.UserRepository;
 import com.liftoff.gifter.models.Occasion;
-import com.liftoff.gifter.models.Recipient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

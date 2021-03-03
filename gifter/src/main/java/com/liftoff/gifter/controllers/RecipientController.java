@@ -161,7 +161,6 @@ public class RecipientController {
 
             if (!recipient.occasionNameAlreadyExists(newOccasion.getName()) && newOccasion.getName().length() > 0){
                 recipient.addOccasion(newOccasion);
-//                occasion.setSortableDate();
                 occasionRepository.save(newOccasion);
                 recipientRepository.save(recipient);
             }
@@ -216,14 +215,18 @@ public class RecipientController {
             return "recipient/edit-occasion";
         }
 
-        Occasion occasionToEdit = occasionRepository.findById(id).get();
-        occasionToEdit.setName(occasion.getName());
-        occasionToEdit.setDate(occasion.getDate());
-        occasionToEdit.setSortableDate();
-        occasionToEdit.setRecurring(occasion.isRecurring());
-        occasionRepository.save(occasionToEdit);
+        Optional<Occasion> occasionToEdit = occasionRepository.findById(id);
+        if(occasionToEdit.isPresent()) {
+            occasionToEdit.get().setName(occasion.getName());
+            occasionToEdit.get().setDate(occasion.getDate());
+            occasionToEdit.get().setSortableDate();
+            occasionToEdit.get().setRecurring(occasion.isRecurring());
+            occasionRepository.save(occasionToEdit.get());
+            return "redirect:detail?recipientId=" + occasionToEdit.get().getRecipient().getId();
+        }
+
 //        model.addAttribute("occasions", recipient.getOccasions());
-        return "redirect:detail?recipientId=" + occasionToEdit.getRecipient().getId();
+        return "recipient/edit-occasion";
     }
 
     // ToDo: Build handlers to "remove" recipient
