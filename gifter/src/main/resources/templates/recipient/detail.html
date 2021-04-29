@@ -8,6 +8,7 @@
 <div id="recipient-relationship">
     <span th:text="${recipient.relationship}"></span>
 </div>
+
 <div class="contact-info">
     <span th:unless="${recipient.email == ''}" th:text="'Email: ' + ${recipient.email}"></span>
     <a th:if="${recipient.email == ''}" th:href="'/recipient/edit/' + ${recipient.id}">Add Email</a>
@@ -36,7 +37,7 @@
                 </td>
                 <td th:if="${occasion.gifts.size() > 0}">
                         <span th:each="gift : ${occasion.gifts}">
-                            <span th:text="${gift.name} + ' --'"></span>
+                            <span th:text="${gift.giftName} + ' --'"></span>
                         </span>
                     <a th:href="'/gift/add/' + ${occasion.recipient.id}">Add another</a>
                 </td>

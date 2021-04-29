@@ -48,7 +48,7 @@ public class HomeController {
         model.addAttribute("occasions", occasions);
         model.addAttribute("gifts", giftRepository.findAll());
 
-        List<Occasion> upcoming = Occasion.findUpcoming(occasions);
+         List<Occasion> upcoming = Occasion.findUpcoming(occasions);
 
         model.addAttribute("upcoming", upcoming);
         model.addAttribute("numUpcoming", upcoming.size());
